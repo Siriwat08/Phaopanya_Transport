@@ -1,0 +1,1289 @@
+{
+ "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable",
+ "kind": "process",
+ "domain": "D11",
+ "domain_title": "บอทและกระบวนการอัตโนมัติ (Bot / Automation Workflows)",
+ "file": "app/tables/process/08.json",
+ "table_record": {
+  "type": "table",
+  "name": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable",
+  "page": 23,
+  "props": [
+   [
+    "Table name",
+    "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+   ],
+   [
+    "Visible?",
+    "NEVER"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Schema",
+    "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย Process Table_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "READ_ONLY"
+   ],
+   [
+    "Source Path",
+    "/ProcessStateTables/70999aca-5a1f-4dfc-907b- 417bc046f574/5830b09e-3793-4f4d-b4d8- dd96a75c7e5c/StateTable"
+   ],
+   [
+    "Data Source",
+    "native"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 42,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "Instance Id",
+   "page": 641,
+   "props": [
+    [
+     "Column name",
+     "Instance Id"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 863,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "ID_เบิกค่าเข้ารับสินค้าคืนคลัง",
+   "page": 642,
+   "props": [
+    [
+     "Column name",
+     "ID_เบิกค่าเข้ารับสินค้าคืนคลัง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 864,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "STARTDATE",
+   "page": 643,
+   "props": [
+    [
+     "Column name",
+     "STARTDATE"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 865,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "ENDDATE",
+   "page": 643,
+   "props": [
+    [
+     "Column name",
+     "ENDDATE"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 866,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "วันที่ออกเอกสาร",
+   "page": 644,
+   "props": [
+    [
+     "Column name",
+     "วันที่ออกเอกสาร"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 867,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "EXPORT TO PDF",
+   "page": 645,
+   "props": [
+    [
+     "Column name",
+     "EXPORTTO PDF"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 868,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "EXPORT TO Excel(สรุปจำนวนจุดส่งงาน)",
+   "page": 645,
+   "props": [
+    [
+     "Column name",
+     "EXPORTTO Excel(สรุปจำนวนจุดส่งงาน)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 869,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "ราคา_ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง",
+   "page": 646,
+   "props": [
+    [
+     "Column name",
+     "ราคา_ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 870,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง",
+   "page": 647,
+   "props": [
+    [
+     "Column name",
+     "ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Ref\",\"ElementTypeQualifier\":\" {\\\"ReferencedTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedRootTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedType\\\":\\\"Text\\\",\\\"ReferencedTypeQualifier\\\":\\\" {\\\\\\\"MaxLength\\\\\\\":null,\\\\\\\"MinLength\\\\\\\":null,\\\\\\\"LongTextFormatting\\\\\\\":\\\\\\\"Plain Text\\\\\\\",\\\\\\\"IsMulticolumnKey\\\\\\\":false,\\\\\\\"Valid_If\\\\\\\":null,\\\\\\\"Error_Message_If_Invalid\\\\\\\":null,\\\\\\\"Show_If\\\\\\\":null,\\\\\\\"Required_If\\\\\\\":null,\\\\\\\"Editable_If\\\\\\\":null,\\\\\\\"Reset_If\\\\\\\":null,\\\\\\\"Suggested_Values\\\\\\\":null}\\\",\\\"ReferencedKeyColumn\\\":\\\"ID_รับงานคืนได้เงิน200\\\",\\\"IsAPartOf\\\":false,\\\"RelationshipName\\\":null,\\\"InputMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 871,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "สรุปจำนวนจุดส่งงาน",
+   "page": 648,
+   "props": [
+    [
+     "Column name",
+     "สรุปจำนวนจุดส่งงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Number\",\"ElementTypeQualifier\":\" {\\\"MaxValue\\\":null,\\\"MinValue\\\":null,\\\"StepValue\\\":null,\\\"NumericDigits\\\":null,\\\"ShowThousandsSeparator\\\":true,\\\"NumberDisplayMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 872,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "ทำเบิกค่ายกขึ้นชั้น",
+   "page": 648,
+   "props": [
+    [
+     "Column name",
+     "ทำเบิกค่ายกขึ้นชั้น"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Ref\",\"ElementTypeQualifier\":\" {\\\"ReferencedTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedRootTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedType\\\":\\\"Text\\\",\\\"ReferencedTypeQualifier\\\":\\\" {\\\\\\\"MaxLength\\\\\\\":null,\\\\\\\"MinLength\\\\\\\":null,\\\\\\\"LongTextFormatting\\\\\\\":\\\\\\\"Plain Text\\\\\\\",\\\\\\\"IsMulticolumnKey\\\\\\\":false,\\\\\\\"Valid_If\\\\\\\":null,\\\\\\\"Error_Message_If_Invalid\\\\\\\":null,\\\\\\\"Show_If\\\\\\\":null,\\\\\\\"Required_If\\\\\\\":null,\\\\\\\"Editable_If\\\\\\\":null,\\\\\\\"Reset_If\\\\\\\":null,\\\\\\\"Suggested_Values\\\\\\\":null}\\\",\\\"ReferencedKeyColumn\\\":\\\"ID_รับงานคืนได้เงิน200\\\",\\\"IsAPartOf\\\":false,\\\"RelationshipName\\\":null,\\\"InputMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 873,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "ราคา_ทำเบิกค่ายกขึ้นชั้น",
+   "page": 649,
+   "props": [
+    [
+     "Column name",
+     "ราคา_ทำเบิกค่ายกขึ้นชั้น"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 874,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "ได้เพิ่ม50%ของค่าเที่ยว",
+   "page": 650,
+   "props": [
+    [
+     "Column name",
+     "ได้เพิ่ม50%ของค่าเที่ยว"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Ref\",\"ElementTypeQualifier\":\" {\\\"ReferencedTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedRootTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedType\\\":\\\"Text\\\",\\\"ReferencedTypeQualifier\\\":\\\" {\\\\\\\"MaxLength\\\\\\\":null,\\\\\\\"MinLength\\\\\\\":null,\\\\\\\"LongTextFormatting\\\\\\\":\\\\\\\"Plain Text\\\\\\\",\\\\\\\"IsMulticolumnKey\\\\\\\":false,\\\\\\\"Valid_If\\\\\\\":null,\\\\\\\"Error_Message_If_Invalid\\\\\\\":null,\\\\\\\"Show_If\\\\\\\":null,\\\\\\\"Required_If\\\\\\\":null,\\\\\\\"Editable_If\\\\\\\":null,\\\\\\\"Reset_If\\\\\\\":null,\\\\\\\"Suggested_Values\\\\\\\":null}\\\",\\\"ReferencedKeyColumn\\\":\\\"ID_รับงานคืนได้เงิน200\\\",\\\"IsAPartOf\\\":false,\\\"RelationshipName\\\":null,\\\"InputMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 875,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "ราคา_ได้เพิ่ม50%ของค่าเที่ยว",
+   "page": 651,
+   "props": [
+    [
+     "Column name",
+     "ราคา_ได้เพิ่ม50%ของค่าเที่ยว"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 876,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  },
+  {
+   "type": "column",
+   "name": "เคลียสรุปจุดส่ง",
+   "page": 652,
+   "props": [
+    [
+     "Column name",
+     "เคลียสรุปจุดส่ง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Ref"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ReferencedTableName\":\"เคลียสรุปจุดส่ง Output\",\"ReferencedRootTableName\":null,\"ReferencedType\":\"Text\",\"ReferencedTypeQualifier\":\" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ReferencedKeyColumn\":\"Instance Id\",\"IsAPartOf\":false,\"RelationshipName\":null,\"InputMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "เคลียสรุปจุดส่ง Output_Schema"
+    ],
+    [
+     "Visible?",
+     "NEVER"
+    ]
+   ],
+   "order": 877,
+   "table": "Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable"
+  }
+ ],
+ "actions": [],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

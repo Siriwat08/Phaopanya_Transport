@@ -1,0 +1,1027 @@
+{
+ "table": "Price_Table",
+ "kind": "main",
+ "domain": "D02",
+ "domain_title": "การวางบิลและราคา (Billing & Pricing)",
+ "file": "app/tables/main/27.json",
+ "table_record": {
+  "type": "table",
+  "name": "Price_Table",
+  "page": 15,
+  "props": [
+   [
+    "Table name",
+    "Price_Table"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Data locale",
+    "en-GB"
+   ],
+   [
+    "Schema",
+    "Price_Table_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "ALL_CHANGES"
+   ],
+   [
+    "Expression for update",
+    "=SWITCH(USERROLE(), \"ADMIN\", \"ALL_CHANGES\", \"USER\",\"READ_ONLY\", \"READ_ONLY\")"
+   ],
+   [
+    "Source Path",
+    "เผ่าปัญญา ทรานสปอร์ต"
+   ],
+   [
+    "Worksheet Name/Qualifier",
+    "Price_Table"
+   ],
+   [
+    "Data Source",
+    "google"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 26,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "_RowNumber",
+   "page": 494,
+   "props": [
+    [
+     "Column name",
+     "_RowNumber"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "Number of this row"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "Yes"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 659,
+   "table": "Price_Table"
+  },
+  {
+   "type": "column",
+   "name": "ชื่องาน",
+   "page": 494,
+   "props": [
+    [
+     "Column name",
+     "ชื่องาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 660,
+   "table": "Price_Table"
+  },
+  {
+   "type": "column",
+   "name": "ID_Price Table",
+   "page": 495,
+   "props": [
+    [
+     "Column name",
+     "ID_PriceTable"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "Yes"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "UNIQUEID()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "Yes"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 661,
+   "table": "Price_Table"
+  },
+  {
+   "type": "column",
+   "name": "เรทน้ำมัน_Minimum",
+   "page": 496,
+   "props": [
+    [
+     "Column name",
+     "เรทน้ำมัน_Minimum"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Decimal"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 662,
+   "table": "Price_Table"
+  },
+  {
+   "type": "column",
+   "name": "เรทน้ำมัน_Maximum",
+   "page": 496,
+   "props": [
+    [
+     "Column name",
+     "เรทน้ำมัน_Maximum"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Decimal"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 663,
+   "table": "Price_Table"
+  },
+  {
+   "type": "column",
+   "name": "ระยะทาง_Minimum",
+   "page": 497,
+   "props": [
+    [
+     "Column name",
+     "ระยะทาง_Minimum"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 664,
+   "table": "Price_Table"
+  },
+  {
+   "type": "column",
+   "name": "ระยะทาง_Maximum",
+   "page": 498,
+   "props": [
+    [
+     "Column name",
+     "ระยะทาง_Maximum"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 665,
+   "table": "Price_Table"
+  },
+  {
+   "type": "column",
+   "name": "Price",
+   "page": 499,
+   "props": [
+    [
+     "Column name",
+     "Price"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Decimal"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "ส่งงานที่ยังไม่มีข้อมูลในระบบ_Schema"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 666,
+   "table": "Price_Table"
+  }
+ ],
+ "actions": [
+  {
+   "type": "action",
+   "name": "Delete",
+   "page": 1856,
+   "props": [
+    [
+     "Action name",
+     "Delete"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "DELETE_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "Price_Table"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ADVANCED"
+    ]
+   ],
+   "order": 2605,
+   "table": "Price_Table"
+  },
+  {
+   "type": "action",
+   "name": "Edit",
+   "page": 1857,
+   "props": [
+    [
+     "Action name",
+     "Edit"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"DesktopBehavior\":\"Open a form\",\"DesktopEditBehavior\":\"Edit inplace\",\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EDIT_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "Price_Table"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2606,
+   "table": "Price_Table"
+  },
+  {
+   "type": "action",
+   "name": "Add",
+   "page": 1857,
+   "props": [
+    [
+     "Action name",
+     "Add"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "ADD_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "Price_Table"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2607,
+   "table": "Price_Table"
+  },
+  {
+   "type": "action",
+   "name": "Price_Table_csv",
+   "page": 1905,
+   "props": [
+    [
+     "Action name",
+     "Price_Table_csv"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"CsvLocale\":\"en- GB\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EXPORT_VIEW"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "โหลดไฟล์csv"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "Price_Table"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2678,
+   "table": "Price_Table"
+  }
+ ],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

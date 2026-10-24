@@ -1,0 +1,155 @@
+{
+ "table": "เข้ารับสินค้าคืน Output",
+ "kind": "output",
+ "domain": "D11",
+ "domain_title": "บอทและกระบวนการอัตโนมัติ (Bot / Automation Workflows)",
+ "file": "app/tables/output/03.json",
+ "table_record": {
+  "type": "table",
+  "name": "เข้ารับสินค้าคืน Output",
+  "page": 19,
+  "props": [
+   [
+    "Table name",
+    "เข้ารับสินค้าคืน Output"
+   ],
+   [
+    "Visible?",
+    "NEVER"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Schema",
+    "เข้ารับสินค้าคืน Output_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "READ_ONLY"
+   ],
+   [
+    "Source Path",
+    "/ProcessStateTables/70999aca-5a1f-4dfc-907b- 417bc046f574/4cc2cf19-b0ad-44d8-bf1e- c82109753063/StepOutput_เข้ารับสินค้าคืน"
+   ],
+   [
+    "Data Source",
+    "native"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 35,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "Instance Id",
+   "page": 585,
+   "props": [
+    [
+     "Column name",
+     "Instance Id"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "Process for เพิ่มรูปรับคืน - 1 ProcessTable_Schema"
+    ],
+    [
+     "Visible?",
+     "NEVER"
+    ]
+   ],
+   "order": 784,
+   "table": "เข้ารับสินค้าคืน Output"
+  }
+ ],
+ "actions": [],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

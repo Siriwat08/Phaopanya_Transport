@@ -1,0 +1,965 @@
+{
+ "table": "Clear Output 4",
+ "kind": "output",
+ "domain": "D11",
+ "domain_title": "บอทและกระบวนการอัตโนมัติ (Bot / Automation Workflows)",
+ "file": "app/tables/output/09.json",
+ "table_record": {
+  "type": "table",
+  "name": "Clear Output 4",
+  "page": 26,
+  "props": [
+   [
+    "Table name",
+    "Clear Output 4"
+   ],
+   [
+    "Visible?",
+    "NEVER"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Schema",
+    "Clear Output 4_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "READ_ONLY"
+   ],
+   [
+    "Source Path",
+    "/ProcessStateTables/70999aca-5a1f-4dfc-907b- 417bc046f574/df3f0d2d-9e21-4a4f-b657- 2139591812b7/StepOutput_Clear"
+   ],
+   [
+    "Data Source",
+    "native"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 49,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "Instance Id",
+   "page": 704,
+   "props": [
+    [
+     "Column name",
+     "Instance Id"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 950,
+   "table": "Clear Output 4"
+  },
+  {
+   "type": "column",
+   "name": "ID_ปริ๊นใบวางบิล",
+   "page": 705,
+   "props": [
+    [
+     "Column name",
+     "ID_ปริ๊นใบวางบิล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 951,
+   "table": "Clear Output 4"
+  },
+  {
+   "type": "column",
+   "name": "ชื่องาน",
+   "page": 706,
+   "props": [
+    [
+     "Column name",
+     "ชื่องาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\": null, \"MinLength\": null, \"LongTextFormatting\": \"PlainText\", \"IsMulticolumnKey\": false, \"Valid_If\": \"=ข้อมูลชื่องานต้นทางปลายทาง[ชื่องาน]\", \"Error_Message_If_Invalid\": null, \"Show_If\": null, \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 952,
+   "table": "Clear Output 4"
+  },
+  {
+   "type": "column",
+   "name": "StartDate",
+   "page": 706,
+   "props": [
+    [
+     "Column name",
+     "StartDate"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 953,
+   "table": "Clear Output 4"
+  },
+  {
+   "type": "column",
+   "name": "EndDate",
+   "page": 707,
+   "props": [
+    [
+     "Column name",
+     "EndDate"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 954,
+   "table": "Clear Output 4"
+  },
+  {
+   "type": "column",
+   "name": "ราคารวม",
+   "page": 707,
+   "props": [
+    [
+     "Column name",
+     "ราคารวม"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 955,
+   "table": "Clear Output 4"
+  },
+  {
+   "type": "column",
+   "name": "Export to xlsx",
+   "page": 708,
+   "props": [
+    [
+     "Column name",
+     "Export to xlsx"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 956,
+   "table": "Clear Output 4"
+  },
+  {
+   "type": "column",
+   "name": "Export to xlsx To Athens",
+   "page": 709,
+   "props": [
+    [
+     "Column name",
+     "Export to xlsxTo Athens"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 957,
+   "table": "Clear Output 4"
+  },
+  {
+   "type": "column",
+   "name": "ปริ๊นใบวางบิลแยกตามชื่องาน",
+   "page": 709,
+   "props": [
+    [
+     "Column name",
+     "ปริ๊นใบวางบิลแยกตามชื่องาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 958,
+   "table": "Clear Output 4"
+  },
+  {
+   "type": "column",
+   "name": "วันที่ออกเอกสาร",
+   "page": 710,
+   "props": [
+    [
+     "Column name",
+     "วันที่ออกเอกสาร"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 959,
+   "table": "Clear Output 4"
+  },
+  {
+   "type": "column",
+   "name": "ผลลัพท์",
+   "page": 711,
+   "props": [
+    [
+     "Column name",
+     "ผลลัพท์"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Ref\",\"ElementTypeQualifier\":\" {\\\"ReferencedTableName\\\":\\\"ข้อมูลการวาง บิล\\\",\\\"ReferencedRootTableName\\\":\\\"ข้อมูลการวาง บิล\\\",\\\"ReferencedType\\\":\\\"Text\\\",\\\"ReferencedTypeQualifier\\\":\\\"{\\\\\\\"MaxLength\\\\\\\":null,\\\\\\\"MinLength\\\\\\\":null,\\\\\\\"LongTextFormatting\\\\\\\":\\\\\\\"Plain Text\\\\\\\",\\\\\\\"IsMulticolumnKey\\\\\\\":false,\\\\\\\"Valid_If\\\\\\\":null,\\\\\\\"Error_Message_If_Invalid\\\\\\\":null,\\\\\\\"Show_If\\\\\\\":null,\\\\\\\"Required_If\\\\\\\":null,\\\\\\\"Editable_If\\\\\\\":null,\\\\\\\"Reset_If\\\\\\\":null,\\\\\\\"Suggested_Values\\\\\\\":null}\\\",\\\"ReferencedKeyColumn\\\":\\\"ID_วาง บิล\\\",\\\"IsAPartOf\\\":false,\\\"RelationshipName\\\":null,\\\"InputMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "Process for ปริ๊นใบวางบิล_person_14 Process Table_Schema"
+    ],
+    [
+     "Visible?",
+     "NEVER"
+    ]
+   ],
+   "order": 960,
+   "table": "Clear Output 4"
+  }
+ ],
+ "actions": [],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

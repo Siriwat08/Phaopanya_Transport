@@ -1,0 +1,155 @@
+{
+ "table": "AppSheet___KM Output",
+ "kind": "output",
+ "domain": "D11",
+ "domain_title": "บอทและกระบวนการอัตโนมัติ (Bot / Automation Workflows)",
+ "file": "app/tables/output/20.json",
+ "table_record": {
+  "type": "table",
+  "name": "AppSheet___KM Output",
+  "page": 38,
+  "props": [
+   [
+    "Table name",
+    "AppSheet___KM Output"
+   ],
+   [
+    "Visible?",
+    "NEVER"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Schema",
+    "AppSheet___KM Output_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "READ_ONLY"
+   ],
+   [
+    "Source Path",
+    "/ProcessStateTables/70999aca-5a1f-4dfc-907b-417bc046f574/261d0ba4-8cde-454c-bb42- cbd0b03b5c66/StepOutput_AppSheet___KM"
+   ],
+   [
+    "Data Source",
+    "native"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 72,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "Instance Id",
+   "page": 1268,
+   "props": [
+    [
+     "Column name",
+     "Instance Id"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "New step Output 2_Schema"
+    ],
+    [
+     "Visible?",
+     "NEVER"
+    ]
+   ],
+   "order": 1743,
+   "table": "AppSheet___KM Output"
+  }
+ ],
+ "actions": [],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

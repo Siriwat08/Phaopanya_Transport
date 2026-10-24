@@ -1,0 +1,1208 @@
+{
+ "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table",
+ "kind": "process",
+ "domain": "D11",
+ "domain_title": "บอทและกระบวนการอัตโนมัติ (Bot / Automation Workflows)",
+ "file": "app/tables/process/20.json",
+ "table_record": {
+  "type": "table",
+  "name": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table",
+  "page": 34,
+  "props": [
+   [
+    "Table name",
+    "Process for ทำเบิกค่ายกขึ้นชั้น ProcessTable"
+   ],
+   [
+    "Visible?",
+    "NEVER"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Schema",
+    "Process for ทำเบิกค่ายกขึ้นชั้น ProcessTable_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "READ_ONLY"
+   ],
+   [
+    "Source Path",
+    "/ProcessStateTables/70999aca-5a1f-4dfc-907b- 417bc046f574/4a9715e2-a9bd-4142-afaa-d10bcd4db61f/StateTable"
+   ],
+   [
+    "Data Source",
+    "native"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 65,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "Instance Id",
+   "page": 917,
+   "props": [
+    [
+     "Column name",
+     "Instance Id"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1251,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "ID_เบิกค่าเข้ารับสินค้าคืนคลัง",
+   "page": 918,
+   "props": [
+    [
+     "Column name",
+     "ID_เบิกค่าเข้ารับสินค้าคืนคลัง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1252,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "STARTDATE",
+   "page": 918,
+   "props": [
+    [
+     "Column name",
+     "STARTDATE"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1253,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "ENDDATE",
+   "page": 919,
+   "props": [
+    [
+     "Column name",
+     "ENDDATE"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1254,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "วันที่ออกเอกสาร",
+   "page": 920,
+   "props": [
+    [
+     "Column name",
+     "วันที่ออกเอกสาร"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1255,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "EXPORT TO PDF",
+   "page": 920,
+   "props": [
+    [
+     "Column name",
+     "EXPORTTO PDF"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1256,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "EXPORT TO Excel(สรุปจำนวนจุดส่งงาน)",
+   "page": 921,
+   "props": [
+    [
+     "Column name",
+     "EXPORTTO Excel(สรุปจำนวนจุดส่งงาน)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1257,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "ราคา_ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง",
+   "page": 922,
+   "props": [
+    [
+     "Column name",
+     "ราคา_ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1258,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง",
+   "page": 922,
+   "props": [
+    [
+     "Column name",
+     "ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Ref\",\"ElementTypeQualifier\":\" {\\\"ReferencedTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedRootTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedType\\\":\\\"Text\\\",\\\"ReferencedTypeQualifier\\\":\\\" {\\\\\\\"MaxLength\\\\\\\":null,\\\\\\\"MinLength\\\\\\\":null,\\\\\\\"LongTextFormatting\\\\\\\":\\\\\\\"Plain Text\\\\\\\",\\\\\\\"IsMulticolumnKey\\\\\\\":false,\\\\\\\"Valid_If\\\\\\\":null,\\\\\\\"Error_Message_If_Invalid\\\\\\\":null,\\\\\\\"Show_If\\\\\\\":null,\\\\\\\"Required_If\\\\\\\":null,\\\\\\\"Editable_If\\\\\\\":null,\\\\\\\"Reset_If\\\\\\\":null,\\\\\\\"Suggested_Values\\\\\\\":null}\\\",\\\"ReferencedKeyColumn\\\":\\\"ID_รับงานคืนได้เงิน200\\\",\\\"IsAPartOf\\\":false,\\\"RelationshipName\\\":null,\\\"InputMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1259,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "สรุปจำนวนจุดส่งงาน",
+   "page": 923,
+   "props": [
+    [
+     "Column name",
+     "สรุปจำนวนจุดส่งงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Number\",\"ElementTypeQualifier\":\" {\\\"MaxValue\\\":null,\\\"MinValue\\\":null,\\\"StepValue\\\":null,\\\"NumericDigits\\\":null,\\\"ShowThousandsSeparator\\\":true,\\\"NumberDisplayMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1260,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "ทำเบิกค่ายกขึ้นชั้น",
+   "page": 924,
+   "props": [
+    [
+     "Column name",
+     "ทำเบิกค่ายกขึ้นชั้น"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Ref\",\"ElementTypeQualifier\":\" {\\\"ReferencedTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedRootTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedType\\\":\\\"Text\\\",\\\"ReferencedTypeQualifier\\\":\\\" {\\\\\\\"MaxLength\\\\\\\":null,\\\\\\\"MinLength\\\\\\\":null,\\\\\\\"LongTextFormatting\\\\\\\":\\\\\\\"Plain Text\\\\\\\",\\\\\\\"IsMulticolumnKey\\\\\\\":false,\\\\\\\"Valid_If\\\\\\\":null,\\\\\\\"Error_Message_If_Invalid\\\\\\\":null,\\\\\\\"Show_If\\\\\\\":null,\\\\\\\"Required_If\\\\\\\":null,\\\\\\\"Editable_If\\\\\\\":null,\\\\\\\"Reset_If\\\\\\\":null,\\\\\\\"Suggested_Values\\\\\\\":null}\\\",\\\"ReferencedKeyColumn\\\":\\\"ID_รับงานคืนได้เงิน200\\\",\\\"IsAPartOf\\\":false,\\\"RelationshipName\\\":null,\\\"InputMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1261,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "ราคา_ทำเบิกค่ายกขึ้นชั้น",
+   "page": 925,
+   "props": [
+    [
+     "Column name",
+     "ราคา_ทำเบิกค่ายกขึ้นชั้น"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1262,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "ได้เพิ่ม50%ของค่าเที่ยว",
+   "page": 926,
+   "props": [
+    [
+     "Column name",
+     "ได้เพิ่ม50%ของค่าเที่ยว"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Ref\",\"ElementTypeQualifier\":\" {\\\"ReferencedTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedRootTableName\\\":\\\"รับงานคืนได้เงิน200\\\",\\\"ReferencedType\\\":\\\"Text\\\",\\\"ReferencedTypeQualifier\\\":\\\" {\\\\\\\"MaxLength\\\\\\\":null,\\\\\\\"MinLength\\\\\\\":null,\\\\\\\"LongTextFormatting\\\\\\\":\\\\\\\"Plain Text\\\\\\\",\\\\\\\"IsMulticolumnKey\\\\\\\":false,\\\\\\\"Valid_If\\\\\\\":null,\\\\\\\"Error_Message_If_Invalid\\\\\\\":null,\\\\\\\"Show_If\\\\\\\":null,\\\\\\\"Required_If\\\\\\\":null,\\\\\\\"Editable_If\\\\\\\":null,\\\\\\\"Reset_If\\\\\\\":null,\\\\\\\"Suggested_Values\\\\\\\":null}\\\",\\\"ReferencedKeyColumn\\\":\\\"ID_รับงานคืนได้เงิน200\\\",\\\"IsAPartOf\\\":false,\\\"RelationshipName\\\":null,\\\"InputMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 1263,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  },
+  {
+   "type": "column",
+   "name": "ราคา_ได้เพิ่ม50%ของค่าเที่ยว",
+   "page": 927,
+   "props": [
+    [
+     "Column name",
+     "ราคา_ได้เพิ่ม50%ของค่าเที่ยว"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "Process for ได้เพิ่ม25%ของค่าเที่ยว ProcessTable_Schema"
+    ],
+    [
+     "Visible?",
+     "NEVER"
+    ]
+   ],
+   "order": 1264,
+   "table": "Process for ทำเบิกค่ายกขึ้นชั้น Process Table"
+  }
+ ],
+ "actions": [],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

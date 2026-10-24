@@ -1,0 +1,1630 @@
+{
+ "table": "ราคาในระบบก่อนส่งสินค้า",
+ "kind": "main",
+ "domain": "D02",
+ "domain_title": "การวางบิลและราคา (Billing & Pricing)",
+ "file": "app/tables/main/07.json",
+ "table_record": {
+  "type": "table",
+  "name": "ราคาในระบบก่อนส่งสินค้า",
+  "page": 4,
+  "props": [
+   [
+    "Table name",
+    "ราคาในระบบก่อนส่งสินค้า"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Data locale",
+    "en-GB"
+   ],
+   [
+    "Schema",
+    "ราคาในระบบก่อนส่งสินค้า_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "ALL_CHANGES"
+   ],
+   [
+    "Expression for update mode",
+    "=SWITCH(USERROLE(), \"ADMIN\", \"ALL_CHANGES\", \"USER\",\"READ_ONLY\", \"READ_ONLY\")"
+   ],
+   [
+    "Source Path",
+    "เผ่าปัญญา ทรานสปอร์ต"
+   ],
+   [
+    "Worksheet Name/Qualifier",
+    "ราคาในระบบก่อนส่งสินค้า"
+   ],
+   [
+    "Data Source",
+    "google"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 6,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "_RowNumber",
+   "page": 174,
+   "props": [
+    [
+     "Column name",
+     "_RowNumber"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "Number of this row"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "Yes"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 257,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "ID_ราคา",
+   "page": 175,
+   "props": [
+    [
+     "Column name",
+     "ID_ราคา"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Spreadsheet formula",
+     "IF(RC[1]<>\"\",\"ในระบบ-\" & ROW(), \"\")"
+    ],
+    [
+     "Formula version",
+     "1"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 258,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "Shipment No",
+   "page": 176,
+   "props": [
+    [
+     "Column name",
+     "Shipment No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":false,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "Yes"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "Yes"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 259,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "วันที่ส่งสินค้า",
+   "page": 176,
+   "props": [
+    [
+     "Column name",
+     "วันที่ส่งสินค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 260,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อต้นทาง",
+   "page": 177,
+   "props": [
+    [
+     "Column name",
+     "ชื่อต้นทาง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 261,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อปลายทาง",
+   "page": 178,
+   "props": [
+    [
+     "Column name",
+     "ชื่อปลายทาง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 262,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อ - นามสกุล",
+   "page": 178,
+   "props": [
+    [
+     "Column name",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 263,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "ทะเบียนรถ",
+   "page": 179,
+   "props": [
+    [
+     "Column name",
+     "ทะเบียนรถ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 264,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "Truck Type",
+   "page": 180,
+   "props": [
+    [
+     "Column name",
+     "TruckType"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 265,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "Weight (t)",
+   "page": 180,
+   "props": [
+    [
+     "Column name",
+     "Weight (t)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Decimal"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 266,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "น้ำหนัก",
+   "page": 181,
+   "props": [
+    [
+     "Column name",
+     "น้ำหนัก"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Decimal"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 267,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "ระยะทาง (km)",
+   "page": 182,
+   "props": [
+    [
+     "Column name",
+     "ระยะทาง (km)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Decimal"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 268,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "ราคา",
+   "page": 183,
+   "props": [
+    [
+     "Column name",
+     "ราคา"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 269,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "ราคาหลังส่งสินค้า",
+   "page": 183,
+   "props": [
+    [
+     "Column name",
+     "ราคาหลังส่งสินค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Spreadsheet formula",
+     "=ArrayFormula(XLOOKUP(RC[-11],'ราคาในระบบหลังส่ง สินค้า'!C[-12]:C[-12],'ราคาในระบบหลังส่งสินค้า'!C[-9]:C[-9]))"
+    ],
+    [
+     "Formula version",
+     "1"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 270,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "column",
+   "name": "เดือน",
+   "page": 184,
+   "props": [
+    [
+     "Column name",
+     "เดือน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF( ISBLANK([วันที่ส่งสินค้า]), \"\", CONCATENATE( YEAR([วันที่ส่งสินค้า]) - IF(YEAR([วันที่ส่งสินค้า]) > 2500, 543, 0), \"-\",TEXT([วันที่ส่งสินค้า], \"MM\") ) )"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "หน้าหลัก_Schema"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 271,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  }
+ ],
+ "actions": [
+  {
+   "type": "action",
+   "name": "Delete",
+   "page": 1831,
+   "props": [
+    [
+     "Action name",
+     "Delete"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "DELETE_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ราคาในระบบก่อนส่งสินค้า"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ADVANCED"
+    ]
+   ],
+   "order": 2566,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "action",
+   "name": "Edit",
+   "page": 1832,
+   "props": [
+    [
+     "Action name",
+     "Edit"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"DesktopBehavior\":\"Open a form\",\"DesktopEditBehavior\":\"Edit inplace\",\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EDIT_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ราคาในระบบก่อนส่งสินค้า"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2567,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "action",
+   "name": "Add",
+   "page": 1835,
+   "props": [
+    [
+     "Action name",
+     "Add"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "ADD_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ราคาในระบบก่อนส่งสินค้า"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2573,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  },
+  {
+   "type": "action",
+   "name": "ราคาในระบบก่อนส่งสินค้าcsv",
+   "page": 1901,
+   "props": [
+    [
+     "Action name",
+     "ราคาในระบบก่อนส่งสินค้าcsv"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"CsvLocale\":\"en- GB\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EXPORT_VIEW"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "โหลดไฟล์csv"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ราคาในระบบก่อนส่งสินค้า"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2671,
+   "table": "ราคาในระบบก่อนส่งสินค้า"
+  }
+ ],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

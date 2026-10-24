@@ -1,0 +1,1136 @@
+{
+ "table": "ข้อมูลชื่องานต้นทางปลายทาง",
+ "kind": "main",
+ "domain": "D01",
+ "domain_title": "งานจัดส่งหลัก (Core Delivery)",
+ "file": "app/tables/main/16.json",
+ "table_record": {
+  "type": "table",
+  "name": "ข้อมูลชื่องานต้นทางปลายทาง",
+  "page": 9,
+  "props": [
+   [
+    "Table name",
+    "ข้อมูลชื่องานต้นทางปลายทาง"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Data locale",
+    "en-GB"
+   ],
+   [
+    "Schema",
+    "ข้อมูลชื่องานต้นทางปลายทาง_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "ALL_CHANGES"
+   ],
+   [
+    "Expression for update mode",
+    "=SWITCH(USERROLE(), \"ADMIN\", \"ALL_CHANGES\", \"USER\",\"READ_ONLY\", \"READ_ONLY\")"
+   ],
+   [
+    "Source Path",
+    "เผ่าปัญญาทรานสปอร์ต-915154893"
+   ],
+   [
+    "Worksheet Name/Qualifier",
+    "ข้อมูลชื่องานต้นทางปลายทาง"
+   ],
+   [
+    "Data Source",
+    "google_tables"
+   ],
+   [
+    "Store for image and file",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 15,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "_RowNumber",
+   "page": 288,
+   "props": [
+    [
+     "Column name",
+     "_RowNumber"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "Number of this row"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "Yes"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 399,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "column",
+   "name": "Row ID",
+   "page": 288,
+   "props": [
+    [
+     "Column name",
+     "Row ID"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "ID of this row"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "UNIQUEID(\"PackedUUID\")"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "No"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 400,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "column",
+   "name": "ID_ชื่องาน",
+   "page": 289,
+   "props": [
+    [
+     "Column name",
+     "ID_ชื่องาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=UNIQUEID()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "Yes"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "NFC Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 401,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "column",
+   "name": "ชื่องาน",
+   "page": 290,
+   "props": [
+    [
+     "Column name",
+     "ชื่องาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "Yes"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "NFC Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 402,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "column",
+   "name": "สถานที่รับสินค้า (ต้นทาง)",
+   "page": 291,
+   "props": [
+    [
+     "Column name",
+     "สถานที่รับสินค้า (ต้นทาง)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "NFC Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 403,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "column",
+   "name": "สถานที่ส่งสินค้า (ปลายทาง)",
+   "page": 291,
+   "props": [
+    [
+     "Column name",
+     "สถานที่ส่งสินค้า (ปลายทาง)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "NFC Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 404,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "column",
+   "name": "ประเภทการคำนวน",
+   "page": 292,
+   "props": [
+    [
+     "Column name",
+     "ประเภทการคำนวน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Enum"
+    ],
+    [
+     "Type Qualifier",
+     "{\"EnumValues\":[\"กรอกเอง\",\"ราคาคงที่\",\"ระยะทาง คงที่\",\"จากShipment\"],\"AllowOtherValues\":false,\"AutoCompleteOtherValues\":true,\"BaseType\":\"Text\",\"BaseTypeQualifier\":\" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"EnumInputMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 405,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "column",
+   "name": "ระยะทางคงที่",
+   "page": 293,
+   "props": [
+    [
+     "Column name",
+     "ระยะทางคงที่"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Decimal"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 406,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "column",
+   "name": "ราคาคงที่",
+   "page": 293,
+   "props": [
+    [
+     "Column name",
+     "ราคาคงที่"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Decimal"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "สรุปเบิกส่วนต่าง_Schema"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 407,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  }
+ ],
+ "actions": [
+  {
+   "type": "action",
+   "name": "Add",
+   "page": 1825,
+   "props": [
+    [
+     "Action name",
+     "Add"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "ADD_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลชื่องานต้นทางปลายทาง"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2554,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "action",
+   "name": "Delete",
+   "page": 1827,
+   "props": [
+    [
+     "Action name",
+     "Delete"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "DELETE_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลชื่องานต้นทางปลายทาง"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ADVANCED"
+    ]
+   ],
+   "order": 2557,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "action",
+   "name": "Edit",
+   "page": 1827,
+   "props": [
+    [
+     "Action name",
+     "Edit"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"DesktopBehavior\":\"Open a form\",\"DesktopEditBehavior\":\"Edit inplace\",\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EDIT_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลชื่องานต้นทางปลายทาง"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2558,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  },
+  {
+   "type": "action",
+   "name": "ข้อมูลชื่องานต้นทางปลายทางcsv",
+   "page": 1896,
+   "props": [
+    [
+     "Action name",
+     "ข้อมูลชื่องานต้นทางปลายทางcsv"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"CsvLocale\":\"en- GB\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EXPORT_VIEW"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "โหลดไฟล์csv"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลชื่องานต้นทางปลายทาง"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2664,
+   "table": "ข้อมูลชื่องานต้นทางปลายทาง"
+  }
+ ],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

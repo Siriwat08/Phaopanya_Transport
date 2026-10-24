@@ -1,0 +1,1391 @@
+{
+ "table": "Acknowledge_Logs",
+ "kind": "main",
+ "domain": "D08",
+ "domain_title": "ประกาศและการรับทราบ (Announcements & Acknowledgement)",
+ "file": "app/tables/main/29.json",
+ "table_record": {
+  "type": "table",
+  "name": "Acknowledge_Logs",
+  "page": 16,
+  "props": [
+   [
+    "Table name",
+    "Acknowledge_Logs"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Data locale",
+    "en-GB"
+   ],
+   [
+    "Schema",
+    "Acknowledge_Logs_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "ALL_CHANGES"
+   ],
+   [
+    "Expression for update mode",
+    "=SWITCH(USERROLE(), \"ADMIN\", \"ALL_CHANGES\", \"USER\",\"ADDS_ONLY\", \"READ_ONLY\")"
+   ],
+   [
+    "Source Path",
+    "เผ่าปัญญา ทรานสปอร์ต"
+   ],
+   [
+    "Worksheet Name/Qualifier",
+    "Acknowledge_Logs"
+   ],
+   [
+    "Data Source",
+    "google"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 28,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "_RowNumber",
+   "page": 510,
+   "props": [
+    [
+     "Column name",
+     "_RowNumber"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "Number of this row"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "Yes"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 682,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "column",
+   "name": "ID_รับทราบ",
+   "page": 511,
+   "props": [
+    [
+     "Column name",
+     "ID_รับทราบ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "Yes"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "UNIQUEID()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "Yes"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 683,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "column",
+   "name": "ID_ประกาศ",
+   "page": 512,
+   "props": [
+    [
+     "Column name",
+     "ID_ประกาศ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Ref"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ReferencedTableName\":\"Announcements\",\"ReferencedRootTableName\":\"Announcements\",\"ReferencedType\":\"Text\",\"ReferencedTypeQualifier\":\" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ReferencedKeyColumn\":\"ID_ประกาศ\",\"IsAPartOf\":false,\"RelationshipName\":null,\"InputMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=MAXROW( \"Announcements\", \"วันที่ประกาศ\", NOT(IN([ID_ประกาศ], SELECT(Acknowledge_Logs[ID_ประกาศ],[Email พนักงาน] = USEREMAIL()))) )"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 684,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "column",
+   "name": "วันที่และเวลารับทราบ",
+   "page": 513,
+   "props": [
+    [
+     "Column name",
+     "วันที่และเวลารับทราบ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "DateTime"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MinValue\":null,\"MaxValue\":null,\"UseLongDateFormat\":false,\"IgnoreSeconds\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=NOW()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 685,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "column",
+   "name": "Email พนักงาน",
+   "page": 513,
+   "props": [
+    [
+     "Column name",
+     "Email พนักงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Email"
+    ],
+    [
+     "Type Qualifier",
+     "{\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=USEREMAIL()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 686,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อ - นามสกุล",
+   "page": 514,
+   "props": [
+    [
+     "Column name",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=LOOKUP(USEREMAIL(), \"ข้อมูลพนักงาน\", \"Email พนักงาน\", \"ชื่อ -นามสกุล\")"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 687,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "column",
+   "name": "ทะเบียนรถ",
+   "page": 515,
+   "props": [
+    [
+     "Column name",
+     "ทะเบียนรถ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=LOOKUP(USEREMAIL(), \"ข้อมูลพนักงาน\", \"Email พนักงาน\", \"ทะเบียนรถ\")"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 688,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "column",
+   "name": "เลือกเพื่อยืนยัน",
+   "page": 516,
+   "props": [
+    [
+     "Column name",
+     "เลือกเพื่อยืนยัน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Enum"
+    ],
+    [
+     "Type Qualifier",
+     "{\"EnumValues\":[\"ข้าพเจ้าได้อ่านและเข้าใจประกาศนี้แล้ว\",\"ติดขัด ปัญหา ไม่สามารถปฏิบัติตาม ได้\"],\"AllowOtherValues\":false,\"AutoCompleteOtherValues\":true,\"BaseType\":\"Text\",\"BaseTypeQualifier\":\" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"EnumInputMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 689,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "column",
+   "name": "หมายเหตุ",
+   "page": 516,
+   "props": [
+    [
+     "Column name",
+     "หมายเหตุ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Display name",
+     "=IFS( [ID_ประกาศ].[หัวข้อประกาศ] = \"สอบถามและรับฟังความคิด เห็น\", \"ตอบคำถาม / แสดงความคิดเห็น\", [เลือกเพื่อยืนยัน] = \"ติดขัดปัญหา ไม่สามารถปฏิบัติตามได้\", \"อธิบายเหตุผลที่ไม่สามารถปฏิบัติตามได้\", TRUE, \"หมายเหตุ\" )"
+    ],
+    [
+     "Type",
+     "LongText"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=OR(\\n\\n [เลือกเพื่อยืนยัน] = \\\"ติดขัดปัญหาไม่สามารถปฏิบัติตามได้\\\",\\n\\n [ID_ประกาศ].[หัวข้อประกาศ] = \\\"สอบถามและรับฟังความคิด เห็น\\\"\\n\\n)\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 690,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "column",
+   "name": "ลงชื่อพนักงาน",
+   "page": 517,
+   "props": [
+    [
+     "Column name",
+     "ลงชื่อพนักงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Signature"
+    ],
+    [
+     "Type Qualifier",
+     "{\"SaveExternal\":true,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 691,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "column",
+   "name": "ข้อความประกาศ",
+   "page": 518,
+   "props": [
+    [
+     "Column name",
+     "ข้อความประกาศ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Show"
+    ],
+    [
+     "Type Qualifier",
+     "{\"Category\":\"Page_Header\",\"Content\":\"=[ข้อความ ประกาศ]\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=CONTEXT(\\\"ViewType\\\") = \\\"Form\\\"\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=CONCATENATE( \" ประกาศ/แจ้งเตือน\" \"เรื่อง: \", [ID_ประกาศ].[หัวข้อประกาศ], \" ---------------------- \", [ID_ประกาศ].[เนื้อหาประกาศ], \" ---------------------- \", [ID_ประกาศ].[Note], ) 📢"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "Announcements_Schema"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 692,
+   "table": "Acknowledge_Logs"
+  }
+ ],
+ "actions": [
+  {
+   "type": "action",
+   "name": "Delete",
+   "page": 1939,
+   "props": [
+    [
+     "Action name",
+     "Delete"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "DELETE_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "Acknowledge_Logs"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ADVANCED"
+    ]
+   ],
+   "order": 2731,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "action",
+   "name": "Edit",
+   "page": 1939,
+   "props": [
+    [
+     "Action name",
+     "Edit"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"DesktopBehavior\":\"Open a form\",\"DesktopEditBehavior\":\"Edit inplace\",\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EDIT_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "Acknowledge_Logs"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2732,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "action",
+   "name": "Compose Email (Email พนักงาน)",
+   "page": 1941,
+   "props": [
+    [
+     "Action name",
+     "Compose Email (Email พนักงาน)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"EmailTo\":\"[Email พนักงาน]\",\"Subject\":null,\"Body\":null,\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EMAIL"
+    ],
+    [
+     "Attach to column",
+     "Email พนักงาน"
+    ],
+    [
+     "Set this column",
+     "Email พนักงาน"
+    ],
+    [
+     "Only if this condition is",
+     "NOT(ISBLANK([Email พนักงาน]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "Acknowledge_Logs"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2735,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "action",
+   "name": "Add",
+   "page": 1942,
+   "props": [
+    [
+     "Action name",
+     "Add"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "ADD_RECORD"
+    ],
+    [
+     "Only if this condition is true",
+     "=COUNT( SELECT( Announcements[ID_ประกาศ], NOT(IN([ID_ประกาศ], SELECT(Acknowledge_Logs[ID_ประกาศ],[Email พนักงาน] = USEREMAIL()))) ) ) > 0"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "Acknowledge_Logs"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2736,
+   "table": "Acknowledge_Logs"
+  },
+  {
+   "type": "action",
+   "name": "View Ref (ID_ประกาศ)",
+   "page": 1943,
+   "props": [
+    [
+     "Action name",
+     "View Ref (ID_ประกาศ)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"CONCATENATE(\\\"#page=detail&table=Announcements&row=\\\", ENCODEURL([ID_ประกาศ]) )\",\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_APP"
+    ],
+    [
+     "Attach to column",
+     "ID_ประกาศ"
+    ],
+    [
+     "Set this column",
+     "ID_ประกาศ"
+    ],
+    [
+     "Only if this condition is true",
+     "NOT(ISBLANK([ID_ประกาศ]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "Acknowledge_Logs"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2738,
+   "table": "Acknowledge_Logs"
+  }
+ ],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/OWNER/appsheet-phaopanya-transport-analysis/schema/finding.schema.json",
+  "title": "Appsheet analysis finding",
+  "type": "object",
+  "required": ["meta", "findings"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": ["agent", "task", "created_at"],
+      "properties": {
+        "agent": { "type": "string", "minLength": 1, "description": "ชื่อของ agent ที่ทำ" },
+        "task": { "type": "string", "description": "task id จาก prompts/ หรือ docs/open-questions.md" },
+        "created_at": { "type": "string", "format": "date-time" },
+        "pdf_available": { "type": "boolean", "description": "true ถ้ามี PDF ต้นฉบับใช้ตรวจสอบ" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+    "findings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/finding" }
+    }
+  },
+  "$defs": {
+    "finding": {
+      "type": "object",
+      "required": [
+        "id", "table", "column", "property", "verdict", "severity",
+        "problem", "evidence", "impact", "recommendation",
+        "source", "falsifiable_test", "confidence"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 8,
+          "description": "unique key: domain|table|column|property|slug"
+        },
+        "table": { "type": "string", "minLength": 1 },
+        "column": { "type": "string", "description": "ชื่อคอลัมน์ หรือชื่อแอคชัน หรือ '(ระดับตาราง)'" },
+        "property": {
+          "type": "string",
+          "enum": [
+            "App formula", "Initial value", "Valid_If", "Show_If", "Required_If",
+            "Editable_If", "Reset_If", "Security filter",
+            "Expression for update mode", "With these properties",
+            "Type Qualifier", "Row filter condition", "-"
+          ]
+        },
+        "domain": { "type": "string", "pattern": "^D(0[1-9]|1[01])$" },
+        "verdict": {
+          "type": "string",
+          "enum": ["ดี", "พอใช้", "ต้องปรับปรุง", "เสี่ยง", "ไม่มีสูตร", "ต้องยืนยันในแอป"]
+        },
+        "severity": {
+          "type": "string",
+          "enum": ["critical", "high", "medium", "low", "info"]
+        },
+        "problem": { "type": "string", "minLength": 10 },
+        "evidence": { "type": "string", "minLength": 10 },
+        "impact": { "type": "string", "minLength": 5 },
+        "recommendation": { "type": "string", "minLength": 10 },
+        "suggested_formula": { "type": "string" },
+        "origin": { "type": "string", "description": "ที่มาของข้อค้นพบ (ตรวจอัตโนมัติ / ทีม / agent)" },
+        "source": {
+          "type": "object",
+          "required": ["pdf_page"],
+          "properties": {
+            "pdf_page": { "type": "integer", "minimum": 1, "maximum": 1946 },
+            "property": { "type": "string" },
+            "quote": { "type": "string", "description": "ข้อความจริงจาก PDF ที่เป็นหลักฐาน" }
+          },
+          "additionalProperties": true
+        },
+        "falsifiable_test": {
+          "type": "string",
+          "minLength": 10,
+          "description": "อะไรจะพิสูจน์ว่าข้อนี้ผิด — ถ้าเขียนไม่ได้ แปลว่ายังไม่พร้อมส่ง"
+        },
+        "confidence": { "type": "string", "enum": ["high", "medium", "low"] }
+      },
+      "additionalProperties": true
+    }
+  }
+}

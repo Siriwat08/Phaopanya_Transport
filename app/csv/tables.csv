@@ -1,0 +1,91 @@
+﻿table,kind,domain,columns,actions,views,security_filter,update_mode,pdf_page
+SCGนครหลวงJWDภูมิภาค,main,D01,49,13,0,"=OR(USERROLE() = ""ADMIN"", [Email พนักงาน] = USEREMAIL())","=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""ADDS_AND_UPDATES"", ""READ_ONLY"")",1
+_Per User Settings,main,D10,15,0,0,,,1
+ข้อมูลการเข้าบำรุงรักษา,main,D04,14,6,0,"=OR(USERROLE() = ""ADMIN"", [Email พนักงาน] = USEREMAIL())","=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""ADDS_AND_UPDATES"", ""READ_ONLY"")",2
+ข้อมูลการวางบิล,main,D02,45,10,0,"=OR(USERROLE() = ""ADMIN"", [Email พนักงาน] = USEREMAIL())","=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""ADDS_AND_UPDATES"", ""READ_ONLY"")",2
+ตารางงานประจำวัน,main,D01,40,10,0,"=OR(USERROLE() = ""ADMIN"", [Email พนักงาน] = USEREMAIL())","=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"", ""ADDS_AND_UPDATES"", ""READ_ONLY"")",3
+ราคาน้ำมันดีเซล,main,D02,4,4,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",3
+ราคาในระบบก่อนส่งสินค้า,main,D02,15,4,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",4
+หน้าหลัก,main,D09,4,5,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",4
+ปริ๊นใบวางบิล,main,D02,11,21,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",5
+PDFพนักงาน,main,D05,11,26,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"", ""READ_ONLY"", ""READ_ONLY"")",5
+แจ้งปัญหาระหว่างวัน,main,D06,29,14,0,"=OR(USERROLE() = ""ADMIN"", [Email พนักงาน] = USEREMAIL())","=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""ADDS_AND_UPDATES"", ""READ_ONLY"")",6
+รับงานคืนได้เงิน200,main,D03,29,9,0,"=OR(USERROLE() = ""ADMIN"", [Email พนักงาน] = USEREMAIL())","=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"", ""ADDS_AND_UPDATES"", ""READ_ONLY"")",7
+ข้อมูลงานRT,main,D01,12,4,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"", ""READ_ONLY"", ""READ_ONLY"")",7
+FILTER,main,D01,14,6,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",8
+ข้อมูลพนักงาน,main,D07,17,7,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",8
+ข้อมูลชื่องานต้นทางปลายทาง,main,D01,9,4,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",9
+สรุปเบิกส่วนต่าง,main,D03,12,6,0,,,9
+Doc_Return,main,D05,7,4,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",10
+Image_Doc_Return,main,D05,4,5,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"", ""READ_ONLY"", ""READ_ONLY"")",10
+ทำเบิกส่วนต่างScgวังน้อย,main,D03,136,15,0,"=OR(USERROLE() = ""ADMIN"", [Email พนักงาน] = USEREMAIL())","=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"", ""ADDS_ONLY"", ""READ_ONLY"")",11
+ข้อมูลงานRW,main,D01,15,4,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",11
+สร้างเอกสาร,main,D05,25,3,0,,,12
+ScanDocs,main,D05,18,7,0,,,13
+สรุป_เจ้าของสินค้า,main,D01,13,3,0,,,13
+สรุป_Shipment,main,D01,14,3,0,,,13
+PriceOverride,main,D02,7,3,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",14
+Price_Table,main,D02,8,4,0,,,15
+ส่งงานที่ยังไม่มีข้อมูลในระบบ,main,D05,15,6,0,,,15
+Acknowledge_Logs,main,D08,11,5,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""ADDS_ONLY"", ""READ_ONLY"")",16
+Announcements,main,D08,7,3,0,,"=SWITCH(USERROLE(), ""ADMIN"", ""ALL_CHANGES"", ""USER"",""READ_ONLY"", ""READ_ONLY"")",16
+Process for ปริ๊นใบวางบิล Process Table,process,D11,12,0,0,,,17
+ปริ๊นใบวางบิล_step Output,output,D11,11,0,0,,,17
+Process for Telegram_แจ้งปัญหา - 1 Process Table,process,D11,30,0,0,,,18
+Telegram_แจ้งปัญหา2 Output,output,D11,1,0,0,,,18
+Process for Bot_รับสินค้าคืน - 1 Process Table,process,D11,30,0,0,,,19
+เข้ารับสินค้าคืน Output,output,D11,1,0,0,,,19
+Process for เพิ่มรูปรับคืน - 1 Process Table,process,D11,30,0,0,,,20
+New step Output,output,D11,2,0,0,,,20
+Process for ใบป่ะหน้า - 1 Process Table,process,D11,11,0,0,,,21
+Process for ปริ๊นใบวางบิลเอเทน - 1 Process Table,process,D11,12,0,0,,,21
+Clear Output,output,D11,11,0,0,,,22
+Process for สรุปส่วนต่าง - 1 Process Table,process,D11,12,0,0,,,22
+Process for สรุปจำนวนจุดที่ส่งงานSCGวังน้อย ProcessTable,process,D11,15,0,0,,,23
+เคลียสรุปจุดส่ง Output,output,D11,14,0,0,,,23
+Process for ปริ๊นใบวางบิลโอนคลัง มโนยนต์ (นวนคร)Process Table,process,D11,12,0,0,,,24
+Clear Output 2,output,D11,11,0,0,,,24
+Process for ปริ๊นใบวางบิล_โอนคลัง กระสอบ2(บางบัวทอง)Process Table,process,D11,12,0,0,,,25
+Clear Output 3,output,D11,11,0,0,,,25
+Process for ปริ๊นใบวางบิล_ไอโรบอท Process Table,process,D11,12,0,0,,,26
+Clear Output 4,output,D11,11,0,0,,,26
+Process for ปริ๊นใบวางบิล_โอนคลัง เอเธน Process Table,process,D11,12,0,0,,,27
+Clear Output 5,output,D11,11,0,0,,,27
+Process for ปริ๊นใบวางบิล_รับเอกสาร (งานพี่เหน่ง) สตีเบลProcess Table,process,D11,12,0,0,,,28
+Clear Output 6,output,D11,11,0,0,,,28
+Process for ปริ๊นใบวางบิล_รับเอกสาร (งานพี่เหน่ง) ProcessTable,process,D11,12,0,0,,,29
+Clear Output 7,output,D11,11,0,0,,,29
+Process for ฺBot_4ตัว_จัดเรียงเส้นทาง Process Table,process,D11,137,0,0,,,30
+GoogleMapsRoutesAPI_Step Output,output,D11,1,0,0,,,30
+Process for โอนคลัง (GQ) จีคิว Process Table,process,D11,12,0,0,,,31
+Clear Output 8,output,D11,11,0,0,,,31
+Process for MeSpace Process Table,process,D11,12,0,0,,,32
+Clear Output 9,output,D11,11,0,0,,,32
+Process for ปริ๊นใบวางบิล_คลังSCGJWDวังน้อย ProcessTable,process,D11,12,0,0,,,33
+Clear Output 10,output,D11,11,0,0,,,33
+Process for ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่งProcess Table,process,D11,14,0,0,,,34
+Process for ทำเบิกค่ายกขึ้นชั้น Process Table,process,D11,14,0,0,,,34
+Process for ได้เพิ่ม25%ของค่าเที่ยว Process Table,process,D11,14,0,0,,,35
+Process for ทำเบิกส่วนต่างScgวังน้อย - 1 Process Table,process,D11,139,0,0,,,35
+ทำเบิกส่วนต่างScgวังน้อยstep Output,output,D11,2,0,0,,,36
+New step2 Output,output,D11,136,0,0,,,36
+ไม่ผ่านNew step Output,output,D11,136,0,0,,,37
+Process for AppSheet_KM - 1 Process Table,process,D11,51,0,0,,,37
+AppSheet___KM Output,output,D11,1,0,0,,,38
+New step Output 2,output,D11,49,0,0,,,38
+Process for New bot - 1 Process Table,process,D11,30,0,0,,,39
+New step Output 3,output,D11,29,0,0,,,39
+Process for Update ScanStatus เมื่อสแกน Invoice - 1Process Table,process,D11,19,0,0,,,40
+Update Output,output,D11,18,0,0,,,40
+Process for ปริ๊นใบวางบิล_เบทาโกร+เหมาตู้ Process Table,process,D11,12,0,0,,,41
+Clear Output 11,output,D11,11,0,0,,,41
+Process for ปริ๊นใบวางบิล_LINEMAN (6W) (SCG Express)Process Table,process,D11,12,0,0,,,42
+Clear Output 12,output,D11,11,0,0,,,42
+Process for ปริ๊นใบวางบิล_Thai paper (SCG Express) - 1Process Table,process,D11,12,0,0,,,43
+Clear Output 13,output,D11,11,0,0,,,43
+Process for ปริ๊นใบวางบิล_โอนคลัง บุญถาวร เกษตร_นวมินทร์ - 1 Process Table,process,D11,12,0,0,,,44
+Clear Output 14,output,D11,11,0,0,,,44
+Process for Bot_เบิกค่าขนส่งตามระยะทาง - 1 ProcessTable,process,D11,139,0,0,,,45
+เบิกตามระยะทาง Output,output,D11,2,0,0,,,45
+New step4 Output,output,D11,136,0,0,,,46
+New step3 Output,output,D11,136,0,0,,,46

@@ -1,0 +1,298 @@
+[
+ {
+  "type": "slice",
+  "name": "Name รอการอนุมัติ",
+  "page": 1732,
+  "props": [
+   [
+    "Slice Name",
+    "รอการอนุมัติ"
+   ],
+   [
+    "Slice Columns",
+    "_RowNumber ชื่องาน วันที่ชื่อ - นามสกุล ทะเบียนรถ สถานที่รับงาน (ต้นทาง) รูปถ่ายบิลงาน สถานที่ส่งงาน (ปลายทาง) เรทดีเซล สถานะการอนุมัติราคา Email ผู้อนุมัติID_วางบิล Shipment No Email พนักงาน เดือน ราคาตามระยะทาง ราคาจุดเพิ่ม จำนวนร้านที่ยกขึ้นชั้น ระยะทางที่วิ่ง (KM) จำนวนจุดรับ / จุดส่ง พิมอธิบายทุกอย่างที่สำคัญ ราคาในระบบหลังส่งสินค้า รูปถ่ายหลังรถตอนขึ้นสินค้าเสร็จรูปถ่ายบิลงานเพิ่ม1 รูปถ่ายบิลงานเพิ่ม2"
+   ],
+   [
+    "Row filter condition",
+    "=USERROLE()= \"ADMIN\""
+   ],
+   [
+    "Update mode",
+    "ALL_CHANGES"
+   ],
+   [
+    "SourceTable",
+    "ข้อมูลการวางบิล"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Slice Actions",
+    "**auto**"
+   ]
+  ],
+  "order": 2394,
+  "table": null
+ },
+ {
+  "type": "slice",
+  "name": "Name ข้อมูลการวางของแต่ละคน",
+  "page": 1733,
+  "props": [
+   [
+    "Slice Name",
+    "ข้อมูลการวางของแต่ละคน"
+   ],
+   [
+    "Slice Columns",
+    "_RowNumber วันที่ชื่อ - นามสกุล ชื่องาน ทะเบียนรถ สถานที่รับงาน (ต้นทาง) Email พนักงาน สถานที่ส่งงาน (ปลายทาง) รูปถ่ายบิลงาน พิมอธิบายทุกอย่างที่สำคัญ Shipment No จำนวนร้านที่ยกขึ้นชั้น จำนวนจุดรับ / จุดส่ง ราคาจุดเพิ่ม"
+   ],
+   [
+    "Row filter condition",
+    "=OR(USERROLE() = \"ADMIN\", [Email พนักงาน] = USEREMAIL())"
+   ],
+   [
+    "Update mode",
+    "ADDS_ONLY"
+   ],
+   [
+    "SourceTable",
+    "ข้อมูลการวางบิล"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Slice Actions",
+    "**auto**"
+   ]
+  ],
+  "order": 2395,
+  "table": null
+ },
+ {
+  "type": "slice",
+  "name": "Name View ราคาไม่ตรง",
+  "page": 1734,
+  "props": [
+   [
+    "Slice Name",
+    "View ราคาไม่ตรง"
+   ],
+   [
+    "Slice Columns",
+    "_RowNumber ชื่องาน"
+   ],
+   [
+    "Row filter condition",
+    "=AND( [ราคาในระบบหลังส่งสินค้า] <> [ราคา], OR( [ชื่องาน] = \"นครหลวง\",[ชื่องาน] = \"โอนคลัง พว\", [ชื่องาน] = \"โอนคลัง นำวิวัฒน์\", [ชื่องาน] = \"โอนคลัง ซอยฮะ (โกเรีย)\", [ชื่องาน] = \"โอนคลัง TRW\", [ชื่องาน] = \"โอนคลัง NocNoc\", [ชื่องาน] = \"โอนคลัง CPF FOOD\", [ชื่องาน] = \"โอนคลัง BYD\", [ชื่องาน] = \"ภูมิภาค\" ) )"
+   ],
+   [
+    "Update mode",
+    "READ_ONLY"
+   ],
+   [
+    "SourceTable",
+    "ข้อมูลการวางบิล"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Slice Actions",
+    "**auto**"
+   ]
+  ],
+  "order": 2396,
+  "table": null
+ },
+ {
+  "type": "slice",
+  "name": "Name สรุปงานประจำวัน",
+  "page": 1735,
+  "props": [
+   [
+    "Slice Name",
+    "สรุปงานประจำวัน"
+   ],
+   [
+    "Slice Columns",
+    "_RowNumber ID_งานประจำวัน Plan Delivery ชื่อ - นามสกุล ทะเบียนรถ Shipment No ชื่อปลายทาง จำนวนปลายทาง ลำดับแรก ที่อยู่ปลายทาง ที่อยู่ปลายทาง_LatLong หน่วย ItemWeight DeliveryNo ScanStatus Related แจ้งปัญหาระหว่างวันs DeliveryStatus Related SCGนครหลวงJWDภูมิภาคsEmail พนักงาน จำนวนสินค้ารวมของร้านนี้น้ำหนักสินค้ารวมของร้านนี้จำนวน_Invoice_ที่ต้องสแกน LatLong_Actual ชื่อเจ้าของสินค้า_Invoice_ที่ต้องสแกนShopKey Related ScanDocs MATCH_KEY MD_ID LatLong_Actual_Status"
+   ],
+   [
+    "Row filter condition",
+    "=[ลำดับแรก] = TRUE"
+   ],
+   [
+    "Update mode",
+    "ALL_CHANGES"
+   ],
+   [
+    "SourceTable",
+    "ตารางงานประจำวัน"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Slice Actions",
+    "**auto**"
+   ]
+  ],
+  "order": 2397,
+  "table": null
+ },
+ {
+  "type": "slice",
+  "name": "Name Slice_Monitor_Today",
+  "page": 1736,
+  "props": [
+   [
+    "Slice Name",
+    "Slice_Monitor_Today"
+   ],
+   [
+    "Slice Columns",
+    "_RowNumber ScanStatus Invoice No DeliveryNo"
+   ],
+   [
+    "Row filter condition",
+    "=[ID_งานประจำวัน] = LOOKUP( MIN( SELECT( ตารางงานประจำวัน[_ROWNUMBER], AND( [Shipment No] = [_THISROW].[Shipment No], [Invoice No] = [_THISROW].[Invoice No] ) ) ), ตารางงานประจำวัน,\"_ROWNUMBER\", \"ID_งานประจำวัน\" )"
+   ],
+   [
+    "Update mode",
+    "ALL_CHANGES"
+   ],
+   [
+    "SourceTable",
+    "ตารางงานประจำวัน"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Slice Actions",
+    "**auto**"
+   ]
+  ],
+  "order": 2398,
+  "table": null
+ },
+ {
+  "type": "slice",
+  "name": "Name SM_Today_User",
+  "page": 1738,
+  "props": [
+   [
+    "Slice Name",
+    "SM_Today_User"
+   ],
+   [
+    "Slice Columns",
+    "_RowNumber ID_งานประจำวัน Plan Delivery Invoice No Shipment No ชื่อ - นามสกุล ทะเบียนรถ รหัสผู้รับเหมา ชื่อผู้รับเหมา รหัสลูกค้า ชื่อเจ้าของสินค้า ชื่อปลายทาง ที่อยู่ปลายทาง ที่อยู่ปลายทาง_LatLong ชื่อวัสดุจำนวนสินค้า หน่วย ItemWeight DeliveryNo จำนวนปลายทาง_System ลำดับแรก จำนวนจุดที่ส่งจริง Related แจ้งปัญหาระหว่างวันs รายชื่อปลายทาง_System ScanStatus จำนวนปลายทาง DeliveryStatus เดือน Related SCGนครหลวงJWDภูมิภาคsEmail พนักงาน จำนวนสินค้ารวมของร้านนี้น้ำหนักสินค้ารวมของร้านนี้จำนวน_Invoice_ที่ต้องสแกน LatLong_Actual ชื่อเจ้าของสินค้า_Invoice_ที่ต้องสแกนShopKey Related ScanDocs MATCH_KEY MD_ID LatLong_Actual_Status"
+   ],
+   [
+    "Row filter condition",
+    "=IF(USERROLE() = \"ADMIN\", true, AND( [Plan Delivery] =TODAY(),[DeliveryStatus] <> \"จัดส่งเรียบร้อย\" ) )"
+   ],
+   [
+    "Update mode",
+    "ADDS_AND_UPDATES"
+   ],
+   [
+    "SourceTable",
+    "ตารางงานประจำวัน"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Slice Actions",
+    "**auto**"
+   ]
+  ],
+  "order": 2399,
+  "table": null
+ },
+ {
+  "type": "slice",
+  "name": "Name ค้างสแกนวันนี้และเมื่อวาน",
+  "page": 1739,
+  "props": [
+   [
+    "Slice Name",
+    "ค้างสแกนวันนี้และเมื่อวาน"
+   ],
+   [
+    "Slice Columns",
+    "_RowNumber ID_งานประจำวัน Plan Delivery Invoice No Shipment No ชื่อ - นามสกุล ทะเบียนรถ รหัสผู้รับเหมา ชื่อผู้รับเหมา รหัสลูกค้า ชื่อเจ้าของสินค้า ชื่อปลายทาง ที่อยู่ปลายทาง ที่อยู่ปลายทาง_LatLong ชื่อวัสดุจำนวนสินค้า หน่วย ItemWeight DeliveryNo"
+   ],
+   [
+    "Row filter condition",
+    "=AND( IN([Plan Delivery], LIST(TODAY(),TODAY() - 1)), [ScanStatus]<> \"สแกนรับแล้ว\" )"
+   ],
+   [
+    "Update mode",
+    "ALL_CHANGES"
+   ],
+   [
+    "SourceTable",
+    "ตารางงานประจำวัน"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Slice Actions",
+    "**auto**"
+   ]
+  ],
+  "order": 2400,
+  "table": null
+ },
+ {
+  "type": "slice",
+  "name": "Name SM_Today_User 2",
+  "page": 1740,
+  "props": [
+   [
+    "Slice Name",
+    "SM_Today_User 2"
+   ],
+   [
+    "Slice Columns",
+    "_RowNumber ID_งานประจำวัน Plan Delivery Invoice No Shipment No ชื่อ - นามสกุล ทะเบียนรถ รหัสผู้รับเหมา ชื่อผู้รับเหมา รหัสลูกค้า"
+   ],
+   [
+    "Row filter condition",
+    "=IF(USERROLE() = \"ADMIN\",true, AND( [Plan Delivery] =TODAY(),[Email พนักงาน] = USEREMAIL() ) )"
+   ],
+   [
+    "Update mode",
+    "ADDS_AND_UPDATES"
+   ],
+   [
+    "SourceTable",
+    "ตารางงานประจำวัน"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Slice Actions",
+    "**auto**"
+   ]
+  ],
+  "order": 2401,
+  "table": null
+ }
+]

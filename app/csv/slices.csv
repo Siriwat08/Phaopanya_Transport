@@ -1,0 +1,9 @@
+﻿slice,table,source_table,condition,pdf_page
+Name รอการอนุมัติ,,ข้อมูลการวางบิล,"=USERROLE()= ""ADMIN""",1732
+Name ข้อมูลการวางของแต่ละคน,,ข้อมูลการวางบิล,"=OR(USERROLE() = ""ADMIN"", [Email พนักงาน] = USEREMAIL())",1733
+Name View ราคาไม่ตรง,,ข้อมูลการวางบิล,"=AND( [ราคาในระบบหลังส่งสินค้า] <> [ราคา], OR( [ชื่องาน] = ""นครหลวง"",[ชื่องาน] = ""โอนคลัง พว"", [ชื่องาน] = ""โอนคลัง นำวิวัฒน์"", [ชื่องาน] = ""โอนคลัง ซอยฮะ (โกเรีย)"", [ชื่องาน] = ""โอนคลัง TRW"", [ชื่องาน] = ""โอนคลัง NocNoc"", [ชื่องาน] = ""โอนคลัง CPF FOOD"", [ชื่องาน] = ""โอนคลัง BYD"", [ชื่องาน] = ""ภูมิภาค"" ) )",1734
+Name สรุปงานประจำวัน,,ตารางงานประจำวัน,=[ลำดับแรก] = TRUE,1735
+Name Slice_Monitor_Today,,ตารางงานประจำวัน,"=[ID_งานประจำวัน] = LOOKUP( MIN( SELECT( ตารางงานประจำวัน[_ROWNUMBER], AND( [Shipment No] = [_THISROW].[Shipment No], [Invoice No] = [_THISROW].[Invoice No] ) ) ), ตารางงานประจำวัน,""_ROWNUMBER"", ""ID_งานประจำวัน"" )",1736
+Name SM_Today_User,,ตารางงานประจำวัน,"=IF(USERROLE() = ""ADMIN"", true, AND( [Plan Delivery] =TODAY(),[DeliveryStatus] <> ""จัดส่งเรียบร้อย"" ) )",1738
+Name ค้างสแกนวันนี้และเมื่อวาน,,ตารางงานประจำวัน,"=AND( IN([Plan Delivery], LIST(TODAY(),TODAY() - 1)), [ScanStatus]<> ""สแกนรับแล้ว"" )",1739
+Name SM_Today_User 2,,ตารางงานประจำวัน,"=IF(USERROLE() = ""ADMIN"",true, AND( [Plan Delivery] =TODAY(),[Email พนักงาน] = USEREMAIL() ) )",1740

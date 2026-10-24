@@ -1,0 +1,34 @@
+name: validate
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: ตรวจสัญญาข้อมูล (schema + คำศัพท์ + ตารางอ้างอิง + ไม่มีข้อมูลส่วนบุคคล)
+        run: python3 scripts/validate_findings.py
+
+      - name: ตรวจว่า data/index.json ยังตรงกับไฟล์ตาราง
+        run: python3 scripts/build_index.py
+
+      - name: กันข้อมูลส่วนบุคคลหลุดเข้ามาทั้ง repo (รวมในไฟล์ xlsx)
+        run: python3 scripts/pii_guard.py
+
+      - name: ตรวจว่าไม่มีไฟล์ขนาดใหญ่ผิดปกติ (เช่น PDF ต้นฉบับ)
+        run: |
+          set -e
+          big=$(find . -type f -size +5M -not -path './.git/*')
+          if [ -n "$big" ]; then
+            echo "::error::มีไฟล์ใหญ่เกิน 5MB: $big"
+            exit 1
+          fi
+          echo "ขนาดไฟล์ปกติ ✓"

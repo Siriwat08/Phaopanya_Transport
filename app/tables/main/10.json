@@ -1,0 +1,2980 @@
+{
+ "table": "PDFพนักงาน",
+ "kind": "main",
+ "domain": "D05",
+ "domain_title": "เอกสารและการสแกน (Documents & Scanning)",
+ "file": "app/tables/main/10.json",
+ "table_record": {
+  "type": "table",
+  "name": "PDFพนักงาน",
+  "page": 5,
+  "props": [
+   [
+    "Table name",
+    "PDFพนักงาน"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Data locale",
+    "en-GB"
+   ],
+   [
+    "Schema",
+    "PDFพนักงาน_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "ALL_CHANGES"
+   ],
+   [
+    "Expression for update mode",
+    "=SWITCH(USERROLE(), \"ADMIN\", \"ALL_CHANGES\", \"USER\", \"READ_ONLY\", \"READ_ONLY\")"
+   ],
+   [
+    "Source Path",
+    "เผ่าปัญญา ทรานสปอร์ต"
+   ],
+   [
+    "Worksheet Name/Qualifier",
+    "PDFพนักงาน"
+   ],
+   [
+    "Data Source",
+    "google"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 9,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "_RowNumber",
+   "page": 196,
+   "props": [
+    [
+     "Column name",
+     "_RowNumber"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "Number of this row"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "Yes"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 287,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "column",
+   "name": "ID_XLSXพนักงาน",
+   "page": 197,
+   "props": [
+    [
+     "Column name",
+     "ID_XLSXพนักงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "Yes"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "UNIQUEID()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "Yes"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 288,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อ - นามสกุล",
+   "page": 197,
+   "props": [
+    [
+     "Column name",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":\"=ข้อมูลพนักงาน[ชื่อ - นามสกุล]\",\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 289,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "column",
+   "name": "StartDate",
+   "page": 198,
+   "props": [
+    [
+     "Column name",
+     "StartDate"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 290,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "column",
+   "name": "EndDate",
+   "page": 199,
+   "props": [
+    [
+     "Column name",
+     "EndDate"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 291,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "column",
+   "name": "ราคารวม",
+   "page": 199,
+   "props": [
+    [
+     "Column name",
+     "ราคารวม"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=SUM(SELECT(ข้อมูลการวางบิล[ราคา], AND([ชื่อ - นามสกุล]= [_THISROW].[ชื่อ - นามสกุล],[วันที่] >= [_THISROW].[Startdate], [วันที่] <= [_THISROW].[Enddate])))"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 292,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "column",
+   "name": "Export to XLSX",
+   "page": 200,
+   "props": [
+    [
+     "Column name",
+     "Export to XLSX"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 293,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อไฟล์",
+   "page": 201,
+   "props": [
+    [
+     "Column name",
+     "ชื่อไฟล์"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 294,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "column",
+   "name": "ผลลัพท์.",
+   "page": 202,
+   "props": [
+    [
+     "Column name",
+     "ผลลัพท์."
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Ref\",\"ElementTypeQualifier\":\" {\\\"ReferencedTableName\\\":\\\"ข้อมูลการวาง บิล\\\",\\\"ReferencedRootTableName\\\":\\\"ข้อมูลการวาง บิล\\\",\\\"ReferencedType\\\":\\\"Text\\\",\\\"ReferencedTypeQualifier\\\":\\\"{\\\\\\\"MaxLength\\\\\\\":null,\\\\\\\"MinLength\\\\\\\":null,\\\\\\\"LongTextFormatting\\\\\\\":\\\\\\\"Plain Text\\\\\\\",\\\\\\\"IsMulticolumnKey\\\\\\\":false,\\\\\\\"Valid_If\\\\\\\":null,\\\\\\\"Error_Message_If_Invalid\\\\\\\":null,\\\\\\\"Show_If\\\\\\\":null,\\\\\\\"Required_If\\\\\\\":null,\\\\\\\"Editable_If\\\\\\\":null,\\\\\\\"Reset_If\\\\\\\":null,\\\\\\\"Suggested_Values\\\\\\\":null}\\\",\\\"ReferencedKeyColumn\\\":\\\"ID_วาง บิล\\\",\\\"IsAPartOf\\\":false,\\\"RelationshipName\\\":null,\\\"InputMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=FILTER(\"ข้อมูลการวางบิล\",(AND([ชื่อ - นามสกุล]=[_THISROW].[ชื่อ- นามสกุล],[วันที่]>=[_THISROW].[StartDate],[วันที่]<=[_THISROW].[EndDate])))"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 295,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "column",
+   "name": "debugstartdate",
+   "page": 203,
+   "props": [
+    [
+     "Column name",
+     "debugstartdate"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=[StartDate]"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 296,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "column",
+   "name": "debugenddate",
+   "page": 203,
+   "props": [
+    [
+     "Column name",
+     "debugenddate"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=[EndDate]"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "แจ้งปัญหาระหว่างวัน_Schema"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 297,
+   "table": "PDFพนักงาน"
+  }
+ ],
+ "actions": [
+  {
+   "type": "action",
+   "name": "Edit",
+   "page": 1818,
+   "props": [
+    [
+     "Action name",
+     "Edit"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"DesktopBehavior\":\"Open a form\",\"DesktopEditBehavior\":\"Edit inplace\",\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EDIT_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2541,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "Add",
+   "page": 1819,
+   "props": [
+    [
+     "Action name",
+     "Add"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "ADD_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2543,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "CLEAR 2",
+   "page": 1820,
+   "props": [
+    [
+     "Action name",
+     "CLEAR 2"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"\\\"\"}, {\"ColumnToEdit\":\"StartDate\",\"NewColumnValue\":\"=\\\"\\\"\"}, {\"ColumnToEdit\":\"EndDate\",\"NewColumnValue\":\"=\\\"\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=\\\"\\\"\"}, {\"ColumnToEdit\":\"ชื่อ ไฟล์\",\"NewColumnValue\":\"=\\\"\\\"\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is",
+     "=USERROLE() = ADMIN"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2545,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "Delete",
+   "page": 1834,
+   "props": [
+    [
+     "Action name",
+     "Delete"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "DELETE_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ADVANCED"
+    ]
+   ],
+   "order": 2571,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_01",
+   "page": 1839,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_01"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_01\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"สำเริง แก้วกาม เกตุ\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_01\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2582,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้าทุกคน",
+   "page": 1840,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้าทุกคน"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Actions\":[{\"ActionName\":\"สร้างใบป่ะหน้า_person_01\"}, {\"ActionName\":\"Clearหน้าจอ\"},{\"ActionName\":\"สร้างใบป่ะหน้า_person_02\"},{\"ActionName\":\"Clearหน้าจอ\"},{\"ActionName\":\"สร้างใบป่ะหน้า_person_03\"},{\"ActionName\":\"Clearหน้าจอ\"}, {\"ActionName\":\"สร้างใบป่ะหน้า_person_04\"}, {\"ActionName\":\"Clearหน้าจอ\"},{\"ActionName\":\"สร้างใบป่ะ หน้า_person_05\"},{\"ActionName\":\"Clearหน้าจอ\"}, {\"ActionName\":\"สร้างใบป่ะหน้า_person_06\"}, {\"ActionName\":\"Clearหน้าจอ\"},{\"ActionName\":\"สร้างใบป่ะ หน้า_person_07\"},{\"ActionName\":\"Clearหน้าจอ\"}, {\"ActionName\":\"สร้างใบป่ะหน้า_กิตติพงษ์แหลมผักแว่น\"}, {\"ActionName\":\"Clearหน้าจอ\"},{\"ActionName\":\"สร้างใบป่ะ หน้า_person_08\"},{\"ActionName\":\"Clearหน้าจอ\"}, {\"ActionName\":\"สร้างใบป่ะหน้า_person_09\"}, {\"ActionName\":\"Clearหน้าจอ\"},{\"ActionName\":\"สร้างใบป่ะ หน้า_person_10\"},{\"ActionName\":\"Clearหน้าจอ\"}, {\"ActionName\":\"สร้างใบป่ะหน้า_person_11\"}, {\"ActionName\":\"Clearหน้าจอ\"},{\"ActionName\":\"สร้างใบป่ะหน้า_จิรายุโคตรวงษ์\"},{\"ActionName\":\"Clearหน้าจอ\"},{\"ActionName\":\"สร้างใบป่ะหน้า_person_12\"},{\"ActionName\":\"Clearหน้าจอ\"}, {\"ActionName\":\"สร้างใบป่ะหน้า_person_13\"}, {\"ActionName\":\"Clearหน้าจอ\"},{\"ActionName\":\"สร้างใบป่ะ หน้า_เกียรติศักดิ์พินิจเมือง\"},{\"ActionName\":\"Clearหน้าจอ\"}, {\"ActionName\":\"สร้างใบป่ะหน้า_เกียรติศักดิ์ยอมใหญ่\"}, {\"ActionName\":\"Clearหน้าจอ\"},{\"ActionName\":\"สร้างใบป่ะ หน้า_person_15\"},{\"ActionName\":\"Clearหน้าจอ\"}, {\"ActionName\":\"สร้างใบป่ะหน้า_person_16\"}, {\"ActionName\":\"CLEAR 2\"}],\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "COMPOSITE"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2583,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "Clearหน้าจอ",
+   "page": 1841,
+   "props": [
+    [
+     "Action name",
+     "Clearหน้าจอ"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"\\\"\"},{\"ColumnToEdit\":\"Export toXLSX\",\"NewColumnValue\":\"=\\\"\\\"\"},{\"ColumnToEdit\":\"ชื่อ ไฟล์\",\"NewColumnValue\":\"=\\\"\\\"\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2584,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_02",
+   "page": 1842,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_02"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_02\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"สุทิศ นัน พนัก\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_02\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2585,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_03",
+   "page": 1843,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_03"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_03\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_03\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_03\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2586,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_04",
+   "page": 1844,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_04"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_04\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"สุด พัน พม่า\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_04\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2587,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_05",
+   "page": 1844,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_05"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_05\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_05\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_05\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2588,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_06",
+   "page": 1845,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_06"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_06\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"ปราโมทย์เรียน พิษ\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_06\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2589,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_07",
+   "page": 1846,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_07"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_07\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"กฤษฎา พิญญะ ดำ\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_07\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2590,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_กิตติพงษ์แหลมผักแว่น",
+   "page": 1847,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_กิตติพงษ์แหลมผักแว่น"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"กิตติพงษ์แหลมผักแว่น\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"กิตติพงษ์แหลมผัก แว่น\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is",
+     "true"
+    ],
+    [
+     "Disable automatic",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"กิตติพงษ์แหลมผักแว่น\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2591,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_08",
+   "page": 1847,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_08"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_08\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"จักรภัทร วง ทอง\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_08\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2592,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_09",
+   "page": 1848,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_09"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_09\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"พีระพล รูป แก้ว\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_09\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2593,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_10",
+   "page": 1849,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_10"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_10\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"อชิตพล ยัง ยิ้ม\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_10\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2594,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_11",
+   "page": 1850,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_11"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_11\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"ธีรยุทธ นรา ทอง\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is",
+     "true"
+    ],
+    [
+     "Disable automatic",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_11\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2595,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_จิรายุโคตรวงษ์",
+   "page": 1850,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_จิรายุโคตรวงษ์"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"จิรายุโคตรวงษ์\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"จิรายุโคตร วงษ์\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"จิรายุโคตรวงษ์\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2596,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_12",
+   "page": 1851,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_12"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_12\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"ทัดเทพ พรม มา\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_12\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2597,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_13",
+   "page": 1860,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_13"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_13\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"พงศธร หมวดไธ สง\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_13\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2611,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_เกียรติศักดิ์พินิจเมือง",
+   "page": 1861,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_เกียรติศักดิ์พินิจเมือง"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"เกียรติศักดิ์พินิจเมือง\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"เกียรติศักดิ์พินิจ เมือง\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"เกียรติศักดิ์พินิจเมือง\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2612,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_เกียรติศักดิ์ยอมใหญ่",
+   "page": 1871,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_เกียรติศักดิ์ยอมใหญ่"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"เกียรติศักดิ์ยอมใหญ่\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"เกียรติศักดิ์ยอม ใหญ่\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"เกียรติศักดิ์ยอมใหญ่\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2628,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "PDFพนักงานcsv",
+   "page": 1904,
+   "props": [
+    [
+     "Action name",
+     "PDFพนักงานcsv"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"CsvLocale\":\"en- GB\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EXPORT_VIEW"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "โหลดไฟล์csv"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2677,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_15",
+   "page": 1921,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_15"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_15\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"สิทธิชัย ทิศ วงค์\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_15\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2702,
+   "table": "PDFพนักงาน"
+  },
+  {
+   "type": "action",
+   "name": "สร้างใบป่ะหน้า_person_16",
+   "page": 1943,
+   "props": [
+    [
+     "Action name",
+     "สร้างใบป่ะหน้า_person_16"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"person_16\\\"\"}, {\"ColumnToEdit\":\"Export to XLSX\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ - นามสกุล\",\"NewColumnValue\":\"=\\\"ไนยชน วงศ์บุญ มา\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Set this column",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "PDFพนักงาน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_16\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2739,
+   "table": "PDFพนักงาน"
+  }
+ ],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

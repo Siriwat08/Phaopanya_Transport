@@ -1,0 +1,2591 @@
+{
+ "table": "ปริ๊นใบวางบิล",
+ "kind": "main",
+ "domain": "D02",
+ "domain_title": "การวางบิลและราคา (Billing & Pricing)",
+ "file": "app/tables/main/09.json",
+ "table_record": {
+  "type": "table",
+  "name": "ปริ๊นใบวางบิล",
+  "page": 5,
+  "props": [
+   [
+    "Table name",
+    "ปริ๊นใบวางบิล"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Data locale",
+    "en-GB"
+   ],
+   [
+    "Schema",
+    "ปริ๊นใบวางบิล_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "ALL_CHANGES"
+   ],
+   [
+    "Expression for update mode",
+    "=SWITCH(USERROLE(), \"ADMIN\", \"ALL_CHANGES\", \"USER\",\"READ_ONLY\", \"READ_ONLY\")"
+   ],
+   [
+    "Source Path",
+    "เผ่าปัญญา ทรานสปอร์ต"
+   ],
+   [
+    "Worksheet Name/Qualifier",
+    "ปริ๊นใบวางบิล"
+   ],
+   [
+    "Data Source",
+    "google"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 8,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "_RowNumber",
+   "page": 188,
+   "props": [
+    [
+     "Column name",
+     "_RowNumber"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "Number of this row"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "Yes"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 276,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ID_ปริ๊นใบวางบิล",
+   "page": 189,
+   "props": [
+    [
+     "Column name",
+     "ID_ปริ๊นใบวางบิล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "UNIQUEID()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "Yes"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 277,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ชื่องาน",
+   "page": 189,
+   "props": [
+    [
+     "Column name",
+     "ชื่องาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\": null, \"MinLength\": null, \"LongTextFormatting\": \"PlainText\", \"IsMulticolumnKey\": false, \"Valid_If\": \"=ข้อมูลชื่องานต้นทางปลายทาง[ชื่องาน]\", \"Error_Message_If_Invalid\": null, \"Show_If\": null, \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "Yes"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 278,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "StartDate",
+   "page": 190,
+   "props": [
+    [
+     "Column name",
+     "StartDate"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 279,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "EndDate",
+   "page": 191,
+   "props": [
+    [
+     "Column name",
+     "EndDate"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 280,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคารวม",
+   "page": 191,
+   "props": [
+    [
+     "Column name",
+     "ราคารวม"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=SUM(SELECT(ข้อมูลการวางบิล[ราคา], AND([ชื่องาน]= [_THISROW].[ชื่องาน],[วันที่] >= [_THISROW].[Startdate], [วันที่] <=[_THISROW].[Enddate])))"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 281,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "Export to xlsx",
+   "page": 192,
+   "props": [
+    [
+     "Column name",
+     "Export to xlsx"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 282,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "Export to xlsx To Athens",
+   "page": 193,
+   "props": [
+    [
+     "Column name",
+     "Export to xlsxTo Athens"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 283,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ปริ๊นใบวางบิลแยกตามชื่องาน",
+   "page": 193,
+   "props": [
+    [
+     "Column name",
+     "ปริ๊นใบวางบิลแยกตามชื่องาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 284,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "วันที่ออกเอกสาร",
+   "page": 194,
+   "props": [
+    [
+     "Column name",
+     "วันที่ออกเอกสาร"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=TODAY()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 285,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ผลลัพท์",
+   "page": 195,
+   "props": [
+    [
+     "Column name",
+     "ผลลัพท์"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "List"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ElementType\":\"Ref\",\"ElementTypeQualifier\":\" {\\\"ReferencedTableName\\\":\\\"ข้อมูลการวาง บิล\\\",\\\"ReferencedRootTableName\\\":\\\"ข้อมูลการวาง บิล\\\",\\\"ReferencedType\\\":\\\"Text\\\",\\\"ReferencedTypeQualifier\\\":\\\"{\\\\\\\"MaxLength\\\\\\\":null,\\\\\\\"MinLength\\\\\\\":null,\\\\\\\"LongTextFormatting\\\\\\\":\\\\\\\"Plain Text\\\\\\\",\\\\\\\"IsMulticolumnKey\\\\\\\":false,\\\\\\\"Valid_If\\\\\\\":null,\\\\\\\"Error_Message_If_Invalid\\\\\\\":null,\\\\\\\"Show_If\\\\\\\":null,\\\\\\\"Required_If\\\\\\\":null,\\\\\\\"Editable_If\\\\\\\":null,\\\\\\\"Reset_If\\\\\\\":null,\\\\\\\"Suggested_Values\\\\\\\":null}\\\",\\\"ReferencedKeyColumn\\\":\\\"ID_วาง บิล\\\",\\\"IsAPartOf\\\":false,\\\"RelationshipName\\\":null,\\\"InputMode\\\":\\\"Auto\\\",\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"ItemSeparator\":\" , \",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=FILTER(\"ข้อมูลการวางบิล\",(AND([ชื่องาน]=[_THISROW].[ชื่องาน],[วันที่]>=[_THISROW].[StartDate],[วันที่]<=[_THISROW]. [EndDate])))"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "PDFพนักงาน_Schema"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 286,
+   "table": "ปริ๊นใบวางบิล"
+  }
+ ],
+ "actions": [
+  {
+   "type": "action",
+   "name": "Edit",
+   "page": 1817,
+   "props": [
+    [
+     "Action name",
+     "Edit"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"DesktopBehavior\":\"Open a form\",\"DesktopEditBehavior\":\"Edit inplace\",\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EDIT_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2540,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "Add",
+   "page": 1818,
+   "props": [
+    [
+     "Action name",
+     "Add"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "ADD_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2542,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "Clear",
+   "page": 1819,
+   "props": [
+    [
+     "Action name",
+     "Clear"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"\\\"\"},{\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่องาน\",\"NewColumnValue\":\"=\\\"\\\"\"}],\"ColumnToEdit\":\"ชื่องาน\",\"NewColumnValue\":\"=\\\"\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "=USERROLE() = ADMIN"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2544,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "Delete",
+   "page": 1833,
+   "props": [
+    [
+     "Action name",
+     "Delete"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "DELETE_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ADVANCED"
+    ]
+   ],
+   "order": 2570,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "ไอโรบอท",
+   "page": 1873,
+   "props": [
+    [
+     "Action name",
+     "ไอโรบอท"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"ไอโรบอท\\\"\"},{\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"ไอโร บอท\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"ไอโรบอท\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2631,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "รับเอกสาร (งานพี่เหน่ง)",
+   "page": 1874,
+   "props": [
+    [
+     "Action name",
+     "รับเอกสาร (งานพี่เหน่ง)"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"รับเอกสาร (งานพี่เหน่ง)\\\"\"}, {\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"รับเอกสาร (งานพี่เหน่ง)\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is",
+     "true"
+    ],
+    [
+     "Disable automatic",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"รับเอกสาร (งานพี่เหน่ง)\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2632,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "person_14",
+   "page": 1874,
+   "props": [
+    [
+     "Action name",
+     "person_14"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"person_14\\\"\"}, {\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"โอนคลัง เอ เธน\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"person_14\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2633,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "โอนคลัง กระสอบ2(บางบัวทอง)",
+   "page": 1875,
+   "props": [
+    [
+     "Action name",
+     "โอนคลัง กระสอบ2(บางบัวทอง)"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"โอนคลัง กระสอบ2(บางบัวทอง)\\\"\"},{\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"โอนคลัง กระสอบ2(บางบัวทอง)\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"โอนคลัง กระสอบ2(บางบัวทอง)\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2634,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "คลังSCGJWDวังน้อย",
+   "page": 1876,
+   "props": [
+    [
+     "Action name",
+     "คลังSCGJWDวังน้อย"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"คลังSCGJWDวังน้อย\\\"\"}, {\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"คลังSCGJWDวังน้อย\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"คลังSCGJWDวังน้อย\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2635,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "MeSpace",
+   "page": 1877,
+   "props": [
+    [
+     "Action name",
+     "MeSpace"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"MeSpace\\\"\"},{\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"MeSpace\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is",
+     "true"
+    ],
+    [
+     "Disable automatic",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"MeSpace\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2636,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "โอนคลัง มโนยนต์ (นวนคร)",
+   "page": 1877,
+   "props": [
+    [
+     "Action name",
+     "โอนคลัง มโนยนต์ (นวนคร)"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"โอนคลัง มโนยนต์ (นวนคร)\\\"\"}, {\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"โอนคลัง มโนยนต์(นว นคร)\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"โอนคลัง มโนยนต์ (นวนคร)\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2637,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "โอนคลัง (GQ) จีคิว",
+   "page": 1878,
+   "props": [
+    [
+     "Action name",
+     "โอนคลัง (GQ) จีคิว"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"โอนคลัง (GQ) จีคิว\\\"\"}, {\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"โอนคลัง (GQ) จีคิว\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"โอนคลัง (GQ) จีคิว\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2638,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "ปริ๊นวางบิลทุกงาน",
+   "page": 1879,
+   "props": [
+    [
+     "Action name",
+     "ปริ๊นวางบิลทุกงาน"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Actions\":[{\"ActionName\":\"ไอโรบอท\"},{\"ActionName\":\"Clear\"}, {\"ActionName\":\"รับเอกสาร (งานพี่เหน่ง)\"},{\"ActionName\":\"Clear\"},{\"ActionName\":\"person_14\"},{\"ActionName\":\"Clear\"}, {\"ActionName\":\"โอนคลัง กระสอบ2(บางบัวทอง)\"}, {\"ActionName\":\"Clear\"},{\"ActionName\":\"คลังSCGJWDวังน้อย\"}, {\"ActionName\":\"Clear\"},{\"ActionName\":\"MeSpace\"}, {\"ActionName\":\"Clear\"},{\"ActionName\":\"โอนคลัง มโนยนต์(นว นคร)\"},{\"ActionName\":\"Clear\"},{\"ActionName\":\"โอนคลัง (GQ) จีคิว\"},{\"ActionName\":\"Clear\"},{\"ActionName\":\"รับเอกสาร (งานพี่เหน่ง) สตีเบล\"},{\"ActionName\":\"Clear\"},{\"ActionName\":\"เบทา โกร+เหมาตู้\"},{\"ActionName\":\"Clear\"},{\"ActionName\":\"Thai paper(SCG Express)\"},{\"ActionName\":\"Clear\"}, {\"ActionName\":\"LINEMAN (6W) (SCG Express)\"}, {\"ActionName\":\"Clear\"},{\"ActionName\":\"โอนคลัง บุญถาวร เกษตร_นวมินทร์\"},{\"ActionName\":\"เคลียหน้า จอ\"}],\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "COMPOSITE"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2639,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "เคลียหน้าจอ",
+   "page": 1880,
+   "props": [
+    [
+     "Action name",
+     "เคลียหน้าจอ"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"\\\"\"}, {\"ColumnToEdit\":\"StartDate\",\"NewColumnValue\":\"=\\\"\\\"\"}, {\"ColumnToEdit\":\"EndDate\",\"NewColumnValue\":\"=\\\"\\\"\"}, {\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=\\\"\\\"\"},{\"ColumnToEdit\":\"Export to xlsx\",\"NewColumnValue\":\"=\\\"\\\"\"},{\"ColumnToEdit\":\"Export to xlsxTo Athens\",\"NewColumnValue\":\"=\\\"\\\"\"},{\"ColumnToEdit\":\"วันที่ออกเอกสาร\",\"NewColumnValue\":\"=\\\"\\\"\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2640,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "รับเอกสาร (งานพี่เหน่ง) สตีเบล",
+   "page": 1884,
+   "props": [
+    [
+     "Action name",
+     "รับเอกสาร (งานพี่เหน่ง) สตีเบล"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"รับเอกสาร (งานพี่เหน่ง) สตีเบล\\\"\"}, {\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"รับเอกสาร (งานพี่เหน่ง) สตีเบล\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"รับเอกสาร (งานพี่เหน่ง) สตีเบล\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2647,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "CLEAR_ปริ๊นใบวางบิล_Action",
+   "page": 1885,
+   "props": [
+    [
+     "Action name",
+     "CLEAR_ปริ๊นใบวางบิล_Action"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"\\\"\"}, {\"ColumnToEdit\":\"StartDate\",\"NewColumnValue\":\"=\\\"\\\"\"}, {\"ColumnToEdit\":\"EndDate\",\"NewColumnValue\":\"=\\\"\\\"\"}, {\"ColumnToEdit\":\"Export to xlsx\",\"NewColumnValue\":\"=\\\"\\\"\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2648,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "ปริ๊นใบวางบิลcsv",
+   "page": 1899,
+   "props": [
+    [
+     "Action name",
+     "ปริ๊นใบวางบิลcsv"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"CsvLocale\":\"en- GB\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EXPORT_VIEW"
+    ],
+    [
+     "Only if this condition is",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "โหลดไฟล์csv"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2668,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "เบทาโกร+เหมาตู้",
+   "page": 1931,
+   "props": [
+    [
+     "Action name",
+     "เบทาโกร+เหมาตู้"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"เบทาโกร+เหมาตู้\\\"\"}, {\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"เบทาโกร+เหมา ตู้\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"เบทาโกร+เหมาตู้\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2720,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "Thai paper (SCG Express)",
+   "page": 1932,
+   "props": [
+    [
+     "Action name",
+     "Thai paper (SCG Express)"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"Thai paper (SCG Express)\\\"\"}, {\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"Thai paper (SCG Express)\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"Thai paper (SCG Express)\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2721,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "LINEMAN (6W) (SCG Express)",
+   "page": 1933,
+   "props": [
+    [
+     "Action name",
+     "LINEMAN (6W) (SCG Express)"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"LINEMAN (6W) (SCG Express)\\\"\"},{\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"LINEMAN (6W) (SCG Express)\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"LINEMAN (6W) (SCG Express)\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2722,
+   "table": "ปริ๊นใบวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "โอนคลัง บุญถาวร เกษตร_นวมินทร์",
+   "page": 1934,
+   "props": [
+    [
+     "Action name",
+     "โอนคลัง บุญถาวร เกษตร_นวมินทร์"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"โอนคลัง บุญถาวร เกษตร_นวมินทร์\\\"\"},{\"ColumnToEdit\":\"ปริ๊นใบวางบิลแยกตามชื่อ งาน\",\"NewColumnValue\":\"=TRUE\"}],\"ColumnToEdit\":\"ชื่อ งาน\",\"NewColumnValue\":\"=\\\"โอนคลัง บุญถาวร เกษตร_นวมินทร์\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "ชื่องาน"
+    ],
+    [
+     "Set this column",
+     "ชื่องาน"
+    ],
+    [
+     "Only if this condition is",
+     "true"
+    ],
+    [
+     "Disable automatic",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ปริ๊นใบวางบิล"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"โอนคลัง บุญถาวร เกษตร_นวมินทร์\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2723,
+   "table": "ปริ๊นใบวางบิล"
+  }
+ ],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

@@ -1,0 +1,4738 @@
+{
+ "table": "ข้อมูลการวางบิล",
+ "kind": "main",
+ "domain": "D02",
+ "domain_title": "การวางบิลและราคา (Billing & Pricing)",
+ "file": "app/tables/main/04.json",
+ "table_record": {
+  "type": "table",
+  "name": "ข้อมูลการวางบิล",
+  "page": 2,
+  "props": [
+   [
+    "Table name",
+    "ข้อมูลการวางบิล"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Data locale",
+    "en-GB"
+   ],
+   [
+    "Schema",
+    "ข้อมูลการวางบิล_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "ALL_CHANGES"
+   ],
+   [
+    "Expression for update mode",
+    "=SWITCH(USERROLE(), \"ADMIN\", \"ALL_CHANGES\", \"USER\",\"ADDS_AND_UPDATES\", \"READ_ONLY\")"
+   ],
+   [
+    "Security filter",
+    "=OR(USERROLE() = \"ADMIN\", [Email พนักงาน] = USEREMAIL())"
+   ],
+   [
+    "Source Path",
+    "เผ่าปัญญา ทรานสปอร์ต"
+   ],
+   [
+    "Worksheet Name/Qualifier",
+    "ข้อมูลการวางบิล"
+   ],
+   [
+    "Data Source",
+    "google"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 3,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "_RowNumber",
+   "page": 106,
+   "props": [
+    [
+     "Column name",
+     "_RowNumber"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "Number of this row"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "Yes"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 168,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ID_พนักงาน",
+   "page": 107,
+   "props": [
+    [
+     "Column name",
+     "ID_พนักงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Ref"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ReferencedTableName\": \"ข้อมูลพนักงาน\", \"ReferencedRootTableName\": \"ข้อมูลพนักงาน\", \"ReferencedType\": \"Text\", \"ReferencedTypeQualifier\": \" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\", \"ReferencedKeyColumn\": \"ID_พนักงาน\", \"IsAPartOf\": false, \"RelationshipName\": null, \"InputMode\": \"Auto\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": \"=USERROLE()= \\\"ADMIN\\\"\", \"Required_If\": null, \"Editable_If\": \"=USERROLE()= \\\"ADMIN\\\"\", \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=LOOKUP(USEREMAIL(), \"ข้อมูลพนักงาน\", \"Email พนักงาน\", \"ID_พนักงาน\")"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 169,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ID_วางบิล",
+   "page": 108,
+   "props": [
+    [
+     "Column name",
+     "ID_วางบิล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "Yes"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=UNIQUEID()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "Yes"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 170,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ชื่องาน",
+   "page": 108,
+   "props": [
+    [
+     "Column name",
+     "ชื่องาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":\"=SELECT(\\n ข้อมูลชื่องานต้นทางปลายทาง[ชื่องาน],\\n AND\\n (TRUE,NOT(IN([ชื่องาน], {\\\"เบทาโกร\\\",\\\"เหมา ตู้\\\"}))\\n))\",\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":\"=OR(\\nUSERROLE() = \\\"ADMIN\\\" ,[สถานะการอนุมัติ]<>\\\"อนุมัติ\\\" )\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 171,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "วันที่",
+   "page": 109,
+   "props": [
+    [
+     "Column name",
+     "วันที่"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":\"=USERROLE()= \\\"ADMIN\\\"\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=TODAY()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 172,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อ - นามสกุล",
+   "page": 110,
+   "props": [
+    [
+     "Column name",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":\"\",\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=[ID_พนักงาน].[ชื่อ - นามสกุล]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 173,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ทะเบียนรถ",
+   "page": 110,
+   "props": [
+    [
+     "Column name",
+     "ทะเบียนรถ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=[ID_พนักงาน].[ทะเบียนรถ]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 174,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "สถานที่รับงาน (ต้นทาง)",
+   "page": 111,
+   "props": [
+    [
+     "Column name",
+     "สถานที่รับงาน (ต้นทาง)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\": null, \"MinLength\": null, \"LongTextFormatting\": \"PlainText\", \"IsMulticolumnKey\": false, \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": null, \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": \"=[_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]\", \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "=[_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]"
+    ],
+    [
+     "Initial value",
+     "=LOOKUP([_THISROW].[ชื่องาน],\"ข้อมูลชื่องานต้นทางปลาย ทาง\",\"ชื่องาน\",\"สถานที่รับสินค้า (ต้นทาง)\")"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 175,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "สถานที่ส่งงาน (ปลายทาง)",
+   "page": 112,
+   "props": [
+    [
+     "Column name",
+     "สถานที่ส่งงาน (ปลายทาง)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\": null, \"MinLength\": null, \"LongTextFormatting\": \"PlainText\", \"IsMulticolumnKey\": false, \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": null, \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": \"=[_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]\", \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "=[_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]"
+    ],
+    [
+     "Initial value",
+     "=LOOKUP([_THISROW].[ชื่องาน],\"ข้อมูลชื่องานต้นทางปลาย ทาง\",\"ชื่องาน\",\"สถานที่ส่งสินค้า (ปลายทาง)\")"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 176,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "Email พนักงาน",
+   "page": 113,
+   "props": [
+    [
+     "Column name",
+     "Email พนักงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Email"
+    ],
+    [
+     "Type Qualifier",
+     "{\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":\"=USERROLE() = \\\"ADMIN\\\"\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=USEREMAIL()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 177,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "พิมอธิบายทุกอย่างที่สำคัญ",
+   "page": 113,
+   "props": [
+    [
+     "Column name",
+     "พิมอธิบายทุกอย่างที่สำคัญ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "LongText"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":\"=OR(\\nUSERROLE() = \\\"ADMIN\\\" ,[สถานะการอนุมัติ]<>\\\"อนุมัติ\\\" )\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 178,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "Shipment No",
+   "page": 114,
+   "props": [
+    [
+     "Column name",
+     "Shipment No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\": null, \"MinValue\": null, \"StepValue\": null, \"NumericDigits\": null, \"ShowThousandsSeparator\": false, \"NumberDisplayMode\": \"Auto\", \"Valid_If\": \"=AND(\\n [_THIS] >= 100000000,\\n [_THIS] <= 999999999,\\n ISBLANK(\\n ANY(SELECT(ข้อมูลการวางบิล[Shipment No], [Shipment No] = [_THIS]))\\n )\\n)\", \"Error_Message_If_Invalid\": null, \"Show_If\": \"=IN([ชื่องาน], LIST(\\\"ภูมิภาค\\\",\\\"นครหลวง\\\",\\\"04JB_นครหลวง_ภูมิภาค\\\",\\\"สตีเบลเอลทรอน เอเซีย จํากัด\\\",\\\"Idem_04ID\\\",\\\"โอนคลัง บุญถาวร รังสิต\\\",\\\"โอนคลัง บุญถาวร เกษตร_นวมินทร์\\\",\\\"โอนคลัง ยนตรกิจ(ร่มเกล้า) YONTRAKIT\\\",\\\"โอนคลัง (GQ) จีคิว\\\",\\\"โอนคลัง พีโอเอสดิสเพลย์\\\",\\\"โอนคลัง CPF FOOD\\\",\\\"โอนคลัง Mizuno\\\",\\\"โอนคลัง ทีจีโฟน\\\",\\\"โอนคลัง TRW\\\",\\\"โอนคลัง BYD\\\",\\\"โอนคลัง ซอยฮะ (โก เรีย)\\\", \\\"โอนคลัง โลจิสท์พลัส\\\" , \\\"โอนคลัง SIS\\\" , \\\"โอนคลัง พว.\\\",\\\"คลังSCGJWDวังน้อย\\\",\\\"Lyreco (Thailand)\\\",\\\"น้ำมะปี๊ด(ปั้มบางจาก)FarmZaa\\\"))\", \"Required_If\": \"=IN([ชื่องาน], LIST(\\\"ภูมิภาค\\\",\\\"นครหลวง\\\",\\\"04JB_นครหลวง_ภูมิภาค\\\",\\\"Idem_04ID\\\"))\", \"Editable_If\": \"=OR(\\nUSERROLE() = \\\"ADMIN\\\" ,[สถานะการอนุมัติ]<>\\\"อนุมัติ\\\" )\", \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 179,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ระยะทางที่วิ่ง (KM)",
+   "page": 115,
+   "props": [
+    [
+     "Column name",
+     "ระยะทางที่วิ่ง (KM)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\": null, \"MinValue\": null, \"StepValue\": null, \"NumericDigits\": null, \"ShowThousandsSeparator\": false, \"NumberDisplayMode\": \"Auto\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": \"=IN([ชื่องาน], LIST(\\\"เบทาโกร+เหมาตู้\\\",\\\"ออเรนจ์โคร\\\",\\\"ไอโรบอท\\\",\\\"อิริคสัน\\\",\\\"เอเทน\\\",\\\"MeSpace\\\",\\\"ฟ้าใส (SCG Express)\\\",\\\"รูทรังสิต(SCG Express)\\\",\\\"Thai paper (SCG Express)\\\",\\\"โอนคลัง ไอโร บอท\\\",\\\"นิคมหนองแค ส่งเอกสาร บีเจซีมูฟ\\\",\\\"โอนคลัง (TVS) ชาญไพบูลย์\\\",\\\"โอนคลัง ทีจีโฟน\\\",\\\"person_14\\\",\\\"โอนคลัง พว.\\\",\\\"โอนคลัง ซอยฮะ (โกเรีย)\\\",\\\"โอนคลัง นำวิวัฒน์\\\",\\\"โอนคลังกระสอบ2(บางบัวทอง)\\\",\\\"โอนคลัง โลจิสท์พลัส\\\",\\\"โอนคลัง SIS\\\"))\", \"Required_If\": null, \"Editable_If\": \"=OR(\\nUSERROLE() = \\\"ADMIN\\\" ,[สถานะการอนุมัติ]<>\\\"อนุมัติ\\\" )\", \"Reset_If\": \"= [_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]\", \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "=[_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]"
+    ],
+    [
+     "Initial value",
+     "=LOOKUP([_THISROW].[ชื่องาน], \"ข้อมูลชื่องานต้นทางปลายทาง\",\"ชื่องาน\", \"ระยะทางคงที่\")"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 180,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "จำนวนจุดรับ / จุดส่ง",
+   "page": 116,
+   "props": [
+    [
+     "Column name",
+     "จำนวนจุดรับ / จุดส่ง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\": null, \"MinValue\": null, \"StepValue\": null, \"NumericDigits\": null, \"ShowThousandsSeparator\": false, \"NumberDisplayMode\": \"Auto\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": \"=IN([ชื่องาน], LIST( \\\"เบทาโกร+เหมาตู้\\\",\\\"ออเรนจ์โคร\\\", \\\"ไอโร บอท\\\"))\", \"Required_If\": null, \"Editable_If\": \"=OR(\\nUSERROLE() = \\\"ADMIN\\\" ,[สถานะการอนุมัติ]<>\\\"อนุมัติ\\\" )\", \"Reset_If\": \"= [_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]\", \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "=[_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 181,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "จำนวนร้านที่ยกขึ้นชั้น",
+   "page": 117,
+   "props": [
+    [
+     "Column name",
+     "จำนวนร้านที่ยกขึ้นชั้น"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\": null, \"MinValue\": null, \"StepValue\": null, \"NumericDigits\": null, \"ShowThousandsSeparator\": false, \"NumberDisplayMode\": \"Auto\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": \"=IN([ชื่องาน], LIST( \\\"เอเทน\\\",\\\"ออเรนจ์โคร\\\"))\", \"Required_If\": null, \"Editable_If\": \"=OR(\\nUSERROLE() = \\\"ADMIN\\\" ,[สถานะการอนุมัติ]<>\\\"อนุมัติ\\\" )\", \"Reset_If\": \"= [_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]\", \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "=[_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 182,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคา",
+   "page": 118,
+   "props": [
+    [
+     "Column name",
+     "ราคา"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=OR(\\nUSERROLE() = \\\"ADMIN\\\" ,[สถานะการอนุมัติ]<>\\\"อนุมัติ\\\" )\",\"Required_If\":null,\"Editable_If\":\"=USERROLE()= \\\"ADMIN\\\"\",\"Reset_If\":\"=[_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]\",\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "=[_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]"
+    ],
+    [
+     "Initial value",
+     "=IFS( ISBLANK([ชื่องาน]), 0, ISNOTBLANK(LOOKUP([_THISROW].[ชื่องาน], \"ข้อมูลชื่องาน ต้นทางปลายทาง\", \"ชื่องาน\", \"ราคาคงที่\")), LOOKUP([_THISROW].[ชื่องาน], \"ข้อมูลชื่องานต้นทางปลายทาง\", \"ชื่องาน\", \"ราคาคงที่\") + [ราคาจุดเพิ่ม], ISNOTBLANK(LOOKUP([_THISROW].[Shipment No], \"ราคาในระบบก่อนส่งสินค้า\", \"Shipment No\", \"ราคา\")), LOOKUP([_THISROW].[Shipment No], \"ราคาในระบบก่อนส่งสินค้า\",\"Shipment No\", \"ราคา\"),TRUE, [ราคาตามระยะทาง] + [ราคาจุดเพิ่ม]+ [ราคาเพิ่ม] )"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 183,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "Email ผู้อนุมัติ",
+   "page": 119,
+   "props": [
+    [
+     "Column name",
+     "Email ผู้อนุมัติ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Email"
+    ],
+    [
+     "Type Qualifier",
+     "{\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF([สถานะการอนุมัติ]=\"อนุมัติ\", USEREMAIL(), [Email ผู้อนุมัติ])"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 184,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "สถานะการอนุมัติ",
+   "page": 119,
+   "props": [
+    [
+     "Column name",
+     "สถานะการอนุมัติ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Enum"
+    ],
+    [
+     "Type Qualifier",
+     "{\"EnumValues\":[\"อนุมัติ\",\"รอการ อนุมัติ\"],\"AllowOtherValues\":false,\"AutoCompleteOtherValues\":true,\"BaseType\":\"Text\",\"BaseTypeQualifier\":\" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"EnumInputMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":\"=USERROLE()= \\\"ADMIN\\\"\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=\"รอการอนุมัติ”"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 185,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคาในระบบหลังส่งสินค้า",
+   "page": 120,
+   "props": [
+    [
+     "Column name",
+     "ราคาในระบบหลังส่งสินค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "Yes"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 186,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "รูปถ่ายหลังรถตอนขึ้นสินค้าเสร็จ",
+   "page": 121,
+   "props": [
+    [
+     "Column name",
+     "รูปถ่ายหลังรถตอนขึ้นสินค้าเสร็จ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Display name",
+     "=IF( IN([ชื่องาน], LIST(\"เบทาโกร\",\"เหมาตู้\",\"เอเทน\")), \"รูปแคปหน้าจอGPS\", \"รูปถ่ายหลังรถตอนขึ้นสินค้าเสร็จ\" )"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 187,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "รูปถ่ายบิลงาน",
+   "page": 122,
+   "props": [
+    [
+     "Column name",
+     "รูปถ่ายบิลงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":\"=Camera\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 188,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "รูปถ่ายบิลงานเพิ่ม1",
+   "page": 122,
+   "props": [
+    [
+     "Column name",
+     "รูปถ่ายบิลงานเพิ่ม1"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Display name",
+     "=IF( IN([ชื่องาน], LIST(\"เบทาโกร\",\"เหมาตู้\",)), \"รูปแคปหน้าจอ GPSเพิ่ม1\", \"รูปถ่ายบิลงานเพิ่ม1\" )"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 189,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "รูปถ่ายบิลงานเพิ่ม2",
+   "page": 123,
+   "props": [
+    [
+     "Column name",
+     "รูปถ่ายบิลงานเพิ่ม2"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Display name",
+     "=IF( IN([ชื่องาน], LIST(\"เบทาโกร\",\"เหมาตู้\")), \"รูปแคปหน้าจอ GPSเพิ่ม2\", \"รูปถ่ายบิลงานเพิ่ม2\" )"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 190,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "เลือกเพิ่มเติม",
+   "page": 124,
+   "props": [
+    [
+     "Column name",
+     "เลือกเพิ่มเติม"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Enum"
+    ],
+    [
+     "Type Qualifier",
+     "{\"EnumValues\": [\"งานMeSpace+แพ็คสินค้า\", \"จองรถ ก่อน14.00+แรงงาน1คน\", \"เพิ่ม แรงงาน1คน\"], \"AllowOtherValues\": false, \"AutoCompleteOtherValues\": true, \"BaseType\": \"Text\", \"BaseTypeQualifier\": \" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\", \"EnumInputMode\": \"Auto\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": \"=[ชื่องาน] =\\\"MeSpace\\\"\", \"Required_If\": null, \"Editable_If\": \"=OR(\\nUSERROLE() = \\\"ADMIN\\\" ,[สถานะการอนุมัติ]<>\\\"อนุมัติ\\\" )\", \"Reset_If\": \"= [_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]\", \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "=[_THISROW_BEFORE].[ชื่องาน] <> [_THISROW].[ชื่องาน]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 191,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ยืนยันการกรอกข้อมูล",
+   "page": 125,
+   "props": [
+    [
+     "Column name",
+     "ยืนยันการกรอกข้อมูล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "=IF([ยืนยันการกรอกข้อมูล] = \"ตรวจสอบข้อมูลเรียบร้อย\",\"จะไม่สามารถแก้ไขอะไรได้อีกหลังจากกด Save\",\"\")"
+    ],
+    [
+     "Type",
+     "Enum"
+    ],
+    [
+     "Type Qualifier",
+     "{\"EnumValues\": [\"ไม่ได้ตรวจสอบ\", \"ตรวจสอบข้อมูล เรียบร้อย\"], \"AllowOtherValues\": false, \"AutoCompleteOtherValues\": true, \"BaseType\": \"Text\", \"BaseTypeQualifier\": \" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\", \"EnumInputMode\": \"Dropdown\", \"Valid_If\": \"=IF([ยืนยันการกรอกข้อมูล] = \\\"ตรวจสอบข้อมูลเรียบร้อย\\\" , TRUE , FALSE)\", \"Error_Message_If_Invalid\": \"=\\\"กรุณาตรวจสอบข้อมูลที่กรอกเข้ามาอีกรอบ\\\"\", \"Show_If\": \"=ISNOTBLANK([รูปถ่ายบิลงาน])\", \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=\"ไม่ได้ตรวจสอบ\""
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 192,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "เดือน",
+   "page": 126,
+   "props": [
+    [
+     "Column name",
+     "เดือน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=IF( ISBLANK([วันที่]), \"\", (YEAR([วันที่]) - IF(YEAR([วันที่]) > 2500,543, 0)) & \"-\" &TEXT([วันที่], \"MM\") )"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 193,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ระบุการเติมน้ำมัน",
+   "page": 126,
+   "props": [
+    [
+     "Column name",
+     "ระบุการเติมน้ำมัน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"=มีการเติมน้ำมัน\",\"NoLabel\":\"=ไม่มีการเติม น้ำมัน\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=OR(\\n USERROLE() = \\\"ADMIN\\\",\\n IN(\\n USEREMAIL(),\\n LIST(\\n \\\"employee01@example.invalid\\\",\\n \\\"employee02@example.invalid\\\",\\n \\\"employee03@example.invalid\\\",\\n \\\"employee04@example.invalid\\\",\\n \\\"employee05@example.invalid\\\",\\n\\\"employee06@example.invalid\\\",\\n \\\"employee07@example.invalid\\\",\\n \\\"employee08@example.invalid\\\",\\n \\\"employee09@example.invalid\\\",\\n \\\"employee10@example.invalid\\\",\\n \\\"employee11@example.invalid\\\",\\n\\\"employee12@example.invalid\\\",\\n \\\"employee13@example.invalid\\\",\\n \\\"employee14@example.invalid\\\"\\n )\\n )\\n)\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 194,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคาที่เติม",
+   "page": 127,
+   "props": [
+    [
+     "Column name",
+     "ราคาที่เติม"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Decimal"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=[ระบุการเติมน้ำมัน] = TRUE\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 195,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "รูปถ่ายใบเสร็จน้ำมัน_ใบเล็ก",
+   "page": 128,
+   "props": [
+    [
+     "Column name",
+     "รูปถ่ายใบเสร็จน้ำมัน_ใบเล็ก"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=[ระบุการเติมน้ำมัน] = TRUE\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 196,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ระบุทางด่วนM-Flow",
+   "page": 129,
+   "props": [
+    [
+     "Column name",
+     "ระบุทางด่วนM-Flow"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\": \"=ใช้ทางด่วน_M_Flow\", \"NoLabel\": \"=ไม่ใช้ทางด่วน\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": \"=AND(\\n OR(\\n USERROLE() = \\\"ADMIN\\\",\\n IN(\\n USEREMAIL(),\\n LIST(\\n \\\"employee01@example.invalid\\\",\\n \\\"employee02@example.invalid\\\",\\n \\\"employee03@example.invalid\\\",\\n \\\"employee04@example.invalid\\\",\\n \\\"employee05@example.invalid\\\",\\n\\\"employee06@example.invalid\\\",\\n \\\"employee07@example.invalid\\\",\\n \\\"employee08@example.invalid\\\",\\n \\\"employee09@example.invalid\\\",\\n \\\"employee10@example.invalid\\\",\\n \\\"employee11@example.invalid\\\",\\n\\\"employee12@example.invalid\\\",\\n \\\"employee13@example.invalid\\\",\\n \\\"employee14@example.invalid\\\"\\n )\\n )\\n ),\\n ISNOTBLANK([ระบุการเติมน้ำมัน])\\n)\", \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 197,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "จำนวนด่าน",
+   "page": 130,
+   "props": [
+    [
+     "Column name",
+     "จำนวนด่าน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=[ระบุทางด่วนM-Flow] = TRUE\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 198,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "รูปสลิปการโอน",
+   "page": 130,
+   "props": [
+    [
+     "Column name",
+     "รูปสลิปการโอน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=[ระบุทางด่วนM-Flow] = TRUE\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 199,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ระบุการซ่อมบำรุง",
+   "page": 131,
+   "props": [
+    [
+     "Column name",
+     "ระบุการซ่อมบำรุง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\": \"=มีการเข้าซ่อม\", \"NoLabel\": \"=ไม่มีการเข้า ซ่อม\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": \"=AND(\\n OR(\\n USERROLE() = \\\"ADMIN\\\",\\n IN(\\n USEREMAIL(),\\nLIST(\\n \\\"employee01@example.invalid\\\",\\n \\\"employee02@example.invalid\\\",\\n \\\"employee03@example.invalid\\\",\\n \\\"employee04@example.invalid\\\",\\n \\\"employee05@example.invalid\\\",\\n\\\"employee06@example.invalid\\\",\\n \\\"employee07@example.invalid\\\",\\n \\\"employee08@example.invalid\\\",\\n \\\"employee09@example.invalid\\\",\\n \\\"employee10@example.invalid\\\",\\n \\\"employee11@example.invalid\\\",\\n\\\"employee12@example.invalid\\\",\\n \\\"employee13@example.invalid\\\",\\n \\\"employee14@example.invalid\\\"\\n )\\n )\\n ),\\n ISNOTBLANK([ระบุทางด่วนM-Flow])\\n)\", \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 200,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคาตามบิล",
+   "page": 132,
+   "props": [
+    [
+     "Column name",
+     "ราคาตามบิล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=[ระบุการซ่อมบำรุง] = TRUE\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 201,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "รูปถ่ายบิลซ่อมบำรุง",
+   "page": 133,
+   "props": [
+    [
+     "Column name",
+     "รูปถ่ายบิลซ่อมบำรุง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=[ระบุการซ่อมบำรุง] = TRUE\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 202,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคาจุดเพิ่ม",
+   "page": 133,
+   "props": [
+    [
+     "Column name",
+     "ราคาจุดเพิ่ม"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=OR(USERROLE() = \\\"Admin\\\", [สถานะการอนุมัติ] = \\\"อนุมัติ\\\")\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IFS( AND([ชื่องาน] = \"เบทาโกร+เหมาตู้\",[จำนวนจุดรับ / จุดส่ง] >=11), ([จำนวนจุดรับ / จุดส่ง] - 11) * 50, AND([ชื่องาน] = \"ไอโรบอท\",[จำนวนจุดรับ / จุดส่ง] >= 1), ([จำนวนจุดรับ / จุดส่ง] - 1) * 100, [ชื่องาน] = \"ออเรนจ์โคร\", (([จำนวนจุดรับ / จุดส่ง] - 1) * 100) + ([จำนวนร้านที่ยกขึ้นชั้น] * 300), [ชื่องาน] = \"เอเทน\", [จำนวนร้านที่ยกขึ้นชั้น] *250, TRUE, 0 )"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 203,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคาตามระยะทาง",
+   "page": 134,
+   "props": [
+    [
+     "Column name",
+     "ราคาตามระยะทาง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=OR(USERROLE() = \\\"Admin\\\", [สถานะการอนุมัติ] = \\\"อนุมัติ\\\")\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=ANY( SELECT( Price_Table[Price], AND( IN( [_THISROW].[ชื่องาน], SPLIT([ชื่องาน], \",\") ), [เรทน้ำมัน_Minimum] <= [_THISROW].[เรทดีเซล], [เรทน้ำมัน_Maximum] >= [_THISROW].[เรทดีเซล], [ระยะทาง_Minimum] <= [_THISROW].[ระยะทางที่วิ่ง (KM)], [ระยะทาง_Maximum] >= [_THISROW].[ระยะทางที่วิ่ง (KM)] ) ) )"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 204,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "เรทดีเซล",
+   "page": 135,
+   "props": [
+    [
+     "Column name",
+     "เรทดีเซล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF( ISBLANK([_THISROW].[วันที่]), \"\", IF( ISNOTBLANK( ANY( SELECT( PriceOverride[UsePriceDate], AND( [StartDate] <= [_THISROW].[วันที่], [EndDate] >= [_THISROW].[วันที่], [JobName]= [_THISROW].[ชื่องาน] ) ) ) ), ANY( SELECT( ราคาน้ำมันดีเซล[ราคา/หน่วย], [วันที่] = ANY( SELECT( PriceOverride[UsePriceDate], AND( [StartDate] <= [_THISROW].[วันที่], [EndDate] >= [_THISROW].[วันที่], [JobName] = [_THISROW].[ชื่องาน] ) ) ) ) ), IF( ISNOTBLANK( ANY( SELECT(PriceOverride[UsePriceDate], AND( [StartDate] <= [_THISROW].[วันที่], [EndDate] >= [_THISROW].[วันที่], ISBLANK([JobName]) ) )) ), ANY( SELECT( ราคาน้ำมันดีเซล[ราคา/หน่วย], [วันที่] = ANY( SELECT( PriceOverride[UsePriceDate], AND( [StartDate] <= [_THISROW].[วันที่], [EndDate] >= [_THISROW].[วันที่], ISBLANK([JobName]) ) ) ) ) ), ANY( SELECT( ราคาน้ำมันดีเซล[ราคา/หน่วย], [วันที่] = DATE( CONCATENATE( YEAR(EOMONTH([_THISROW].[วันที่], -1)), \"-\", RIGHT(\"0\" & MONTH(EOMONTH([_THISROW].[วันที่], -1)), 2), \"-25\" ) ) ) ) ) ) )"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 205,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคาเพิ่ม",
+   "page": 136,
+   "props": [
+    [
+     "Column name",
+     "ราคาเพิ่ม"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=[ชื่องาน] =\\\"MeSpace\\\"\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF([เลือกเพิ่มเติม] = \"เพิ่มแรงงาน1คน\",500, IF([เลือกเพิ่มเติม] = \"จองรถก่อน14.00+แรงงาน1คน\",1200, IF([เลือกเพิ่มเติม] = \"งานMeSpace+แพ็คสินค้า\",2400,0)))"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 206,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ข้อความแจ้งเตือน",
+   "page": 137,
+   "props": [
+    [
+     "Column name",
+     "ข้อความแจ้งเตือน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=TRUE\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF([ยืนยันการกรอกข้อมูล] = \"ตรวจสอบข้อมูลเรียบร้อย\", \" สำเร็จ กลับไปบันทึกข้อมูลได้\", \"\") ✅ ยืนยัน"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 207,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคาหลังส่งสินค้า",
+   "page": 138,
+   "props": [
+    [
+     "Column name",
+     "ราคาหลังส่งสินค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=LOOKUP([_THISROW].[Shipment No],\"ราคาในระบบก่อนส่ง สินค้า\",\"Shipment No\",\"ราคาหลังส่งสินค้า\")"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 208,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคาก่อนส่งสินค้า",
+   "page": 139,
+   "props": [
+    [
+     "Column name",
+     "ราคาก่อนส่งสินค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=LOOKUP([_THISROW].[Shipment No],\"ราคาในระบบก่อนส่ง สินค้า\",\"Shipment No\",\"ราคา\")"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 209,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคาที่อนุมัติแล้ว",
+   "page": 139,
+   "props": [
+    [
+     "Column name",
+     "ราคาที่อนุมัติแล้ว"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=OR(USERROLE() = \\\"Admin\\\", [สถานะการอนุมัติ] = \\\"อนุมัติ\\\")\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF( [สถานะการอนุมัติ] = \"อนุมัติ\", [ราคา], 0 )"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 210,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "SM",
+   "page": 140,
+   "props": [
+    [
+     "Column name",
+     "SM"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":false,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=LEFT([พิมอธิบายทุกอย่างที่สำคัญ], FIND(\"//\", [พิมอธิบายทุกอย่างที่สำคัญ]) - 1)"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 211,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "column",
+   "name": "ราคาหลังส่งเอเธน",
+   "page": 141,
+   "props": [
+    [
+     "Column name",
+     "ราคาหลังส่งเอเธน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF( [ชื่องาน] = \"เอเทน\", LOOKUP( [SM], \"ราคาในระบบก่อนส่ง สินค้า\", \"Shipment No\", \"ราคาหลังส่งสินค้า\" ), \"\" )"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "ตารางงานประจำวัน_Schema"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 212,
+   "table": "ข้อมูลการวางบิล"
+  }
+ ],
+ "actions": [
+  {
+   "type": "action",
+   "name": "Compose Email (Email พนักงาน)",
+   "page": 1811,
+   "props": [
+    [
+     "Action name",
+     "Compose Email (Email พนักงาน)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"EmailTo\":\"[Email พนักงาน]\",\"Subject\":null,\"Body\":null,\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EMAIL"
+    ],
+    [
+     "Attach to column",
+     "Email พนักงาน"
+    ],
+    [
+     "Set this column",
+     "Email พนักงาน"
+    ],
+    [
+     "Only if this condition is true",
+     "NOT(ISBLANK([Email พนักงาน]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลการวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2531,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "Compose Email (Email ผู้อนุมัติ)",
+   "page": 1812,
+   "props": [
+    [
+     "Action name",
+     "Compose Email (Email ผู้อนุมัติ)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"EmailTo\":\"[Email ผู้อนุมัติ]\",\"Subject\":null,\"Body\":null,\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EMAIL"
+    ],
+    [
+     "Attach to column",
+     "Email ผู้อนุมัติ"
+    ],
+    [
+     "Set this column",
+     "Email ผู้อนุมัติ"
+    ],
+    [
+     "Only if this condition is true",
+     "NOT(ISBLANK([Email ผู้อนุมัติ]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลการวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2532,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "Add",
+   "page": 1814,
+   "props": [
+    [
+     "Action name",
+     "Add"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "ADD_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลการวางบิล"
+    ],
+    [
+     "Does this action apply to",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2535,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "อนุมัติ",
+   "page": 1815,
+   "props": [
+    [
+     "Action name",
+     "อนุมัติ"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"สถานะการ อนุมัติ\",\"NewColumnValue\":\"\\\"อนุมัติ\\\"\"}],\"ColumnToEdit\":\"สถานะการ อนุมัติ\",\"NewColumnValue\":\"\\\"อนุมัติ\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "สถานะการอนุมัติ"
+    ],
+    [
+     "Set this column",
+     "สถานะการอนุมัติ"
+    ],
+    [
+     "Only if this condition is",
+     "=AND( [สถานะการอนุมัติ] <> \"อนุมัติ\", USERROLE() = \"ADMIN\")"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "\"อนุมัติ\""
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลการวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "To this value",
+     "\"อนุมัติ\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2537,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "รอการอนุมัติ",
+   "page": 1816,
+   "props": [
+    [
+     "Action name",
+     "รอการอนุมัติ"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Assignments\":[{\"ColumnToEdit\":\"สถานะการ อนุมัติ\",\"NewColumnValue\":\"=\\\"รอการ อนุมัติ\\\"\"}],\"ColumnToEdit\":\"สถานะการ อนุมัติ\",\"NewColumnValue\":\"=\\\"รอการ อนุมัติ\\\"\",\"InputParametersUsed\":null,\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "SET_COLUMN_VALUE"
+    ],
+    [
+     "Attach to column",
+     "สถานะการอนุมัติ"
+    ],
+    [
+     "Set this column",
+     "สถานะการอนุมัติ"
+    ],
+    [
+     "Only if this condition is true",
+     "=AND( [สถานะการอนุมัติ] <> \"รอการอนุมัติ\", USERROLE() = \"ADMIN\")"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "\"รอการอนุมัติ\""
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลการวางบิล"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "To this value",
+     "=\"รอการอนุมัติ\""
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2538,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "Edit",
+   "page": 1817,
+   "props": [
+    [
+     "Action name",
+     "Edit"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"DesktopBehavior\":\"Open a form\",\"DesktopEditBehavior\":\"Edit inplace\",\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EDIT_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลการวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2539,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "Delete",
+   "page": 1836,
+   "props": [
+    [
+     "Action name",
+     "Delete"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "DELETE_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลการวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ADVANCED"
+    ]
+   ],
+   "order": 2575,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "ส่งรูปวางบิลหรือสลิปโอนเงิน",
+   "page": 1860,
+   "props": [
+    [
+     "Action name",
+     "ส่งรูปวางบิลหรือสลิปโอนเงิน"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Confirmation Message",
+     "กดส่งรูปวางบิล เพื่อเข้าสู่ขั้นตอนการเพื่มรูปถ่าย"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"=LINKTOAPP(\\\"1c544f2c-efb8-41ee-8cc5-ac5573f10e5c\\\") \\n& LINKTOROW([ID_วางบิล], \\\"ข้อมูลการวางบิล_Detail\\\")\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"กดส่งรูปวางบิล เพื่อเข้าสู่ขั้นตอนการเพื่มรูป ถ่าย\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_DIFFERENT_APP"
+    ],
+    [
+     "Attach to column",
+     "จำนวนด่าน"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลการวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2610,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "ข้อมูลการวางบิลcsv",
+   "page": 1894,
+   "props": [
+    [
+     "Action name",
+     "ข้อมูลการวางบิลcsv"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"CsvLocale\":\"en- GB\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EXPORT_VIEW"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "โหลดไฟล์csv"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลการวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2660,
+   "table": "ข้อมูลการวางบิล"
+  },
+  {
+   "type": "action",
+   "name": "View Ref (ID_พนักงาน)",
+   "page": 1916,
+   "props": [
+    [
+     "Action name",
+     "View Ref (ID_พนักงาน)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"CONCATENATE(\\\"#page=detail&table=%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99&row=\\\", ENCODEURL([ID_พนักงาน]) )\",\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_APP"
+    ],
+    [
+     "Attach to column",
+     "ID_พนักงาน"
+    ],
+    [
+     "Set this column",
+     "ID_พนักงาน"
+    ],
+    [
+     "Only if this condition is true",
+     "NOT(ISBLANK([ID_พนักงาน]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "ข้อมูลการวางบิล"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2695,
+   "table": "ข้อมูลการวางบิล"
+  }
+ ],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

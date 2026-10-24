@@ -1,0 +1,3261 @@
+{
+ "table": "รับงานคืนได้เงิน200",
+ "kind": "main",
+ "domain": "D03",
+ "domain_title": "เบิกค่าและส่วนต่าง (Reimbursement & Deductions)",
+ "file": "app/tables/main/12.json",
+ "table_record": {
+  "type": "table",
+  "name": "รับงานคืนได้เงิน200",
+  "page": 7,
+  "props": [
+   [
+    "Table name",
+    "รับงานคืนได้เงิน200"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Data locale",
+    "en-GB"
+   ],
+   [
+    "Schema",
+    "รับงานคืนได้เงิน200_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "ALL_CHANGES"
+   ],
+   [
+    "Expression for update mode",
+    "=SWITCH(USERROLE(), \"ADMIN\", \"ALL_CHANGES\", \"USER\", \"ADDS_AND_UPDATES\", \"READ_ONLY\")"
+   ],
+   [
+    "Security filter",
+    "=OR(USERROLE() = \"ADMIN\", [Email พนักงาน] = USEREMAIL())"
+   ],
+   [
+    "Source Path",
+    "เผ่าปัญญา ทรานสปอร์ต"
+   ],
+   [
+    "Worksheet Name/Qualifier",
+    "รับงานคืนได้เงิน200"
+   ],
+   [
+    "Data Source",
+    "google"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 11,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "_RowNumber",
+   "page": 227,
+   "props": [
+    [
+     "Column name",
+     "_RowNumber"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "Number of this row"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "Yes"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 327,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "ID_รับงานคืนได้เงิน200",
+   "page": 228,
+   "props": [
+    [
+     "Column name",
+     "ID_รับงานคืนได้เงิน200"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "Yes"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=UNIQUEID()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "Yes"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 328,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "สถานะการเข้ารับสินค้า",
+   "page": 229,
+   "props": [
+    [
+     "Column name",
+     "สถานะการเข้ารับสินค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Display name",
+     "=IF([สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\", \"ตรวจสอบก่อนกดบันทึก\", IF([สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม50%) ของค่าเที่ยว\", \"สอบถามแอดมินก่อนกด\", IF([สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม200) ไม่มีสินค้าคืน หรือ ร้านปิด\", \"ตรวจสอบก่อนกดบันทึก\", IF([สถานะการเข้ารับสินค้า] =\"ทำเบิกค่ายกขึ้นชั้น\", \"สอบถามแอดมินก่อนกด\", \"สถานะการเข้ารับสินค้า\" )) ))"
+    ],
+    [
+     "Type",
+     "Enum"
+    ],
+    [
+     "Type Qualifier",
+     "{\"EnumValues\":[\"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\",\"(ไม่ได้เพิ่ม) มีในจุดที่ส่งงานวันนี้\",\"(ได้เพิ่ม50%) ของค่าเที่ยว\",\"(ได้เพิ่ม200) ไม่มีสินค้าคืน หรือ ร้านปิด\",\"ทำเบิกค่ายกขึ้นชั้น\",\"เบิกค่าขนส่งตามระยะ ทาง\"],\"AllowOtherValues\":false,\"AutoCompleteOtherValues\":true,\"BaseType\":\"Text\",\"BaseTypeQualifier\":\" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"EnumInputMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 329,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "วันที่เข้ารับ",
+   "page": 230,
+   "props": [
+    [
+     "Column name",
+     "วันที่เข้ารับ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Display name",
+     "=IF([สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\", \"ถ้าตรวจสอบเจอว่าทุจริต ปรับ 10 เท่า\", IF([สถานะการเข้ารับ สินค้า] = \"(ได้เพิ่ม50%) ของค่าเที่ยว\", \"แอดมินจะต้องอนุมัติแล้ว เท่านั้น\", IF([สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม200) ไม่มีสินค้าคืน หรือ ร้านปิด\", \"ถ้าตรวจสอบเจอว่าทุจริต ปรับ 10 เท่า\", IF([สถานะการเข้ารับสินค้า] = \"ทำเบิกค่ายกขึ้นชั้น\", \"แอดมินจะต้องอนุมัติแล้ว เท่านั้น\", \"\" ))) )"
+    ],
+    [
+     "Type",
+     "Date"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UseLongDateFormat\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":\"=USERROLE() = \\\"ADMIN\\\"\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=TODAY()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 330,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อ - นามสกุล",
+   "page": 231,
+   "props": [
+    [
+     "Column name",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":\"\",\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=[ID_พนักงาน].[ชื่อ - นามสกุล]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 331,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "ทะเบียนรถ",
+   "page": 231,
+   "props": [
+    [
+     "Column name",
+     "ทะเบียนรถ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=[ID_พนักงาน].[ทะเบียนรถ]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 332,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "Shipment (หลัก)",
+   "page": 232,
+   "props": [
+    [
+     "Column name",
+     "Shipment (หลัก)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":false,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":\"=IF(\\n\\nUSERROLE()= \\\"ADMIN\\\",\\n SELECT(\\nข้อมูลงานRT[Shipment (หลัก)],\\nTRUE\\n ),\\n SELECT(\\n ข้อมูลงานRT[Shipment (หลัก)],\\n AND(\\n [ชื่อ - นามสกุล] =[_THISROW].[ID_พนักงาน].[ชื่อ - นามสกุล],\\n [วันที่เข้ารับ] =TODAY()\\n )\\n )\\n)\",\"Error_Message_If_Invalid\":null,\"Show_If\":\"=IN([สถานะการเข้ารับสินค้า],{\\\"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\\\",\\\"(ไม่ได้เพิ่ม)มีในจุดที่ส่งงานวันนี้\\\", \\\"(ได้เพิ่ม50%) ของค่าเที่ยว\\\",\\\"(ได้เพิ่ม200)ไม่มีสินค้าคืน หรือ ร้าน ปิด\\\"})\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 333,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "Shipment (รับคืน)",
+   "page": 233,
+   "props": [
+    [
+     "Column name",
+     "Shipment (รับคืน)"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":false,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":\"\",\"Error_Message_If_Invalid\":null,\"Show_If\":\"=IN([สถานะการเข้ารับสินค้า],{\\\"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\\\",\\\"(ไม่ได้เพิ่ม) มีในจุดที่ส่งงานวันนี้\\\", \\\"(ได้เพิ่ม50%) ของค่าเที่ยว\\\",\\\"(ได้เพิ่ม200) ไม่มีสินค้าคืน หรือ ร้าน ปิด\\\"})\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=LOOKUP([_THISROW].[Shipment (หลัก)],\"ข้อมูล งานRT\",\"Shipment (หลัก)\",\"Shipment (รับคืน)\")"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 334,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "เลขที่เอกสารรับคืน",
+   "page": 234,
+   "props": [
+    [
+     "Column name",
+     "เลขที่เอกสารรับคืน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":\"=IF( \\nUSERROLE() =\\\"ADMIN\\\",\\n SELECT(\\n ข้อมูลงานRT[เลขที่เอกสารรับคืน],\\n IN([Shipment (รับคืน)], LIST([_THISROW].[Shipment (รับคืน)])) \\n),\\n\\n SELECT(\\n ข้อมูลงานRT[เลขที่เอกสารรับคืน],\\n AND(\\n IN([Shipment (รับคืน)], LIST([_THISROW].[Shipment (รับคืน)])),\\n[ชื่อ - นามสกุล] = [_THISROW].[ID_พนักงาน].[ชื่อ - นามสกุล],\\n [วันที่เข้ารับ] =TODAY(),\\n NOT(IN([เลขที่เอกสารรับคืน], SELECT(รับงานคืนได้เงิน200[เลขที่เอกสารรับคืน], TRUE)))\\n )\\n )\\n)\",\"Error_Message_If_Invalid\":null,\"Show_If\":\"=IN([สถานะการเข้ารับสินค้า],{\\\"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\\\",\\\"(ไม่ได้เพิ่ม)มีในจุดที่ส่งงานวันนี้\\\", \\\"(ได้เพิ่ม50%) ของค่าเที่ยว\\\",\\\"(ได้เพิ่ม200)ไม่มีสินค้าคืน หรือ ร้าน ปิด\\\"})\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 335,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "จำนวนสินค้า",
+   "page": 235,
+   "props": [
+    [
+     "Column name",
+     "จำนวนสินค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=IN([สถานะการเข้ารับสินค้า],{\\\"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\\\",\\\"(ไม่ได้เพิ่ม) มีในจุดที่ส่งงานวันนี้\\\", \\\"(ได้เพิ่ม50%) ของค่า เที่ยว\\\",\\\"เบิกค่าขนส่งตามระยะทาง\\\",\\\"ทำเบิกค่ายกขึ้น ชั้น\\\"})\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 336,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "Shipment No",
+   "page": 236,
+   "props": [
+    [
+     "Column name",
+     "Shipment No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":false,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":\"=SM_Today_User 2[Shipment No]\",\"Error_Message_If_Invalid\":null,\"Show_If\":\"=IN([สถานะการเข้ารับสินค้า],{\\\"เบิกค่าขนส่งตามระยะทาง\\\",\\\"ทำเบิกค่ายกขึ้น ชั้น\\\"})\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 337,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "Invoice No",
+   "page": 236,
+   "props": [
+    [
+     "Column name",
+     "Invoice No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "EnumList"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ItemSeparator\":\",\",\"EnumValues\": [],\"AllowOtherValues\":true,\"AutoCompleteOtherValues\":true,\"BaseType\":\"Text\",\"BaseTypeQualifier\":\" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"EnumInputMode\":\"Dropdown\",\"Valid_If\":\"=IF(\\n ISBLANK([Shipment No]),\\n LIST(),\\n UNIQUE(\\n SELECT(\\n SM_Today_User 2[Invoice No],\\n AND(\\n [Shipment No] = [_THISROW]. [Shipment No],\\n NOT(\\n IN(\\n [Invoice No],\\n รับงานคืนได้เงิน200[Invoice No]\\n )\\n )\\n )\\n )\\n + [_THISROW].[Invoice No]\\n )\\n - LIST(\\\"\\\")\\n)\",\"Error_Message_If_Invalid\":null,\"Show_If\":\"=IN([สถานะการเข้ารับสินค้า],{\\\"เบิกค่าขนส่งตามระยะทาง\\\",\\\"ทำเบิกค่ายกขึ้น ชั้น\\\"})\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 338,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อเจ้าของสินค้า",
+   "page": 237,
+   "props": [
+    [
+     "Column name",
+     "ชื่อเจ้าของสินค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF( IN([สถานะการเข้ารับสินค้า],{\"เบิกค่าขนส่งตามระยะทาง\",\"ทำ เบิกค่ายกขึ้นชั้น\"}), LOOKUP(ANY([_THISROW].[Invoice No]), \"ตารางงานประจำวัน\", \"Invoice No\", \"ชื่อเจ้าของสินค้า\"), LOOKUP([_THISROW].[รหัสลูกค้า],\"DOC_RETURN\",\"รหัสลูกค้า\",\"ชื่อเจ้าของสินค้า\") )"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 339,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "รหัสลูกค้า",
+   "page": 238,
+   "props": [
+    [
+     "Column name",
+     "รหัสลูกค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF( IN([สถานะการเข้ารับสินค้า],{\"เบิกค่าขนส่งตามระยะทาง\",\"ทำ เบิกค่ายกขึ้นชั้น\"}), LOOKUP(ANY([_THISROW].[Invoice No]), \"ตารางงานประจำวัน\", \"Invoice No\", \"รหัสลูกค้า\"), LOOKUP([_THISROW].[เลขที่เอกสารรับคืน], \"ข้อมูลงานRT\", \"เลขที่เอกสารรับคืน\", \"รหัสลูกค้า\") )"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 340,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อลูกค้าที่เข้ารับ",
+   "page": 239,
+   "props": [
+    [
+     "Column name",
+     "ชื่อลูกค้าที่เข้ารับ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Display name",
+     "=IF( [สถานะการเข้ารับสินค้า] = \"ทำเบิกค่ายกขึ้นชั้น\", \"ชื่อปลายทาง\",\"\" )"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":\"\",\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF( IN([สถานะการเข้ารับสินค้า],{\"เบิกค่าขนส่งตามระยะทาง\",\"ทำ เบิกค่ายกขึ้นชั้น\"}), LOOKUP(ANY([_THISROW].[Invoice No]), \"ตารางงานประจำวัน\", \"Invoice No\", \"ชื่อปลายทาง\"), LOOKUP([_THISROW].[เลขที่เอกสารรับคืน],\"ข้อมูลงานRT\",\"เลขที่เอกสารรับคืน\",\"ชื่อลูกค้าที่เข้ารับ\") )"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 341,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "รูปสินค้า",
+   "page": 240,
+   "props": [
+    [
+     "Column name",
+     "รูปสินค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Display name",
+     "=IF([สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม200) ไม่มีสินค้าคืน หรือ ร้านปิด\", \"รูปหน้าร้าน ให้เห็นชื่อร้านด้วย\", \"\" )"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 342,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "รูปบิลรับคืน",
+   "page": 240,
+   "props": [
+    [
+     "Column name",
+     "รูปบิลรับคืน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Display name",
+     "=IF( [สถานะการเข้ารับสินค้า] = \"ทำเบิกค่ายกขึ้นชั้น\", \"รูปบิลส่ง สินค้า\", IF( [สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม200) ไม่มีสินค้าคืน หรือ ร้านปิด\", \"รูปบิลให้ลูกค้าเขียนกำกับด้วยว่า ไม่มีสินค้าส่งคืน และให้ลูกค้าเซ็นต์ชื่อด้วย\", \"\" ) )"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 343,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "หมายเหตุ",
+   "page": 241,
+   "props": [
+    [
+     "Column name",
+     "หมายเหตุ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "LongText"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=IN([สถานะการเข้ารับสินค้า],{\\\"ทำเบิกค่ายกขึ้นชั้น\\\",\\\"เบิกค่าขนส่งตามระยะทาง\\\",\\\"(ได้เพิ่ม200) ไม่มีสินค้าคืนหรือ ร้าน ปิด\\\"})\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 344,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "รูปจุดที่ส่งงาน",
+   "page": 242,
+   "props": [
+    [
+     "Column name",
+     "รูปจุดที่ส่งงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Display name",
+     "=IF([สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\", \"จะต้องขอรูปจากแอดมินก่อนเท่านั้น\", IF([สถานะการเข้ารับสินค้า]= \"(ได้เพิ่ม50%) ของค่าเที่ยว\", \"จะต้องขอรูปจากแอดมินก่อนเท่านั้น\",IF([สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม200) ไม่มีสินค้าคืน หรือ ร้านปิด\", \"จะต้องขอรูปจากแอดมินก่อนเท่านั้น\", IF([สถานะการเข้ารับ สินค้า] = \"ทำเบิกค่ายกขึ้นชั้น\", \"จะต้องขอรูป CS แจ้งราคา จากแอ ดมิน\", \"รูปจุดที่ส่งงาน\" ))))"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=IN([สถานะการเข้ารับสินค้า] ,{\\\"(ได้เพิ่ม200) ไม่มีสินค้าคืน หรือ ร้านปิด\\\",\\\"(ได้เพิ่ม50%) ของค่า เที่ยว\\\",\\\"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\\\",\\\"เบิกค่าขนส่งตาม ระยะทาง\\\",\\\"ทำเบิกค่ายกขึ้น ชั้น\\\"})\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 345,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "Lat / Long",
+   "page": 243,
+   "props": [
+    [
+     "Column name",
+     "Lat / Long"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "LatLong"
+    ],
+    [
+     "Type Qualifier",
+     "{\"RealTime\":false,\"PublishIfRowKey\":null,\"KMLFileUrl\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=HERE()"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 346,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "Email พนักงาน",
+   "page": 244,
+   "props": [
+    [
+     "Column name",
+     "Email พนักงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Email"
+    ],
+    [
+     "Type Qualifier",
+     "{\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":\"=USERROLE() = \\\"ADMIN\\\"\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=USEREMAIL()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 347,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "ราคา",
+   "page": 244,
+   "props": [
+    [
+     "Column name",
+     "ราคา"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Price"
+    ],
+    [
+     "Type Qualifier",
+     "{\"CurrencySymbol\":\"฿\",\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"DecimalDigits\":2,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=IN([สถานะการเข้ารับสินค้า] ,{\\\"(ได้เพิ่ม200) ไม่มีสินค้าคืน หรือ ร้านปิด\\\",\\\"(ได้เพิ่ม50%) ของค่า เที่ยว\\\",\\\"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\\\",\\\"เบิกค่าขนส่งตาม ระยะทาง\\\",\\\"ทำเบิกค่ายกขึ้น ชั้น\\\"})\",\"Required_If\":null,\"Editable_If\":\"=USERROLE() = \\\"ADMIN\\\"\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=IFS( OR( [สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม200) ไม่มีในจุด ที่ส่งงานวันนี้\", [สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม200) ไม่มีสินค้าคืน หรือร้านปิด\" ), 200, [สถานะการเข้ารับสินค้า] = \"(ไม่ได้เพิ่ม) มีในจุดที่ส่งงานวันนี้\", 0, [สถานะการเข้ารับสินค้า] = \"(ได้เพิ่ม50%) ของค่าเที่ยว\",LOOKUP( [Shipment (หลัก)], \"ราคาในระบบก่อนส่งสินค้า\", \"Shipment No\", \"ราคา\" ) * 0.50, [สถานะการเข้ารับสินค้า] = \"(ทำเบิกค่ายกขึ้นชั้น)\", \"\" )"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 348,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "สร้างPDFรับคืน",
+   "page": 245,
+   "props": [
+    [
+     "Column name",
+     "สร้างPDFรับคืน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=USERROLE() = \\\"ADMIN\\\"\",\"Required_If\":null,\"Editable_If\":\"=USERROLE() = \\\"ADMIN\\\"\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 349,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "TimeChange",
+   "page": 246,
+   "props": [
+    [
+     "Column name",
+     "TimeChange"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "ChangeCounter"
+    ],
+    [
+     "Type Qualifier",
+     "{\"UpdateMode\":\"Accumulate\",\"ChangeColumns\": [],\"ChangeValues\": [],\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 350,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "ตรวจสอบก่อนบันทึกข้อมูล",
+   "page": 247,
+   "props": [
+    [
+     "Column name",
+     "ตรวจสอบก่อนบันทึกข้อมูล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":\"=[ตรวจสอบก่อนบันทึกข้อมูล] >0\",\"Error_Message_If_Invalid\":\"=บันทึกข้อมูลไม่สำเร็จ กรุณา ติดต่อแอดมินเพื่อตรวจ สอบ\",\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=IF( IN([สถานะการเข้ารับสินค้า],{\"เบิกค่าขนส่งตามระยะทาง\",\"ทำ เบิกค่ายกขึ้นชั้น\"}), 1, IF( COUNT( SELECT( ข้อมูลงานRT[เลขที่เอกสารรับคืน], AND( [วันที่เข้ารับ] = [_THISROW].[วันที่เข้ารับ], [ชื่อ -นามสกุล] = [_THISROW].[ชื่อ - นามสกุล], [Shipment (หลัก)] = [_THISROW].[Shipment (หลัก)], [Shipment (รับคืน)] = [_THISROW].[Shipment (รับคืน)], [เลขที่เอกสารรับคืน] = [_THISROW].[เลขที่เอกสารรับคืน] ) ) ) > 0, 1, 0 ) )"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 351,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "เดือน",
+   "page": 248,
+   "props": [
+    [
+     "Column name",
+     "เดือน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=IF( ISBLANK([วันที่เข้ารับ]), \"\", CONCATENATE( YEAR([วันที่เข้ารับ]) - IF(YEAR([วันที่เข้ารับ]) > 2500, 543, 0), \"-\",TEXT([วันที่เข้ารับ],\"MM\") ) )"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 352,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "ID_พนักงาน",
+   "page": 248,
+   "props": [
+    [
+     "Column name",
+     "ID_พนักงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Ref"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ReferencedTableName\": \"ข้อมูลพนักงาน\", \"ReferencedRootTableName\": \"ข้อมูลพนักงาน\", \"ReferencedType\": \"Text\", \"ReferencedTypeQualifier\": \" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\", \"ReferencedKeyColumn\": \"ID_พนักงาน\", \"IsAPartOf\": false, \"RelationshipName\": null, \"InputMode\": \"Auto\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": \"=USERROLE()= \\\"ADMIN\\\"\", \"Required_If\": null, \"Editable_If\": \"=USERROLE() = \\\"ADMIN\\\"\", \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=LOOKUP(USEREMAIL(), \"ข้อมูลพนักงาน\", \"Email พนักงาน\", \"ID_พนักงาน\")"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 353,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "LINK_IMAGE",
+   "page": 249,
+   "props": [
+    [
+     "Column name",
+     "LINK_IMAGE"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=TEXT( LIST( IF(ISNOTBLANK([รูปสินค้า]), CONCATENATE( \"https://www.appsheet.com/template/gettablefileurl?\", \"appName=\", ENCODEURL(\"เผ่าปัญญาทรานสปอร์ต-915154893\"),\"&appId=\", ENCODEURL(\"70999aca-5a1f-4dfc-907b- 417bc046f574\"), \"&tableName=\", ENCODEURL(\"รับงานคืนได้เงิน200\"), \"&fileName=\", ENCODEURL([รูปสินค้า]) ), \"\"), IF(ISNOTBLANK([รูปบิลรับคืน]), CONCATENATE( \"https://www.appsheet.com/template/gettablefileurl?\", \"appName=\", ENCODEURL(\"เผ่าปัญญาทรานสปอร์ต-915154893\"),\"&appId=\", ENCODEURL(\"70999aca-5a1f-4dfc-907b- 417bc046f574\"), \"&tableName=\", ENCODEURL(\"รับงานคืนได้เงิน200\"), \"&fileName=\", ENCODEURL([รูปบิลรับคืน]) ), \"\"), IF(ISNOTBLANK([รูปจุดที่ส่งงาน]), CONCATENATE( \"https://www.appsheet.com/template/gettablefileurl?\", \"appName=\", ENCODEURL(\"เผ่าปัญญาทรานสปอร์ต-915154893\"),\"&appId=\", ENCODEURL(\"70999aca-5a1f-4dfc-907b- 417bc046f574\"), \"&tableName=\", ENCODEURL(\"รับงานคืนได้เงิน200\"), \"&fileName=\", ENCODEURL([รูปจุดที่ส่งงาน]) ), \"\") ) )"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 354,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "column",
+   "name": "รายชื่อจุดส่งในตารางงานประจำวัน",
+   "page": 251,
+   "props": [
+    [
+     "Column name",
+     "รายชื่อจุดส่งในตารางงานประจำวัน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "LongText"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=SUBSTITUTE( ANY( SELECT( ตารางงานประจำวัน[รายชื่อปลายทาง_System], [Shipment No] = IF(ISNOTBLANK([_THISROW]. [Shipment (หลัก)]), [_THISROW].[Shipment (หลัก)], [_THISROW].[Shipment No]) ) ), \", \", \" \" )"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "ข้อมูลงานRT_Schema"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 355,
+   "table": "รับงานคืนได้เงิน200"
+  }
+ ],
+ "actions": [
+  {
+   "type": "action",
+   "name": "Compose Email (Email พนักงาน)",
+   "page": 1825,
+   "props": [
+    [
+     "Action name",
+     "Compose Email (Email พนักงาน)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"EmailTo\":\"[Email พนักงาน]\",\"Subject\":null,\"Body\":null,\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EMAIL"
+    ],
+    [
+     "Attach to column",
+     "Email พนักงาน"
+    ],
+    [
+     "Set this column",
+     "Email พนักงาน"
+    ],
+    [
+     "Only if this condition is true",
+     "NOT(ISBLANK([Email พนักงาน]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "รับงานคืนได้เงิน200"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2555,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "action",
+   "name": "Add",
+   "page": 1826,
+   "props": [
+    [
+     "Action name",
+     "Add"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "ADD_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "รับงานคืนได้เงิน200"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2556,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "action",
+   "name": "Delete",
+   "page": 1838,
+   "props": [
+    [
+     "Action name",
+     "Delete"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "DELETE_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "รับงานคืนได้เงิน200"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ADVANCED"
+    ]
+   ],
+   "order": 2580,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "action",
+   "name": "Edit",
+   "page": 1839,
+   "props": [
+    [
+     "Action name",
+     "Edit"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"DesktopBehavior\":\"Open a form\",\"DesktopEditBehavior\":\"Edit inplace\",\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EDIT_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "รับงานคืนได้เงิน200"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2581,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "action",
+   "name": "View Map (Lat / Long)",
+   "page": 1854,
+   "props": [
+    [
+     "Action name",
+     "View Map (Lat / Long)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"CONCATENATE(\\\"#page=map&table=%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99200&mapcolumn=Lat%20%2F%20Long&row=\\\", ENCODEURL([_THISROW]))\",\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_APP"
+    ],
+    [
+     "Attach to column",
+     "Lat / Long"
+    ],
+    [
+     "Set this column",
+     "Lat / Long"
+    ],
+    [
+     "Only if this condition is true",
+     "NOT(ISBLANK([Lat / Long]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "รับงานคืนได้เงิน200"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2602,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "action",
+   "name": "Chart Data for รับงานคืนได้เงิน200",
+   "page": 1855,
+   "props": [
+    [
+     "Action name",
+     "Chart Data for รับงานคืนได้เงิน200"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"=\\\"#page=fastTable&table=%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%84%E0%B8%B7%E0%B8%99%E0%B9%84%E0%B8%94%E0%B9%89%E0%B9%80%E0%B8%87%E0%B8%B4%E0%B8%99200\\\"\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_APP"
+    ],
+    [
+     "Only if this condition is",
+     "=CONTEXT(\"View\") = \"รับงานคืนได้เงิน200\""
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "Data"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "รับงานคืนได้เงิน200"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2603,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "action",
+   "name": "ส่งรูปจุดที่ส่งงาน",
+   "page": 1859,
+   "props": [
+    [
+     "Action name",
+     "ส่งรูปจุดที่ส่งงาน"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Confirmation Message",
+     "กดส่งรูปจุดที่ส่งงาน เพื่อเข้าสู่ขั้นตอนการเพื่มรูปถ่าย"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"=LINKTOAPP(\\\"1c544f2c-efb8-41ee-8cc5-ac5573f10e5c\\\") \\n& LINKTOROW([ID_รับงานคืนได้เงิน200], \\\"รับงานคืนได้เงิน200_Detail\\\")\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"กดส่งรูปจุดที่ส่งงาน เพื่อเข้าสู่ขั้นตอนการเพื่มรูป ถ่าย\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_DIFFERENT_APP"
+    ],
+    [
+     "Attach to column",
+     "สถานะการเข้ารับสินค้า"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "รับงานคืนได้เงิน200"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2609,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "action",
+   "name": "รับงานคืนได้เงิน200csv",
+   "page": 1899,
+   "props": [
+    [
+     "Action name",
+     "รับงานคืนได้เงิน200csv"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"CsvLocale\":\"en- GB\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EXPORT_VIEW"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "โหลดไฟล์csv"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "รับงานคืนได้เงิน200"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2669,
+   "table": "รับงานคืนได้เงิน200"
+  },
+  {
+   "type": "action",
+   "name": "View Ref (ID_พนักงาน)",
+   "page": 1914,
+   "props": [
+    [
+     "Action name",
+     "View Ref (ID_พนักงาน)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"CONCATENATE(\\\"#page=detail&table=%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99&row=\\\", ENCODEURL([ID_พนักงาน]) )\",\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_APP"
+    ],
+    [
+     "Attach to column",
+     "ID_พนักงาน"
+    ],
+    [
+     "Set this column",
+     "ID_พนักงาน"
+    ],
+    [
+     "Only if this condition is true",
+     "NOT(ISBLANK([ID_พนักงาน]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "รับงานคืนได้เงิน200"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2692,
+   "table": "รับงานคืนได้เงิน200"
+  }
+ ],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

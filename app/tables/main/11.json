@@ -1,0 +1,3586 @@
+{
+ "table": "แจ้งปัญหาระหว่างวัน",
+ "kind": "main",
+ "domain": "D06",
+ "domain_title": "แจ้งปัญหาระหว่างวัน (Issue Reporting)",
+ "file": "app/tables/main/11.json",
+ "table_record": {
+  "type": "table",
+  "name": "แจ้งปัญหาระหว่างวัน",
+  "page": 6,
+  "props": [
+   [
+    "Table name",
+    "แจ้งปัญหาระหว่างวัน"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Shared?",
+    "Yes"
+   ],
+   [
+    "Data locale",
+    "en-GB"
+   ],
+   [
+    "Schema",
+    "แจ้งปัญหาระหว่างวัน_Schema"
+   ],
+   [
+    "Are updates allowed?",
+    "ALL_CHANGES"
+   ],
+   [
+    "Expression for update mode",
+    "=SWITCH(USERROLE(), \"ADMIN\", \"ALL_CHANGES\", \"USER\",\"ADDS_AND_UPDATES\", \"READ_ONLY\")"
+   ],
+   [
+    "Security filter",
+    "=OR(USERROLE() = \"ADMIN\", [Email พนักงาน] = USEREMAIL())"
+   ],
+   [
+    "Source Path",
+    "เผ่าปัญญา ทรานสปอร์ต"
+   ],
+   [
+    "Worksheet Name/Qualifier แจ้งปั",
+    "google"
+   ],
+   [
+    "Store for image and file capture",
+    "_Default"
+   ],
+   [
+    "Column Order List",
+    "_RowNumber"
+   ],
+   [
+    "Partitioned across many files/sources?",
+    "No"
+   ],
+   [
+    "Partitioned across many worksheets?",
+    "No"
+   ]
+  ],
+  "order": 10,
+  "table": null
+ },
+ "columns": [
+  {
+   "type": "column",
+   "name": "_RowNumber",
+   "page": 204,
+   "props": [
+    [
+     "Column name",
+     "_RowNumber"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Description",
+     "Number of this row"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\":null,\"MinValue\":null,\"StepValue\":null,\"NumericDigits\":null,\"ShowThousandsSeparator\":true,\"NumberDisplayMode\":\"Auto\",\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "Yes"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "Yes"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "Yes"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 298,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "ID_แจ้งปัญหาระหว่างวัน",
+   "page": 205,
+   "props": [
+    [
+     "Column name",
+     "ID_แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "Yes"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "UNIQUEID()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "Yes"
+    ],
+    [
+     "Part of Key?",
+     "Yes"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 299,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "กดปุ่มนี้เพื่อส่งข้อมูลแจ้งปัญหา",
+   "page": 206,
+   "props": [
+    [
+     "Column name",
+     "กดปุ่มนี้เพื่อส่งข้อมูลแจ้งปัญหา"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":\"=OR(\\n ISBLANK([กดปุ่มนี้เพื่อส่งข้อมูลแจ้งปัญหา]),\\n NOT([กดปุ่มนี้เพื่อส่งข้อมูลแจ้ง ปัญหา])\\n)\",\"Error_Message_If_Invalid\":null,\"Show_If\":\"=AND(\\nISNOTBLANK([รูป1]),\\n ISNOTBLANK([รูป2]),\\n ISNOTBLANK([รูป3]),\\n NOT([กดปุ่มนี้เพื่อส่งข้อมูลแจ้ง ปัญหา])\\n)\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=false"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 300,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "ข้อมูลการแจ้งปัญหา",
+   "page": 206,
+   "props": [
+    [
+     "Column name",
+     "ข้อมูลการแจ้งปัญหา"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Enum"
+    ],
+    [
+     "Type Qualifier",
+     "{\"EnumValues\":[\"สินค้าชำรุด ตอนขึ้นงาน แจ้งคลังตรวจสอบแล้ว ทางคลังไม่เซ็นรับทราบให้ แจ้งเพื่อทราบครับ\",\"ถังน้ำมัน 200 ลิตร สินค้ามีน้ำหนักเกินกลัวจะเสียหายตอนจัดส่ง สอบถามลูกค้าแล้วไม่มีรถตักสินค้าให้ครับ \",\"ลูกค้าไม่รับสาย ติดต่อ 3 ครั้งแล้ว\",\"ร้าน ปิด\",\"เบอร์โทรผิด ขอเบอร์ติดต่อลูกค้าใหม่ครับ\",\"ติดต่อลูกค้าไม่ได้เข้าหน้างานไม่ถูก ขอโลเคชั่น และ เบอร์โทรติดต่อใหม่ครับ\",\"ที่อยู่หน้าเอกสารกับที่อยู่หน้ากล่องไม่ตรงกัน ให้จัดส่งที่ใหนครับ\",\"ที่อยู่ผิด\",\"สินค้าเสียหาย / ชำรุด\",\"ลูกค้าไม่สะดวกรับสินค้า\",\"จัดส่งสินค้า ไม่ทัน\",\"ไม่มีในจุดส่งงานวันนี้ไม่สามารถเข้ารับงานคืนให้ได้\",\"ปัญหาอื่นๆๆ *ใส่ปัญหาใน หมายเหตุ*\"],\"AllowOtherValues\":false,\"AutoCompleteOtherValues\":false,\"BaseType\":\"Text\",\"BaseTypeQualifier\":\" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\",\"EnumInputMode\":\"Dropdown\",\"Valid_If\":\"\",\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":\"\"}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 301,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "รูป1",
+   "page": 207,
+   "props": [
+    [
+     "Column name",
+     "รูป1"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 302,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "รูป2",
+   "page": 208,
+   "props": [
+    [
+     "Column name",
+     "รูป2"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 303,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "รูป3",
+   "page": 209,
+   "props": [
+    [
+     "Column name",
+     "รูป3"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 304,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "หมายเหตุ",
+   "page": 209,
+   "props": [
+    [
+     "Column name",
+     "หมายเหตุ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "LongText"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 305,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "วันที่+เวลา",
+   "page": 210,
+   "props": [
+    [
+     "Column name",
+     "วันที่+เวลา"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "DateTime"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MinValue\":null,\"MaxValue\":null,\"UseLongDateFormat\":false,\"IgnoreSeconds\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":\"=USERROLE() = \\\"ADMIN\\\"\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=NOW()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 306,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อ - นามสกุล",
+   "page": 211,
+   "props": [
+    [
+     "Column name",
+     "ชื่อ - นามสกุล"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":\"\",\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=[ID_พนักงาน].[ชื่อ - นามสกุล]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 307,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "ทะเบียนรถ",
+   "page": 212,
+   "props": [
+    [
+     "Column name",
+     "ทะเบียนรถ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=[ID_พนักงาน].[ทะเบียนรถ]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 308,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "รหัสผู้รับเหมา",
+   "page": 212,
+   "props": [
+    [
+     "Column name",
+     "รหัสผู้รับเหมา"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=ISNOTBLANK([Invoice No])\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=[SM_Link].[รหัสผู้รับเหมา]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 309,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อผู้รับเหมา",
+   "page": 213,
+   "props": [
+    [
+     "Column name",
+     "ชื่อผู้รับเหมา"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=ISNOTBLANK([Invoice No])\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=[SM_Link].[ชื่อผู้รับเหมา]"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 310,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "Shipment No",
+   "page": 214,
+   "props": [
+    [
+     "Column name",
+     "Shipment No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Number"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxValue\": null, \"MinValue\": null, \"StepValue\": null, \"NumericDigits\": null, \"ShowThousandsSeparator\": false, \"NumberDisplayMode\": \"Auto\", \"Valid_If\": \"=IF(USERROLE() = \\\"ADMIN\\\",\\n (SM_Today_User[Shipment No] + \\n SELECT(ข้อมูลงานRT[Shipment (รับคืน)], [วันที่เข้ารับ] =TODAY())),\\n IF([ข้อมูลการแจ้งปัญหา] = \\\"ไม่มีในจุดส่งงานวันนี้ไม่สามารถเข้ารับงานคืนให้ได้\\\",\\n SELECT(ข้อมูลงานRT[Shipment (รับคืน)], \\n AND([Emailพนักงาน] = USEREMAIL(), [วันที่เข้ารับ] =TODAY())\\n ),\\n SM_Today_User[Shipment No]\\n )\\n)\", \"Error_Message_If_Invalid\": null, \"Show_If\": \"\", \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 311,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "Invoice No",
+   "page": 215,
+   "props": [
+    [
+     "Column name",
+     "Invoice No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "EnumList"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ItemSeparator\": \",\", \"EnumValues\": [], \"AllowOtherValues\": true, \"AutoCompleteOtherValues\": true, \"BaseType\": \"Text\", \"BaseTypeQualifier\": \" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\", \"EnumInputMode\": \"Dropdown\", \"Valid_If\": \"=UNIQUE(\\n IF(USERROLE() = \\\"ADMIN\\\",\\n SELECT(ตารางงานประจำวัน[Invoice No], [Shipment No] = [_THISROW].[Shipment No]) +\\n SELECT(ข้อมูลงานRT[เลขที่เอกสารรับคืน], [Shipment (รับคืน)] = [_THISROW].[Shipment No]),\\n IF([ข้อมูลการแจ้งปัญหา] = \\\"ไม่มีในจุดส่งงานวันนี้ไม่สามารถเข้ารับงานคืนให้ได้\\\",\\n SELECT(ข้อมูลงานRT[เลขที่เอกสารรับคืน],\\n AND(\\n [Shipment (รับคืน)] = [_THISROW].[Shipment No],\\n [Email พนักงาน] = USEREMAIL(),\\n [วันที่เข้ารับ] = TODAY()\\n )\\n ),\\n SELECT(SM_Today_User[Invoice No], \\n AND(\\n [Shipment No] = [_THISROW].[Shipment No],\\n [DeliveryStatus] <> \\\"จัดส่งเรียบร้อย\\\",\\n NOT(IN([Invoice No], SELECT(แจ้งปัญหาระหว่างวัน[Invoice No], [Shipment No] = [_THISROW].[Shipment No])))\\n )\\n )\\n )\\n ) \\n + [_THISROW].[Invoice No]\\n) - LIST(\\\"\\\")\", \"Error_Message_If_Invalid\": null, \"Show_If\": null, \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": null, \"Suggested_Values\": \"\"}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 312,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "รหัสลูกค้า",
+   "page": 216,
+   "props": [
+    [
+     "Column name",
+     "รหัสลูกค้า"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=ISNOTBLANK([Invoice No])\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=IF(ISNOTBLANK([SM_Link]), [SM_Link].[รหัสลูกค้า], IF(ISNOTBLANK([RT_Link]), [RT_Link].[รหัสลูกค้า], \"ไม่พบข้อมูล\" ))"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 313,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "ชื่อปลายทาง",
+   "page": 217,
+   "props": [
+    [
+     "Column name",
+     "ชื่อปลายทาง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=ISNOTBLANK([Invoice No])\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=IF(ISNOTBLANK([SM_Link]), [SM_Link].[ชื่อปลายทาง], IF(ISNOTBLANK([RT_Link]), [RT_Link].[ชื่อลูกค้าที่เข้ารับ], \"ไม่พบข้อมูล\" ) )"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 314,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "ใส่ข้อมูลการแจ้งปัญหา เพื่อนับจุดส่งงาน",
+   "page": 217,
+   "props": [
+    [
+     "Column name",
+     "ใส่ข้อมูลการแจ้งปัญหา เพื่อนับจุดส่งงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "LongText"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":\"=ISNOTBLANK([เพิ่มรูปแคปหน้าจอ นำกลับคืน คลัง])\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 315,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "เพิ่มรูปแคปหน้าจอ นำกลับคืนคลัง",
+   "page": 218,
+   "props": [
+    [
+     "Column name",
+     "เพิ่มรูปแคปหน้าจอ นำกลับคืนคลัง"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Image"
+    ],
+    [
+     "Type Qualifier",
+     "{\"AllowDrawing\":false,\"FolderLocation\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 316,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "อัพเดตข้อมูลการแจ้งปัญหา ไป ตารางส่งงานSCG",
+   "page": 219,
+   "props": [
+    [
+     "Column name",
+     "อัพเดตข้อมูลการแจ้งปัญหา ไป ตารางส่งงานSCG"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Yes/No"
+    ],
+    [
+     "Type Qualifier",
+     "{\"YesLabel\":\"\",\"NoLabel\":\"\",\"Valid_If\":\"=OR(\\n ISBLANK([อัพเดต ข้อมูลการแจ้งปัญหา ไป ตารางส่งงานSCG]),\\n NOT([อัพเดตข้อมูลการแจ้งปัญหา ไป ตารางส่ง งานSCG])\\n)\",\"Error_Message_If_Invalid\":\"\",\"Show_If\":\"=AND(\\nISNOTBLANK([ใส่ข้อมูลการแจ้งปัญหา เพื่อนับจุดส่งงาน]),\\n ISNOTBLANK([เพิ่มรูปแคปหน้าจอ นำกลับคืนคลัง]),\\n NOT([อัพเดตข้อมูลการแจ้งปัญหา ไป ตารางส่ง งานSCG])\\n)\",\"Required_If\":null,\"Editable_If\":\"\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=false"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 317,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "Lat/Long",
+   "page": 220,
+   "props": [
+    [
+     "Column name",
+     "Lat/Long"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "LatLong"
+    ],
+    [
+     "Type Qualifier",
+     "{\"RealTime\":false,\"PublishIfRowKey\":null,\"KMLFileUrl\":null,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=HERE()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 318,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "LatLong_ตรวจสอบ",
+   "page": 220,
+   "props": [
+    [
+     "Column name",
+     "LatLong_ตรวจสอบ"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "LatLong"
+    ],
+    [
+     "Type Qualifier",
+     "{\"RealTime\":false,\"PublishIfRowKey\":null,\"KMLFileUrl\":null,\"Valid_If\":\"\",\"Error_Message_If_Invalid\":\"\",\"Show_If\":\"\",\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":\"=ISNOTBLANK([เพิ่มรูปแคปหน้าจอ นำกลับคืนคลัง])\",\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "=ISNOTBLANK([เพิ่มรูปแคปหน้าจอ นำกลับคืนคลัง])"
+    ],
+    [
+     "Initial value",
+     "=HERE()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "No"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 319,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "Email พนักงาน",
+   "page": 221,
+   "props": [
+    [
+     "Column name",
+     "Email พนักงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Email"
+    ],
+    [
+     "Type Qualifier",
+     "{\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":\"=USERROLE() = \\\"ADMIN\\\"\",\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=USEREMAIL()"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 320,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "เดือน",
+   "page": 222,
+   "props": [
+    [
+     "Column name",
+     "เดือน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=IF( ISBLANK([วันที่+เวลา]), \"\", (YEAR(DATE([วันที่+เวลา])) - IF(YEAR(DATE([วันที่+เวลา])) > 2500, 543, 0)) & \"-\" & TEXT(DATE([วันที่+เวลา]), \"MM\") )"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 321,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "SM_Link",
+   "page": 222,
+   "props": [
+    [
+     "Column name",
+     "SM_Link"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Ref"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ReferencedTableName\": \"ตารางงานประจำวัน\", \"ReferencedRootTableName\": \"ตารางงานประจำวัน\", \"ReferencedType\": \"Text\", \"ReferencedTypeQualifier\": \" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\", \"ReferencedKeyColumn\": \"ID_งานประจำ วัน\", \"IsAPartOf\": false, \"RelationshipName\": null, \"InputMode\": \"Auto\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": null, \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=ANY(SELECT(ตารางงานประจำวัน[ID_งานประจำวัน], AND([Invoice No] = ANY([_THISROW].[Invoice No]), [_ROWNUMBER] = MIN(SELECT(ตารางงานประจำวัน[_ROWNUMBER], [Invoice No] = ANY([_THISROW].[Invoice No]))))))"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 322,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "RT_Link",
+   "page": 223,
+   "props": [
+    [
+     "Column name",
+     "RT_Link"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Ref"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ReferencedTableName\": \"ข้อมูลงานRT\", \"ReferencedRootTableName\": \"ข้อมูลงานRT\", \"ReferencedType\": \"Text\", \"ReferencedTypeQualifier\": \" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\", \"ReferencedKeyColumn\": \"ID_RT\", \"IsAPartOf\": false, \"RelationshipName\": null, \"InputMode\": \"Auto\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": null, \"Required_If\": null, \"Editable_If\": null, \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=ANY(SELECT(ข้อมูลงานRT[ID_RT], [เลขที่เอกสารรับคืน] = ANY([_THISROW].[Invoice No])))"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 323,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "SCGนครหลวงJWDภูมิภาค_ID",
+   "page": 224,
+   "props": [
+    [
+     "Column name",
+     "SCGนครหลวงJWDภูมิภาค_ID"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 324,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "ID_พนักงาน",
+   "page": 225,
+   "props": [
+    [
+     "Column name",
+     "ID_พนักงาน"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Ref"
+    ],
+    [
+     "Type Qualifier",
+     "{\"ReferencedTableName\": \"ข้อมูลพนักงาน\", \"ReferencedRootTableName\": \"ข้อมูลพนักงาน\", \"ReferencedType\": \"Text\", \"ReferencedTypeQualifier\": \" {\\\"MaxLength\\\":null,\\\"MinLength\\\":null,\\\"LongTextFormatting\\\":\\\"Plain Text\\\",\\\"IsMulticolumnKey\\\":false,\\\"Valid_If\\\":null,\\\"Error_Message_If_Invalid\\\":null,\\\"Show_If\\\":null,\\\"Required_If\\\":null,\\\"Editable_If\\\":null,\\\"Reset_If\\\":null,\\\"Suggested_Values\\\":null}\", \"ReferencedKeyColumn\": \"ID_พนักงาน\", \"IsAPartOf\": false, \"RelationshipName\": null, \"InputMode\": \"Auto\", \"Valid_If\": null, \"Error_Message_If_Invalid\": null, \"Show_If\": \"=USERROLE()= \\\"ADMIN\\\"\", \"Required_If\": null, \"Editable_If\": \"=USERROLE() = \\\"ADMIN\\\"\", \"Reset_If\": null, \"Suggested_Values\": null}"
+    ],
+    [
+     "Read-Only",
+     "No"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "Initial value",
+     "=LOOKUP(USEREMAIL(), \"ข้อมูลพนักงาน\", \"Email พนักงาน\", \"ID_พนักงาน\")"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "No"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ]
+   ],
+   "order": 325,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "column",
+   "name": "LINK_Image_แจ้งปัญหา",
+   "page": 226,
+   "props": [
+    [
+     "Column name",
+     "LINK_Image_แจ้งปัญหา"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ],
+    [
+     "Type",
+     "Text"
+    ],
+    [
+     "Type Qualifier",
+     "{\"MaxLength\":null,\"MinLength\":null,\"LongTextFormatting\":\"PlainText\",\"IsMulticolumnKey\":false,\"Valid_If\":null,\"Error_Message_If_Invalid\":null,\"Show_If\":null,\"Required_If\":null,\"Editable_If\":null,\"Reset_If\":null,\"Suggested_Values\":null}"
+    ],
+    [
+     "App formula",
+     "=TEXT( LIST( IF(ISNOTBLANK([รูป1]), CONCATENATE( \"https://www.appsheet.com/template/gettablefileurl?\", \"appName=\", ENCODEURL(\"เผ่าปัญญาทรานสปอร์ต-915154893\"),\"&appId=\", ENCODEURL(\"70999aca-5a1f-4dfc-907b- 417bc046f574\"), \"&tableName=\", ENCODEURL(\"แจ้งปัญหา ระหว่างวัน\"), \"&fileName=\", ENCODEURL([รูป1]) ), \"\"), IF(ISNOTBLANK([รูป2]), CONCATENATE( \"https://www.appsheet.com/template/gettablefileurl?\", \"appName=\", ENCODEURL(\"เผ่าปัญญาทรานสปอร์ต-915154893\"),\"&appId=\", ENCODEURL(\"70999aca-5a1f-4dfc-907b- 417bc046f574\"), \"&tableName=\", ENCODEURL(\"แจ้งปัญหา ระหว่างวัน\"), \"&fileName=\", ENCODEURL([รูป2]) ), \"\"), IF(ISNOTBLANK([รูป3]), CONCATENATE( \"https://www.appsheet.com/template/gettablefileurl?\", \"appName=\", ENCODEURL(\"เผ่าปัญญาทรานสปอร์ต-915154893\"),\"&appId=\", ENCODEURL(\"70999aca-5a1f-4dfc-907b- 417bc046f574\"), \"&tableName=\", ENCODEURL(\"แจ้งปัญหา ระหว่างวัน\"), \"&fileName=\", ENCODEURL([รูป3]) ), \"\") ) )"
+    ],
+    [
+     "Read-Only",
+     "Yes"
+    ],
+    [
+     "Hidden",
+     "No"
+    ],
+    [
+     "Label",
+     "No"
+    ],
+    [
+     "Formula version",
+     "0"
+    ],
+    [
+     "Reset on edit?",
+     "No"
+    ],
+    [
+     "System Defined?",
+     "No"
+    ],
+    [
+     "Key",
+     "No"
+    ],
+    [
+     "Part of Key?",
+     "No"
+    ],
+    [
+     "Fixed definition?",
+     "No"
+    ],
+    [
+     "Editable Initial Value?",
+     "Yes"
+    ],
+    [
+     "Virtual?",
+     "Yes"
+    ],
+    [
+     "LocaleName",
+     "en-GB"
+    ],
+    [
+     "Searchable",
+     "Yes"
+    ],
+    [
+     "Scannable",
+     "No"
+    ],
+    [
+     "Sensitive data",
+     "No"
+    ],
+    [
+     "Schema Name",
+     "รับงานคืนได้เงิน200_Schema"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 326,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  }
+ ],
+ "actions": [
+  {
+   "type": "action",
+   "name": "Edit",
+   "page": 1821,
+   "props": [
+    [
+     "Action name",
+     "Edit"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"DesktopBehavior\":\"Open a form\",\"DesktopEditBehavior\":\"Edit inplace\",\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EDIT_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2547,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "Compose Email (Email พนักงาน)",
+   "page": 1822,
+   "props": [
+    [
+     "Action name",
+     "Compose Email (Email พนักงาน)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"EmailTo\":\"[Email พนักงาน]\",\"Subject\":null,\"Body\":null,\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EMAIL"
+    ],
+    [
+     "Attach to column",
+     "Email พนักงาน"
+    ],
+    [
+     "Set this column",
+     "Email พนักงาน"
+    ],
+    [
+     "Only if this condition is",
+     "NOT(ISBLANK([Email พนักงาน]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2548,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "Add",
+   "page": 1822,
+   "props": [
+    [
+     "Action name",
+     "Add"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Overlay"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Prominence\":\"Display_Overlay\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "ADD_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2549,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "Delete",
+   "page": 1838,
+   "props": [
+    [
+     "Action name",
+     "Delete"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"InputParametersUsed\":null,\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "DELETE_RECORD"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ADVANCED"
+    ]
+   ],
+   "order": 2579,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "ส่งรูปแจ้งปัญหา",
+   "page": 1862,
+   "props": [
+    [
+     "Action name",
+     "ส่งรูปแจ้งปัญหา"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Confirmation Message",
+     "กดส่งรูปแจ้งปัญหา เพื่อเข้าสู่ขั้นตอนการเพื่มรูปถ่าย"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "Yes"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"=LINKTOAPP(\\\"1c544f2c-efb8-41ee-8cc5-ac5573f10e5c\\\") \\n& LINKTOROW([ID_แจ้งปัญหาระหว่างวัน], \\\"แจ้งปัญหาระหว่าง วัน_Detail\\\")\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":true,\"ConfirmationMessage\":\"กดส่งรูปแจ้งปัญหา เพื่อเข้าสู่ขั้นตอนการเพื่มรูป ถ่าย\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_DIFFERENT_APP"
+    ],
+    [
+     "Attach to column",
+     "ID_วางบิล"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2613,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "View Map (Lat/Long)",
+   "page": 1886,
+   "props": [
+    [
+     "Action name",
+     "View Map (Lat/Long)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"CONCATENATE(\\\"#page=map&table=%E0%B9%81%E0%B8%88%E0%B9%89%E0%B8%87%E0%B8%9B%E0%B8%B1%E0%B8%8D%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99&mapcolumn=Lat%2FLong&row=\\\", ENCODEURL([_THISROW]))\",\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_APP"
+    ],
+    [
+     "Attach to column",
+     "Lat/Long"
+    ],
+    [
+     "Set this column",
+     "Lat/Long"
+    ],
+    [
+     "Only if this condition is true",
+     "NOT(ISBLANK([Lat/Long]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2649,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "เพิ่มข้อมูลแจ้งปัญหาในจุดส่งงาน",
+   "page": 1887,
+   "props": [
+    [
+     "Action name",
+     "เพิ่มข้อมูลแจ้งปัญหาในจุดส่งงาน"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"ReferencedTable\":\"SCGนครหลวงJWDภูมิภาค\",\"Assignments\":[{\"ColumnToEdit\":\"head\",\"NewColumnValue\":\"=[หมายเหตุ]\"}, {\"ColumnToEdit\":\"ID_SCGนครหลวงJWDภูมิภาค\",\"NewColumnValue\":\"=UNIQUEID()\"},{\"ColumnToEdit\":\"วันที่ส่ง สินค้า\",\"NewColumnValue\":\"=TODAY()\"},{\"ColumnToEdit\":\"เวลาที่ส่งสินค้า\",\"NewColumnValue\":\"=TIME([วันที่+เวลา])\"}, {\"ColumnToEdit\":\"จุดส่งสินค้าปลายทาง\",\"NewColumnValue\":\"= [Lat/Long]\"},{\"ColumnToEdit\":\"Shipment No\",\"NewColumnValue\":\"=[Shipment No]\"}, {\"ColumnToEdit\":\"Invoice No\",\"NewColumnValue\":\"=SPLIT(TEXT([Invoice No]), \\\" , \\\")\"}, {\"ColumnToEdit\":\"รูปถ่ายบิลส่งสินค้า\",\"NewColumnValue\":\"= [รูป1]\"},{\"ColumnToEdit\":\"รูปสินค้าตอนส่ง\",\"NewColumnValue\":\"=[รูป2]\"},{\"ColumnToEdit\":\"รูปหน้าร้าน / บ้าน\",\"NewColumnValue\":\"=[เพิ่มรูปแคปหน้าจอ นำกลับคืนคลัง]\"}, {\"ColumnToEdit\":\"หมายเหตุ\",\"NewColumnValue\":\"=[ใส่ข้อมูลการแจ้งปัญหา เพื่อนับจุดส่งงาน]\"}, {\"ColumnToEdit\":\"ID_พนักงาน\",\"NewColumnValue\":\"= [ID_พนักงาน]\"},{\"ColumnToEdit\":\"Email พนักงาน\",\"NewColumnValue\":\"=[Email พนักงาน]\"}, {\"ColumnToEdit\":\"SM_Link_SCG\",\"NewColumnValue\":\"= [SM_Link]\"},{\"ColumnToEdit\":\"พิกัดตอนกดบันทึก งาน\",\"NewColumnValue\":\"=[LatLong_ตรวจสอบ]\"}, {\"ColumnToEdit\":\"เวลาบันทึกงาน สำเร็จ\",\"NewColumnValue\":\"=TIMENOW()\"}],\"InputParametersUsed\":null,\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "ADD_RECORD_TO"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2650,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "แจ้งปัญหาระหว่างวันcsv",
+   "page": 1895,
+   "props": [
+    [
+     "Action name",
+     "แจ้งปัญหาระหว่างวันcsv"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Prominently"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"CsvLocale\":\"en- GB\",\"Prominence\":\"Display_Prominently\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "EXPORT_VIEW"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Display name",
+     "โหลดไฟล์csv"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "Yes"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2662,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "View Ref (SM_Link)",
+   "page": 1906,
+   "props": [
+    [
+     "Action name",
+     "View Ref (SM_Link)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"CONCATENATE(\\\"#page=detail&table=%E0%B8%95%E0%B8%B2%E0%B8%A3%E0%B8%B2%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%A7%E0%B8%B1%E0%B8%99&row=\\\", ENCODEURL([SM_Link]) )\",\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_APP"
+    ],
+    [
+     "Attach to column",
+     "SM_Link"
+    ],
+    [
+     "Set this column",
+     "SM_Link"
+    ],
+    [
+     "Only if this condition is true",
+     "NOT(ISBLANK([SM_Link]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2680,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "View Ref (RT_Link)",
+   "page": 1907,
+   "props": [
+    [
+     "Action name",
+     "View Ref (RT_Link)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"CONCATENATE(\\\"#page=detail&table=%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%87%E0%B8%B2%E0%B8%99RT&row=\\\", ENCODEURL([RT_Link]) )\",\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_APP"
+    ],
+    [
+     "Attach to column",
+     "RT_Link"
+    ],
+    [
+     "Set this column",
+     "RT_Link"
+    ],
+    [
+     "Only if this condition is",
+     "NOT(ISBLANK([RT_Link]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2681,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "ACT_Create_SCG_Flow",
+   "page": 1911,
+   "props": [
+    [
+     "Action name",
+     "ACT_Create_SCG_Flow"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "Yes"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"Actions\":[{\"ActionName\":\"เพิ่มข้อมูลแจ้งปัญหาในจุดส่งงาน\"}, {\"ActionName\":\"New Action\"}],\"Prominence\":\"Do_Not_Display\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":true,\"BulkApplicable\":true}"
+    ],
+    [
+     "Do this",
+     "COMPOSITE"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2688,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "New Action",
+   "page": 1912,
+   "props": [
+    [
+     "Action name",
+     "New Action"
+    ],
+    [
+     "Bulk action?",
+     "Yes"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Do_Not_Display"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"ReferencedTable\": \"ตารางงานประจำวัน\", \"ReferencedRows\": \"=SELECT(ตารางงานประจำวัน[ID_งานประจำวัน], \\n IN([Invoice No], [_THISROW].[Invoice No])\\n)\", \"ReferencedAction\": \"Mark_As_Delivered_not\", \"InputAssignments\": [], \"InputParametersUsed\": null, \"Prominence\": \"Do_Not_Display\", \"NeedsConfirmation\": false, \"ConfirmationMessage\": \"\", \"ModifiesData\": false, \"BulkApplicable\": true}"
+    ],
+    [
+     "Do this",
+     "REF_ACTION"
+    ],
+    [
+     "Only if this condition is true",
+     "true"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2689,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "View Ref (ID_พนักงาน)",
+   "page": 1915,
+   "props": [
+    [
+     "Action name",
+     "View Ref (ID_พนักงาน)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"CONCATENATE(\\\"#page=detail&table=%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%A1%E0%B8%B9%E0%B8%A5%E0%B8%9E%E0%B8%99%E0%B8%B1%E0%B8%81%E0%B8%87%E0%B8%B2%E0%B8%99&row=\\\", ENCODEURL([ID_พนักงาน]) )\",\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_APP"
+    ],
+    [
+     "Attach to column",
+     "ID_พนักงาน"
+    ],
+    [
+     "Set this column",
+     "ID_พนักงาน"
+    ],
+    [
+     "Only if this condition is",
+     "NOT(ISBLANK([ID_พนักงาน]))"
+    ],
+    [
+     "Disable automatic",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2693,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  },
+  {
+   "type": "action",
+   "name": "View Map (LatLong_ตรวจสอบ)",
+   "page": 1920,
+   "props": [
+    [
+     "Action name",
+     "View Map (LatLong_ตรวจสอบ)"
+    ],
+    [
+     "Bulk action?",
+     "No"
+    ],
+    [
+     "Modifies data?",
+     "No"
+    ],
+    [
+     "Needs confirmation?",
+     "No"
+    ],
+    [
+     "Prominence",
+     "Display_Inline"
+    ],
+    [
+     "Action order",
+     "1"
+    ],
+    [
+     "With these properties",
+     "{\"NavigateTarget\":\"CONCATENATE(\\\"#page=map&table=%E0%B9%81%E0%B8%88%E0%B9%89%E0%B8%87%E0%B8%9B%E0%B8%B1%E0%B8%8D%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%B0%E0%B8%AB%E0%B8%A7%E0%B9%88%E0%B8%B2%E0%B8%87%E0%B8%A7%E0%B8%B1%E0%B8%99&mapcolumn=LatLong_%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A&row=\\\", ENCODEURL([_THISROW]))\",\"Prominence\":\"Display_Inline\",\"NeedsConfirmation\":false,\"ConfirmationMessage\":\"\",\"ModifiesData\":false,\"BulkApplicable\":false}"
+    ],
+    [
+     "Do this",
+     "NAVIGATE_APP"
+    ],
+    [
+     "Attach to column",
+     "LatLong_ตรวจสอบ"
+    ],
+    [
+     "Set this column",
+     "LatLong_ตรวจสอบ"
+    ],
+    [
+     "Only if this condition is true",
+     "NOT(ISBLANK([LatLong_ตรวจสอบ]))"
+    ],
+    [
+     "Disable automatic updates?",
+     "No"
+    ],
+    [
+     "Action icon",
+     ""
+    ],
+    [
+     "For a record of this table",
+     "แจ้งปัญหาระหว่างวัน"
+    ],
+    [
+     "Does this action apply to the whole table?",
+     "No"
+    ],
+    [
+     "Visible?",
+     "ALWAYS"
+    ]
+   ],
+   "order": 2701,
+   "table": "แจ้งปัญหาระหว่างวัน"
+  }
+ ],
+ "views": [],
+ "slices": [],
+ "format_rules": []
+}

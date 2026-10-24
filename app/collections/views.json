@@ -1,0 +1,4917 @@
+[
+ {
+  "type": "view",
+  "name": "Scan 📋",
+  "page": 1742,
+  "props": [
+   [
+    "View name",
+    "Scan 📋"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "left"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\": [\"Scan_Invoice\",\"Select_Invoice\"],\"AutoSave\":false,\"AutoReopen\":true,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2402,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "หน้าหลัก",
+  "page": 1742,
+  "props": [
+   [
+    "View name",
+    "หน้าหลัก"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "gallery"
+   ],
+   [
+    "ActionType",
+    "Medium"
+   ],
+   [
+    "Position",
+    "right"
+   ],
+   [
+    "View configuration",
+    "{\"ImageSize\":\"Medium\",\"ActionBarEntries\":[],\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"GoToView\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2403,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ฟอร์มรับทราบประกาศ",
+  "page": 1742,
+  "props": [
+   [
+    "View name",
+    "ฟอร์มรับทราบประกาศ"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "right"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":[\"ข้อความประกาศ\",\"หมายเหตุ\",\"เลือกเพื่อยืนยัน\",\"ลงชื่อพนักงาน\",\"วันที่และเวลารับทราบ\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"Email พนักงาน\"],\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fas fa-home- heart\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ],
+   [
+    "Show if",
+    "=COUNT( SELECT( Announcements[ID_ประกาศ], NOT(IN([ID_ประกาศ], SELECT(Acknowledge_Logs[ID_ประกาศ], [Email พนักงาน] = USEREMAIL()))) ) ) > 0"
+   ]
+  ],
+  "order": 2404,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "รอการอนุมัติ",
+  "page": 1743,
+  "props": [
+   [
+    "View name",
+    "รอการอนุมัติ"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "right most"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\":[\"วันที่\",\"ชื่องาน\",\"ชื่อ - นามสกุล\",\"ราคา\",\"ราคาก่อนส่งสินค้า\",\"ราคาหลังส่ง สินค้า\",\"ราคาในระบบหลังส่งสินค้า\",\"Shipment No\",\"ราคาตามระยะ ทาง\",\"ราคาจุดเพิ่ม\",\"ราคาเพิ่ม\",\"สถานะการอนุมัติ\",\"พิมอธิบายทุกอย่างที่สำคัญ\",\"ทะเบียนรถ\",\"สถานที่รับงาน (ต้นทาง)\",\"สถานที่ส่งงาน (ปลาย ทาง)\",\"จำนวนร้านที่ยกขึ้นชั้น\",\"ระยะทางที่วิ่ง (KM)\",\"จำนวนจุดรับ / จุด ส่ง\",\"เลือกเพิ่มเติม\",\"รูปถ่ายหลังรถตอนขึ้นสินค้าเสร็จ\",\"รูปถ่ายบิลงาน\",\"รูปถ่ายบิลงานเพิ่ม1\",\"รูปถ่ายบิลงานเพิ่ม2\",\"เดือน\",\"เรทดีเซล\",\"Email ผู้อนุมัติ\"],\"GroupBy\":[{\"Column\":\"เดือน\",\"Order\":\"Descending\"}, {\"Column\":\"สถานะการอนุมัติ\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"COUNT\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"far fa- star\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ],
+   [
+    "Show if",
+    "=USERROLE() = \"ADMIN\""
+   ]
+  ],
+  "order": 2405,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "📦 สรุป_Shipment",
+  "page": 1744,
+  "props": [
+   [
+    "View name",
+    "📦 สรุป_Shipment App owner"
+   ],
+   [
+    "View type",
+    "deck"
+   ],
+   [
+    "ActionType",
+    "Square Image"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"MainDeckImageColumn\":\"**auto**\",\"ImageShape\":\"Square Image\",\"PrimaryDeckHeaderColumn\":\"ShipmentKey\",\"SecondaryDeckHeaderColumn\":\"สรุป ยอด\",\"DeckSummaryColumn\":\"PlanDelivery\",\"DeckNestedTableColumn\":\"**none**\",\"ShowActionBar\":true,\"ActionColumns\": [],\"ActionBarEntries\":[],\"GroupBy\": [{\"Column\":\"PlanDelivery\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Left\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Right\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2406,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "📦 สรุปรับเอกสาร",
+  "page": 1744,
+  "props": [
+   [
+    "View name",
+    "📦 สรุปรับเอกสาร App owner"
+   ],
+   [
+    "View type",
+    "deck"
+   ],
+   [
+    "ActionType",
+    "Square Image"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"MainDeckImageColumn\":\"**auto**\",\"ImageShape\":\"Square Image\",\"PrimaryDeckHeaderColumn\":\"SoldToName\",\"SecondaryDeckHeaderColumn\":\"สรุป ยอด\",\"DeckSummaryColumn\":\"PlanDelivery\",\"DeckNestedTableColumn\":\"**none**\",\"ShowActionBar\":true,\"ActionColumns\": [],\"ActionBarEntries\":[],\"GroupBy\": [{\"Column\":\"PlanDelivery\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"SUM :: จำนวน_ทั้งหมด\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Left\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Right\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2407,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "🧾ที่สแกนรับ ✅",
+  "page": 1745,
+  "props": [
+   [
+    "View name",
+    "🧾ที่สแกนรับ ✅ App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [\"Scan_Invoice\",\"Select_Invoice\",\"ทะเบียนรถ\",\"Shipment No\",\"วันที่ส่งสินค้า\"],\"GroupBy\":[{\"Column\":\"Shipment No\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"COUNT\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2408,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Acknowledge_Logs_Table",
+  "page": 1745,
+  "props": [
+   [
+    "View name",
+    "Acknowledge_Logs_Table"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [],\"GroupBy\":[{\"Column\":\"ชื่อ - นามสกุล\",\"Order\":\"Ascending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Ascending\"}],\"GroupAggregate\":\"COUNT\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Ascending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2409,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Document_Return",
+  "page": 1746,
+  "props": [
+   [
+    "View name",
+    "Document_Return"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\":[{\"Column\":\"รหัส ลูกค้า\",\"Order\":\"Ascending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Ascending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2410,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "FILTER",
+  "page": 1746,
+  "props": [
+   [
+    "View name",
+    "FILTER"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\": [\"STARTDATE\",\"ENDDATE\",\"EXPORTTO PDF\",\"วันที่ออก เอกสาร\",\"EXPORTTO Excel(สรุปจำนวนจุดส่งงาน)\"],\"ColumnOrder\": [\"STARTDATE\",\"ENDDATE\",\"ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง\",\"ราคา_ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง\",\"ทำเบิกค่ายกขึ้นชั้น\",\"ราคา_ทำเบิกค่ายกขึ้นชั้น\",\"ได้เพิ่ม50%ของค่าเที่ยว\",\"ราคา_ได้เพิ่ม50%ของค่าเที่ยว\",\"วันที่ออกเอกสาร\",\"EXPORTTO PDF\",\"สรุปจำนวนจุดส่งงาน\",\"EXPORTTO Excel(สรุปจำนวนจุดส่ง งาน)\"],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ],
+   [
+    "Show if",
+    "=USERROLE() = \"ADMIN\""
+   ]
+  ],
+  "order": 2411,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Image_Document_Return",
+  "page": 1747,
+  "props": [
+   [
+    "View name",
+    "Image_Document_Return"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Ascending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2412,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Monitor_Dashboard",
+  "page": 1747,
+  "props": [
+   [
+    "View name",
+    "Monitor_Dashboard"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[{\"Column\":\"Shipment No\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"SUM :: จำนวน_Invoice_ที่ต้องสแกน\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2413,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "PriceOverride",
+  "page": 1748,
+  "props": [
+   [
+    "View name",
+    "PriceOverride"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2414,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "SCGนครหลวงJWDภูมิภาค",
+  "page": 1748,
+  "props": [
+   [
+    "View name",
+    "SCGนครหลวงJWDภูมิภาค"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [\"head\",\"ผลการตรวจสอบงานส่ง\",\"ที่อยู่ปลายทาง\",\"LAT\",\"LONG\",\"จุดส่ง สินค้าปลายทาง\",\"Email พนักงาน\",\"วันที่ส่งสินค้า\",\"เวลาที่ส่งสินค้า\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"Shipment No\",\"Invoice No\",\"รหัสลูกค้า\",\"ชื่อ เจ้าของสินค้า\",\"ชื่อปลายทาง\",\"หมายเหตุ\",\"ที่อยู่ปลาย ทาง_LatLong_Api\",\"ระยะทางจากคลัง_Km\",\"พิกัดตอนกดบันทึกงาน\",\"เวลาเริ่มกรอกงาน\",\"เวลาบันทึกงานสำเร็จ\",\"ระยะขยับจากจุดเริ่ม ต้น_เมตร\",\"ระยะเวลาใช้งาน_นาที\",\"ความเร็วการ เคลื่อนที่_เมตร_นาที\"],\"GroupBy\": [{\"Column\":\"เดือน\",\"Order\":\"Descending\"},{\"Column\":\"วันที่ส่ง สินค้า\",\"Order\":\"Descending\"},{\"Column\":\"ชื่อ - นามสกุล\",\"Order\":\"Descending\"},{\"Column\":\"Shipment No\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2415,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "View ราคาไม่ตรง list",
+  "page": 1749,
+  "props": [
+   [
+    "View name",
+    "View ราคาไม่ตรง list"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\":[\"วันที่\",\"ชื่องาน\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"พิมอธิบายทุกอย่างที่สำคัญ\",\"Shipment No\",\"ระยะทางที่วิ่ง (KM)\",\"ราคาตามระยะทาง\",\"จำนวนจุดรับ / จุดส่ง\",\"จำนวนร้านที่ยกขึ้นชั้น\",\"ราคาจุดเพิ่ม\",\"ราคา\",\"ราคาในระบบหลังส่งสินค้า\",\"Email ผู้อนุมัติ\",\"สถานะการอนุมัติ\",\"Email พนักงาน\",\"เรท ดีเซล\",\"เดือน\"],\"GroupBy\":[{\"Column\":\"เดือน\",\"Order\":\"Descending\"}, {\"Column\":\"ชื่องาน\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"COUNT\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":[],\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2416,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการเข้าบำรุงรักษา",
+  "page": 1749,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการเข้าบำรุงรักษา"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [\"ID_การเข้าบำรุงรักษา\",\"Email พนักงาน\",\"วันที่เข้าบำรุงรักษา\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"รูปถ่ายเลขไมล์รถยนต์ก่อนเข้าบำรุงรักษา\",\"รูป ถ่ายบิลหรือใบเสร็จ รายการเข้าบำรุงรักษา\",\"ราคา\",\"เดือน\"],\"GroupBy\": [{\"Column\":\"เดือน\",\"Order\":\"Descending\"},{\"Column\":\"วันที่เข้าบำรุง รักษา\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"SUM :: ราคา\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2417,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการวางบิล",
+  "page": 1750,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการวางบิล"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [\"ID_วางบิล\",\"Email พนักงาน\",\"สถานะการอนุมัติ\",\"ชื่องาน\",\"วันที่\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"สถานที่รับงาน (ต้นทาง)\",\"สถานที่ส่งงาน (ปลาย ทาง)\",\"พิมอธิบายทุกอย่างที่สำคัญ\",\"Shipment No\",\"ระยะทางที่วิ่ง (KM)\",\"จำนวนจุดรับ / จุดส่ง\",\"จำนวนร้านที่ยกขึ้นชั้น\",\"ราคาที่อนุมัติแล้ว\",\"Email ผู้อนุมัติ\",\"ราคาก่อนส่งสินค้า\",\"ราคาในระบบหลังส่ง สินค้า\",\"ราคาหลังส่งสินค้า\",\"รูปถ่ายหลังรถตอนขึ้นสินค้าเสร็จ\",\"รูปถ่ายบิลงาน\",\"รูปถ่ายบิลงานเพิ่ม1\",\"รูปถ่ายบิลงานเพิ่ม2\",\"เลือกเพิ่มเติม\",\"ยืนยัน การกรอกข้อมูล\",\"ราคาจุดเพิ่ม\",\"ราคาตามระยะทาง\",\"เรท ดีเซล\",\"เดือน\",\"ราคาเพิ่ม\",\"SM\",\"ราคาหลังส่งเอเธน\"],\"GroupBy\": [{\"Column\":\"เดือน\",\"Order\":\"Descending\"},{\"Column\":\"ชื่อ งาน\",\"Order\":\"Descending\"},{\"Column\":\"ชื่อ - นามสกุล\",\"Order\":\"Descending\"},{\"Column\":\"วัน ที่\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"COUNT\",\"SortBy\":[{\"Column\":\"เดือน\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ],
+   [
+    "Show if",
+    "=USERROLE() = ADMIN"
+   ]
+  ],
+  "order": 2418,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการวางบิลแต่ละคน",
+  "page": 1750,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการวางบิลแต่ละคน"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [],\"GroupBy\":[{\"Column\":\"สถานะการอนุมัติ\",\"Order\":\"Descending\"}, {\"Column\":\"เดือน\",\"Order\":\"Descending\"},{\"Column\":\"ชื่อ - นามสกุล\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"SUM :: ราคา\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2419,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลงานRT",
+  "page": 1751,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลงานRT"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[{\"Column\":\"วันที่เข้ารับ\",\"Order\":\"Descending\"}, {\"Column\":\"Shipment (รับคืน)\",\"Order\":\"Descending\"}, {\"Column\":\"Shipment (หลัก)\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"NONE\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2420,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลงานRW",
+  "page": 1751,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลงานRW"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [],\"GroupBy\":[{\"Column\":\"Due Date\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"COUNT\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2421,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลชื่องานต้นทางปลายทาง",
+  "page": 1752,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลชื่องานต้นทางปลายทาง"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2422,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลพนักงาน",
+  "page": 1752,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลพนักงาน"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2423,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ค่าใช้จ่าย",
+  "page": 1753,
+  "props": [
+   [
+    "View name",
+    "ค่าใช้จ่าย"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\":[\"ระบุการเติมน้ำมัน\",\"ราคาที่เติม\",\"รูปถ่ายใบเสร็จน้ำมัน_ใบเล็ก\",\"ระบุทางด่วนM-Flow\",\"จำนวนด่าน\",\"รูปสลิปการโอน\",\"ระบุการซ่อมบำรุง\",\"ราคาตามบิล\",\"รูปถ่ายบิลซ่อมบำรุง\",\"ชื่อ - นามสกุล\",\"วันที่\",\"ชื่องาน\",\"ทะเบียนรถ\"],\"GroupBy\":[{\"Column\":\"วันที่\",\"Order\":\"Descending\"},{\"Column\":\"ชื่อ - นามสกุล\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"NONE\",\"SortBy\":[{\"Column\":\"วัน ที่\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2424,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "แจ้งปัญหา",
+  "page": 1753,
+  "props": [
+   [
+    "View name",
+    "แจ้งปัญหา"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [\"ข้อมูลการแจ้งปัญหา\",\"รูป1\",\"รูป2\",\"รูป3\",\"หมายเหตุ\",\"วันที่+เวลา\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"รหัสผู้รับเหมา\",\"ชื่อผู้รับเหมา\",\"Shipment No\",\"Invoice No\",\"รหัสลูกค้า\",\"ชื่อปลายทาง\",\"Email พนักงาน\",\"ใส่ข้อมูล การแจ้งปัญหา เพื่อนับจุดส่งงาน\",\"เพิ่มรูปแคปหน้าจอ นำกลับคืน คลัง\",\"อัพเดตข้อมูลการแจ้งปัญหา ไป ตารางส่ง งานSCG\",\"Lat/Long\"],\"GroupBy\": [{\"Column\":\"เดือน\",\"Order\":\"Descending\"},{\"Column\":\"ชื่อ - นามสกุล\",\"Order\":\"Descending\"},{\"Column\":\"Shipment No\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"NONE\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2425,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ตารางงานประจำวัน",
+  "page": 1754,
+  "props": [
+   [
+    "View name",
+    "ตารางงานประจำวัน"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [\"LatLong_Actual\",\"Invoice No\",\"ID_งานประจำวัน\",\"ที่อยู่ปลาย ทาง_LatLong\",\"Email พนักงาน\",\"Plan Delivery\",\"Shipment No\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"รหัสผู้รับเหมา\",\"ชื่อผู้รับเหมา\",\"รหัสลูกค้า\",\"ชื่อ เจ้าของสินค้า\",\"ชื่อปลายทาง\",\"ที่อยู่ปลายทาง\",\"ชื่อวัสดุ\",\"จำนวน สินค้า\",\"หน่วย\",\"ItemWeight\",\"DeliveryNo\",\"จำนวนปลาย ทาง_System\",\"รายชื่อปลาย ทาง_System\",\"ScanStatus\",\"DeliveryStatus\",\"จำนวนสินค้ารวมของร้านนี้\",\"น้ำหนักสินค้ารวมของร้านนี้\",\"จำนวน_Invoice_ที่ต้องสแกน\",\"ชื่อเจ้าของสินค้า_Invoice_ที่ต้องสแกน\",\"ShopKey\",\"จำนวนปลายทาง\",\"ลำดับ แรก\",\"จำนวนจุดที่ส่งจริง\",\"เดือน\",\"Related SCGนครหลวงJWDภูมิภาคs\",\"Related แจ้งปัญหาระหว่างวันs\",\"RelatedScanDocs\"],\"GroupBy\":[{\"Column\":\"Plan Delivery\",\"Order\":\"Descending\"},{\"Column\":\"Shipment No\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"MAX :: จำนวนปลายทาง_System\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2426,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ตารางราคา",
+  "page": 1755,
+  "props": [
+   [
+    "View name",
+    "ตารางราคา"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2427,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ทำเบิกส่วนต่างScgวังน้อย",
+  "page": 1755,
+  "props": [
+   [
+    "View name",
+    "ทำเบิกส่วนต่างScgวังน้อย"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [\"สถานะ\",\"ขออนุมัติเบิกค่าขนส่งส่วนเพิ่ม\",\"ราคาหลังส่งสินค้า\",\"ราคาที่สมควรได้\",\"ราคาตามระยะทาง\",\"ราคาจุดเพิ่ม\",\"จำนวนจุดส่งงาน จริง\",\"จำนวนจุดส่งก่อนเริ่มงาน\",\"ระยะทาง_GoogleMapAPI_Km\",\"ระยะ ทางในระบบก่อนส่งสินค้า\",\"ราคาในระบบก่อนส่งสินค้า\",\"ชื่อ งาน\",\"Shipment No\",\"วันที่ส่งสินค้า\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"เรท น้ำมันดีเซล\",\"เดือน\"],\"GroupBy\": [{\"Column\":\"เดือน\",\"Order\":\"Descending\"}, {\"Column\":\"สถานะ\",\"Order\":\"Descending\"},{\"Column\":\"ชื่อ - นามสกุล\",\"Order\":\"Descending\"},{\"Column\":\"วันที่ส่ง สินค้า\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"SUM :: ขออนุมัติเบิกค่าขนส่งส่วนเพิ่ม\",\"SortBy\":[{\"Column\":\"Shipment No\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2428,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "รับงานคืนได้เงิน200",
+  "page": 1756,
+  "props": [
+   [
+    "View name",
+    "รับงานคืนได้เงิน200"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [],\"GroupBy\":[{\"Column\":\"เดือน\",\"Order\":\"Descending\"}, {\"Column\":\"สถานะการเข้ารับสินค้า\",\"Order\":\"Descending\"}, {\"Column\":\"วันที่เข้ารับ\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"COUNT\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2429,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ราคาน้ำมันดีเซล",
+  "page": 1756,
+  "props": [
+   [
+    "View name",
+    "ราคาน้ำมันดีเซล"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2430,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ราคาในระบบก่อนส่งสินค้า",
+  "page": 1756,
+  "props": [
+   [
+    "View name",
+    "ราคาในระบบก่อนส่งสินค้า"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[{\"Column\":\"วันที่ส่งสินค้า\",\"Order\":\"Descending\"}, {\"Column\":\"Shipment No\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"SUM :: ราคา\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2431,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สร้างรายงาน",
+  "page": 1757,
+  "props": [
+   [
+    "View name",
+    "สร้างรายงาน"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"ชื่อ งาน\",\"StartDate\",\"EndDate\",\"Export to xlsx\",\"Export to xlsxTo Athens\",\"ปริ๊นใบวางบิลแยกตามชื่องาน\",\"วันที่ออก เอกสาร\"],\"ColumnOrder\":[\"ชื่องาน\",\"StartDate\",\"EndDate\",\"ปริ๊นใบวางบิลแยกตามชื่องาน\",\"วันที่ออกเอกสาร\",\"Export to xlsx\",\"Export to xlsxTo Athens\",\"ผลลัพท์\",\"ราคา รวม\"],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ],
+   [
+    "Show if",
+    "=USERROLE() = \"ADMIN\""
+   ]
+  ],
+  "order": 2432,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สร้างเอกสาร",
+  "page": 1758,
+  "props": [
+   [
+    "View name",
+    "สร้างเอกสาร"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2433,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุปจำนวนจุดส่งสินค้า",
+  "page": 1758,
+  "props": [
+   [
+    "View name",
+    "สรุปจำนวนจุดส่งสินค้า"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [\"จำนวนปลายทาง\",\"Shipment No\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"Plan Delivery\",\"ชื่อปลายทาง\"],\"GroupBy\":[{\"Column\":\"Plan Delivery\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"MAX :: จำนวนปลายทาง\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2434,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุปเบิกส่วนต่าง",
+  "page": 1758,
+  "props": [
+   [
+    "View name",
+    "สรุปเบิกส่วนต่าง"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\":[\"วันที่เริ่มต้น\",\"วันที่สิ้นสุด\",\"Export to Excel\",\"ID_สรุปเบิกส่วน ต่าง\",\"ID_Optimization\",\"ID_เบิกส่วน ต่างSCGวังน้อย\",\"_ComputedKey_ID_SCGนครหลวงJWDภูมิภาค\"],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2435,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุปใบป่ะหน้าคนขับ",
+  "page": 1759,
+  "props": [
+   [
+    "View name",
+    "สรุปใบป่ะหน้าคนขับ"
+   ],
+   [
+    "Created by",
+    "App owner"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "menu"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"ชื่อ - นามสกุล\",\"StartDate\",\"EndDate\",\"Export to XLSX\",\"ชื่อ ไฟล์\"],\"ColumnOrder\": [],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ],
+   [
+    "Show if",
+    "=USERROLE() = \"ADMIN\""
+   ]
+  ],
+  "order": 2436,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Acknowledge_Logs_Detail",
+  "page": 1759,
+  "props": [
+   [
+    "View name",
+    "Acknowledge_Logs_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[\"ข้อความประกาศ\"],\"QuickEditColumns\": [],\"ColumnOrder\":[\"วันที่และเวลารับทราบ\",\"หมายเหตุ\",\"เลือกเพื่อ ยืนยัน\",\"ลงชื่อพนักงาน\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"Email พนักงาน\"],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\":[],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2437,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Acknowledge_Logs_Form",
+  "page": 1760,
+  "props": [
+   [
+    "View name",
+    "Acknowledge_Logs_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":[\"ข้อความประกาศ\",\"หมายเหตุ\",\"วันที่และเวลารับ ทราบ\",\"เลือกเพื่อยืนยัน\",\"ลงชื่อพนักงาน\",\"ชื่อ - นามสกุล\",\"ทะเบียน รถ\"],\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2438,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Acknowledge_Logs_Inline",
+  "page": 1760,
+  "props": [
+   [
+    "View name",
+    "Acknowledge_Logs_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- table\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2439,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Announcements_Detail",
+  "page": 1761,
+  "props": [
+   [
+    "View name",
+    "Announcements_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2440,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Announcements_Form",
+  "page": 1761,
+  "props": [
+   [
+    "View name",
+    "Announcements_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2441,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Doc_Return_Detail",
+  "page": 1762,
+  "props": [
+   [
+    "View name",
+    "Doc_Return_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [\"ชื่อเจ้าของสินค้า\",\"รหัสลูกค้า\",\"ข้อความ อธิบาย_Document_Return\",\"Related Image_Doc_Returns\",\"Related SCGนครหลวงJWDภูมิภาคs\"],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2442,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Doc_Return_Form",
+  "page": 1762,
+  "props": [
+   [
+    "View name",
+    "Doc_Return_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2443,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "FILTER_Detail",
+  "page": 1763,
+  "props": [
+   [
+    "View name",
+    "FILTER_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\": [\"STARTDATE\",\"ENDDATE\",\"วันที่ออกเอกสาร\",\"EXPORTTO PDF\",\"EXPORTTO Excel(สรุปจำนวนจุดส่งงาน)\"],\"ColumnOrder\": [\"STARTDATE\",\"ENDDATE\",\"ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง\",\"ราคา_ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง\",\"ทำเบิกค่ายกขึ้นชั้น\",\"ราคา_ทำเบิกค่ายกขึ้นชั้น\",\"ได้เพิ่ม50%ของค่าเที่ยว\",\"ราคา_ได้เพิ่ม50%ของค่าเที่ยว\",\"วันที่ออกเอกสาร\",\"EXPORTTO PDF\",\"สรุปจำนวนจุดส่งงาน\",\"EXPORTTO Excel(สรุปจำนวนจุดส่ง งาน)\"],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2444,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "FILTER_Form",
+  "page": 1763,
+  "props": [
+   [
+    "View name",
+    "FILTER_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":[\"STARTDATE\",\"ENDDATE\",\"EXPORTTO .\",\"New Virtual Column\"],\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2445,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Image_Doc_Return_Detail",
+  "page": 1764,
+  "props": [
+   [
+    "View name",
+    "Image_Doc_Return_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [\"Image_Document_Return\",\"ID_Image_Doc_Return\",\"ID_Doc_Return\"],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2446,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Image_Doc_Return_Form",
+  "page": 1764,
+  "props": [
+   [
+    "View name",
+    "Image_Doc_Return_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2447,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Image_Doc_Return_Inline",
+  "page": 1764,
+  "props": [
+   [
+    "View name",
+    "Image_Doc_Return_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "deck"
+   ],
+   [
+    "ActionType",
+    "Square Image"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainDeckImageColumn\":\"**auto**\",\"ImageShape\":\"Square Image\",\"PrimaryDeckHeaderColumn\":\"ID_Doc_Return\",\"SecondaryDeckHeaderColumn\":\"**auto**\",\"DeckSummaryColumn\":\"**auto**\",\"DeckNestedTableColumn\":null,\"ShowActionBar\":true,\"ActionColumns\":[],\"ActionBarEntries\":[],\"GroupBy\": [],\"GroupAggregate\":\"NONE\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Ascending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"},{\"EventType\":\"Row Swiped Left\",\"EventAction\":\"**auto**\"},{\"EventType\":\"Row Swiped Right\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2448,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "PDFชื่องาน_Detail",
+  "page": 1765,
+  "props": [
+   [
+    "View name",
+    "PDFชื่องาน_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"ชื่อ งาน\",\"StartDate\",\"EndDate\",\"Export to xlsx\",\"Export to xlsxTo Athens\",\"ปริ๊นใบวางบิลแยกตามชื่องาน\",\"วันที่ออก เอกสาร\"],\"ColumnOrder\":[\"ชื่องาน\",\"StartDate\",\"EndDate\",\"วันที่ออก เอกสาร\",\"ปริ๊นใบวางบิลแยกตามชื่องาน\",\"ผลลัพท์\",\"Export to xlsx\",\"Export to xlsxTo Athens\",\"ราคา รวม\"],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2449,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "PDFชื่องาน_Form",
+  "page": 1766,
+  "props": [
+   [
+    "View name",
+    "PDFชื่องาน_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2450,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "PDFพนักงาน_Detail",
+  "page": 1766,
+  "props": [
+   [
+    "View name",
+    "PDFพนักงาน_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"ชื่อ - นามสกุล\",\"StartDate\",\"EndDate\",\"Export to XLSX\"],\"ColumnOrder\":[\"ชื่อ- นามสกุล\",\"StartDate\",\"EndDate\",\"ราคารวม\",\"Export to XLSX\",\"ชื่อ ไฟล์\",\"ผลลัพท์.\",\"debugstartdate\",\"debugenddate\",\"**all other columns**\"],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2451,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "PDFพนักงาน_Form",
+  "page": 1767,
+  "props": [
+   [
+    "View name",
+    "PDFพนักงาน_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2452,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Price_Table_Detail",
+  "page": 1767,
+  "props": [
+   [
+    "View name",
+    "Price_Table_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2453,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Price_Table_Form",
+  "page": 1767,
+  "props": [
+   [
+    "View name",
+    "Price_Table_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":true,\"AutoReopen\":true,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2454,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "PriceOverride_Detail",
+  "page": 1768,
+  "props": [
+   [
+    "View name",
+    "PriceOverride_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2455,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "PriceOverride_Form",
+  "page": 1768,
+  "props": [
+   [
+    "View name",
+    "PriceOverride_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2456,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ScanDocs_Detail",
+  "page": 1769,
+  "props": [
+   [
+    "View name",
+    "ScanDocs_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2457,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ScanDocs_Form",
+  "page": 1769,
+  "props": [
+   [
+    "View name",
+    "ScanDocs_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2458,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ScanDocs_Inline",
+  "page": 1769,
+  "props": [
+   [
+    "View name",
+    "ScanDocs_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- table\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2459,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "SCGนครหลวงJWDภูมิภาค_Detail",
+  "page": 1770,
+  "props": [
+   [
+    "View name",
+    "SCGนครหลวงJWDภูมิภาค_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**none**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"วันที่ส่งสินค้า\",\"เวลาที่ส่งสินค้า\",\"จุดส่งสินค้าปลายทาง\",\"Shipment No\",\"Invoice No\",\"รูปถ่ายบิลส่งสินค้า\",\"รูปสินค้าตอนส่ง\",\"รูปหน้าร้าน / บ้าน\",\"หมายเหตุ\",\"ID_พนักงาน\",\"รหัสลูกค้า\",\"ชื่อเจ้าของสินค้า\",\"ชื่อปลาย ทาง\",\"ที่อยู่ปลายทาง\",\"ID_Doc_Return\",\"SM_Link_SCG\"],\"ColumnOrder\":[],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa- indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2460,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "SCGนครหลวงJWDภูมิภาค_Form",
+  "page": 1770,
+  "props": [
+   [
+    "View name",
+    "SCGนครหลวงJWDภูมิภาค_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":[\"วันที่ส่งสินค้า\",\"เวลาที่ส่งสินค้า\",\"จุดส่งสินค้าปลาย ทาง\",\"รูปหน้าร้าน / บ้าน\",\"เวลาถ่ายรูปหน้าร้าน_หน้าบ้าน\",\"ID_พนักงาน\",\"ชื่อ- นามสกุล\",\"ทะเบียนรถ\",\"Shipment No\",\"Document_Return\",\"Invoice No\",\"Image_Document_Return\",\"รูปถ่ายบิลส่งสินค้า\",\"รูปสินค้าตอน ส่ง\",\"ชื่อปลายทาง\",\"รหัสลูกค้า\",\"ชื่อเจ้าของสินค้า\",\"Email พนักงาน\",\"หมายเหตุ\",\"ที่อยู่ปลาย ทาง\"],\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2461,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "SCGนครหลวงJWDภูมิภาค_Inline",
+  "page": 1771,
+  "props": [
+   [
+    "View name",
+    "SCGนครหลวงJWDภูมิภาค_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [],\"GroupBy\":[{\"Column\":\"Shipment No\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"NONE\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Ascending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list- ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2462,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Slice_Monitor_Today_Detail",
+  "page": 1771,
+  "props": [
+   [
+    "View name",
+    "Slice_Monitor_Today_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2463,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "Slice_Monitor_Today_Form",
+  "page": 1772,
+  "props": [
+   [
+    "View name",
+    "Slice_Monitor_Today_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2464,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "View ราคาไม่ตรง_Detail",
+  "page": 1772,
+  "props": [
+   [
+    "View name",
+    "View ราคาไม่ตรง_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2465,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการเข้าบำรุงรักษา_Detail",
+  "page": 1773,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการเข้าบำรุงรักษา_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\": [\"ID_พนักงาน\",\"ราคา\"],\"ColumnOrder\": [],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa- indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2466,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการเข้าบำรุงรักษา_Form",
+  "page": 1773,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการเข้าบำรุงรักษา_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":[\"วันที่เข้าบำรุงรักษา\",\"ID_พนักงาน\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"รูปถ่ายเลขไมล์รถยนต์ก่อนเข้าบำรุงรักษา\",\"กรุณาพิม เลขไมล์รถยนต์ก่อนเข้าบำรุงรักษา\",\"รูปถ่ายบิลหรือใบเสร็จ รายการ เข้าบำรุงรักษา\",\"กรุณาพิม รายการเข้าบำรุงรักษา\",\"ราคา\",\"กรุณาพิม เลขไมล์รถยนต์รอบบำรุงรักษาครั้งถัดไป\",\"Email พนักงาน\"],\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"หน้า หลัก\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2467,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการเข้าบำรุงรักษา_Inline",
+  "page": 1774,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการเข้าบำรุงรักษา_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "deck"
+   ],
+   [
+    "ActionType",
+    "Square Image"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainDeckImageColumn\":null,\"ImageShape\":\"Square Image\",\"PrimaryDeckHeaderColumn\":null,\"SecondaryDeckHeaderColumn\":null,\"DeckSummaryColumn\":null,\"DeckNestedTableColumn\":null,\"ShowActionBar\":true,\"ActionColumns\":null,\"ActionBarEntries\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Left\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Right\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2468,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการวางของแต่ละคน_Detail",
+  "page": 1774,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการวางของแต่ละคน_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2469,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการวางของแต่ละคน_Form",
+  "page": 1775,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการวางของแต่ละคน_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2470,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการวางบิล_Detail",
+  "page": 1775,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการวางบิล_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"ชื่องาน\",\"ShipmentNo\",\"จำนวนจุดรับ / จุดส่ง\",\"จำนวนร้านที่ยกขึ้นชั้น\",\"พิมอธิบายทุกอย่างที่สำคัญ\",\"ราคา\",\"สถานะการอนุมัติ\",\"รูปถ่ายหลังรถตอนขึ้นสินค้าเสร็จ\",\"รูป"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2471,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการวางบิล_Form",
+  "page": 1779,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการวางบิล_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":[\"ID_วางบิล\",\"ชื่องาน\",\"วันที่\",\"ID_พนักงาน\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"สถานที่รับงาน (ต้นทาง)\",\"สถานที่ส่งงาน (ปลาย ทาง)\",\"Email พนักงาน\",\"พิมอธิบายทุกอย่างที่สำคัญ\",\"Shipment No\",\"ระยะทางที่วิ่ง (KM)\",\"จำนวนจุดรับ / จุดส่ง\",\"จำนวนร้านที่ยกขึ้น ชั้น\",\"ราคา\",\"Email ผู้อนุมัติ\",\"สถานะการอนุมัติ\",\"ราคาในระบบหลังส่ง สินค้า\",\"รูปถ่ายบิลงาน\",\"เลือกเพิ่มเติม\",\"ยืนยันการกรอกข้อมูล\",\"ราคาจุด เพิ่ม\",\"ราคาตามระยะทาง\",\"เรทดีเซล\",\"เดือน\",\"ราคาเพิ่ม\",\"วันที่.\",\"ข้อความ แจ้งเตือน\",\"New Virtual Column 1\",\"ราคาที่อนุมัติแล้ว\",\"ระบุการเติม น้ำมัน\",\"ราคาที่เติม\",\"รูปถ่ายใบเสร็จน้ำมัน_ใบเล็ก\",\"ระบุทางด่วนM- Flow\",\"จำนวนด่าน\",\"รูปสลิปการโอน\",\"ระบุการซ่อมบำรุง\",\"ราคาตามบิล\",\"รูปถ่ายบิลซ่อม บำรุง\"],\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"ข้อมูลการวางบิล_Detail\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2472,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลการวางบิล_Inline",
+  "page": 1779,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลการวางบิล_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "deck"
+   ],
+   [
+    "ActionType",
+    "Square Image"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainDeckImageColumn\":null,\"ImageShape\":\"Square Image\",\"PrimaryDeckHeaderColumn\":null,\"SecondaryDeckHeaderColumn\":null,\"DeckSummaryColumn\":null,\"DeckNestedTableColumn\":null,\"ShowActionBar\":true,\"ActionColumns\":null,\"ActionBarEntries\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Left\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Right\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2473,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลงานRT_Detail",
+  "page": 1780,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลงานRT_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2474,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลงานRT_Form",
+  "page": 1780,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลงานRT_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2475,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลงานRW_Detail",
+  "page": 1781,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลงานRW_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2476,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลงานRW_Form",
+  "page": 1781,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลงานRW_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2477,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลชื่องานต้นทางปลายทาง_Detail",
+  "page": 1781,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลชื่องานต้นทางปลายทาง_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2478,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลชื่องานต้นทางปลายทาง_Form",
+  "page": 1782,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลชื่องานต้นทางปลายทาง_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2479,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลพนักงาน_Detail",
+  "page": 1782,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลพนักงาน_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2480,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ข้อมูลพนักงาน_Form",
+  "page": 1783,
+  "props": [
+   [
+    "View name",
+    "ข้อมูลพนักงาน_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2481,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ค้างสแกนวันนี้และเมื่อวาน_Detail",
+  "page": 1783,
+  "props": [
+   [
+    "View name",
+    "ค้างสแกนวันนี้และเมื่อวาน_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2482,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ค้างสแกนวันนี้และเมื่อวาน_Form",
+  "page": 1784,
+  "props": [
+   [
+    "View name",
+    "ค้างสแกนวันนี้และเมื่อวาน_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2483,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "แจ้งปัญหาระหว่างวัน_Detail",
+  "page": 1784,
+  "props": [
+   [
+    "View name",
+    "แจ้งปัญหาระหว่างวัน_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"กดปุ่มนี้เพื่อส่งข้อมูล"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2484,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "แจ้งปัญหาระหว่างวัน_Form",
+  "page": 1788,
+  "props": [
+   [
+    "View name",
+    "แจ้งปัญหาระหว่างวัน_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":[\"ข้อมูลการแจ้งปัญหา\",\"ขั้นตอนปฎิบัติ\",\"ขอ เหตุและ ผล\",\"ทำตามคำแนะนำ\",\"หมายเหตุ\",\"วันที่+เวลา\",\"ID_พนักงาน\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"รหัสผู้รับเหมา\",\"ชื่อผู้รับเหมา\",\"Shipment No\",\"Invoice No\",\"รหัสลูกค้า\",\"ชื่อปลายทาง\",\"Email พนักงาน\",\"Lat/Long\",\"เดือน\"],\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"แจ้งปัญหาระหว่าง วัน_Detail\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2485,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "แจ้งปัญหาระหว่างวัน_Inline",
+  "page": 1788,
+  "props": [
+   [
+    "View name",
+    "แจ้งปัญหาระหว่างวัน_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "deck"
+   ],
+   [
+    "ActionType",
+    "Square Image"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainDeckImageColumn\":null,\"ImageShape\":\"Square Image\",\"PrimaryDeckHeaderColumn\":null,\"SecondaryDeckHeaderColumn\":null,\"DeckSummaryColumn\":null,\"DeckNestedTableColumn\":null,\"ShowActionBar\":true,\"ActionColumns\":null,\"ActionBarEntries\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Left\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Right\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2486,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ตารางงานประจำวัน_Detail",
+  "page": 1789,
+  "props": [
+   [
+    "View name",
+    "ตารางงานประจำวัน_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [\"LatLong_Actual\",\"Invoice No\",\"ID_งานประจำวัน\",\"Plan Delivery\",\"Shipment No\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"รหัสผู้รับเหมา\",\"ชื่อผู้รับเหมา\",\"รหัสลูกค้า\",\"ชื่อเจ้าของสินค้า\",\"ชื่อปลายทาง\",\"ที่อยู่ปลาย ทาง\",\"ที่อยู่ปลายทาง_LatLong\",\"ชื่อวัสดุ\",\"จำนวน สินค้า\",\"หน่วย\",\"ItemWeight\",\"DeliveryNo\",\"จำนวนปลาย ทาง_System\",\"รายชื่อปลาย ทาง_System\",\"ScanStatus\",\"DeliveryStatus\",\"Email พนักงาน\",\"จำนวน สินค้ารวมของร้านนี้\",\"น้ำหนักสินค้ารวมของร้านนี้\",\"จำนวน_Invoice_ที่ต้องสแกน\",\"ชื่อเจ้าของสินค้า_Invoice_ที่ต้อง สแกน\",\"ShopKey\",\"MATCH_KEY\",\"MD_ID\",\"LatLong_Actual_Status\",\"จำนวนปลายทาง\",\"ลำดับแรก\",\"จำนวนจุดที่ส่งจริง\",\"เดือน\",\"Related SCGนครหลวงJWDภูมิภาคs\",\"Related แจ้งปัญหาระหว่างวันs\",\"RelatedScanDocs\"],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa- indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2487,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ตารางงานประจำวัน_Form",
+  "page": 1789,
+  "props": [
+   [
+    "View name",
+    "ตารางงานประจำวัน_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2488,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ทำเบิกส่วนต่างScgวังน้อย_Detail",
+  "page": 1790,
+  "props": [
+   [
+    "View name",
+    "ทำเบิกส่วนต่างScgวังน้อย_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"สร้างPDFเบิกส่วนต่าง\",\"Email พนักงาน\",\"สร้างPDFเบิกตามระยะทาง\"],\"ColumnOrder\":[\"QRcode เส้นทางรวม\",\"สร้างPDFเบิกตามระยะทาง\",\"สร้างPDFเบิกส่วน ต่าง\",\"GoogleMapsRoutesAPI\",\"แสดง แผนที่_GoogleMapsRoutesAPI\",\"วันที่ส่งสินค้า\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"Shipment No\",\"ราคาในระบบก่อนส่งสินค้า\",\"ระยะทางในระบบก่อนส่งสินค้า\",\"สถานะ\",\"ชื่องาน\",\"ระยะทาง_GoogleMapAPI_Km\",\"ราคาตามระยะทาง\",\"จำนวนจุดส่งงานจริง\",\"ราคาจุดเพิ่ม\",\"ราคาที่สมควรได้\",\"ราคาหลังส่งสินค้า\",\"ขออนุมัติเบิกค่าขนส่งส่วนเพิ่ม\",\"จำนวนจุดส่งก่อนเริ่ม งาน\",\"ต้นทาง\",\"Lat/Long_ปลายทาง_01\",\"01เจ้าของสินค้า // ชื่อปลายทาง// Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_01\",\"รูปหน้าร้าน_บ้าน01\",\"รูปส่ง สินค้า01\",\"Lat/Long_ปลายทาง_02\",\"02เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_02\",\"รูปหน้าร้าน_บ้าน02\",\"รูปส่ง สินค้า02\",\"Lat/Long_ปลายทาง_03\",\"03เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_03\",\"รูปหน้าร้าน_บ้าน03\",\"รูปส่ง สินค้า03\",\"Lat/Long_ปลายทาง_04\",\"04เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_04\",\"รูปหน้าร้าน_บ้าน04\",\"รูปส่ง สินค้า04\",\"Lat/Long_ปลายทาง_05\",\"05เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_05\",\"รูปหน้าร้าน_บ้าน05\",\"รูปส่ง สินค้า05\",\"Lat/Long_ปลายทาง_06\",\"06เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_06\",\"รูปหน้าร้าน_บ้าน06\",\"รูปส่ง สินค้า06\",\"Lat/Long_ปลายทาง_07\",\"07เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_07\",\"รูปหน้าร้าน_บ้าน07\",\"รูปส่ง สินค้า07\",\"Lat/Long_ปลายทาง_08\",\"08เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_08\",\"รูปหน้าร้าน_บ้าน08\",\"รูปส่ง สินค้า08\",\"Lat/Long_ปลายทาง_09\",\"09เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_09\",\"รูปหน้าร้าน_บ้าน09\",\"รูปส่ง สินค้า09\",\"Lat/Long_ปลายทาง_10\",\"10เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_10\",\"รูปหน้าร้าน_บ้าน10\",\"รูปส่ง สินค้า10\",\"Lat/Long_ปลายทาง_11\",\"11เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_11\",\"รูปหน้าร้าน_บ้าน11\",\"รูปส่ง สินค้า11\",\"Lat/Long_ปลายทาง_12\",\"12เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_12\",\"รูปหน้าร้าน_บ้าน12\",\"รูปส่ง สินค้า12\",\"Lat/Long_ปลายทาง_13\",\"13เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_13\",\"รูปหน้าร้าน_บ้าน13\",\"รูปส่ง สินค้า13\",\"Lat/Long_ปลายทาง_14\",\"14เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_14\",\"รูปหน้าร้าน_บ้าน14\",\"รูปส่ง สินค้า14\",\"Lat/Long_ปลายทาง_15\",\"15เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_15\",\"รูปหน้าร้าน_บ้าน15\",\"รูปส่ง สินค้า15\",\"Lat/Long_ปลายทาง_16\",\"16เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_16\",\"รูปหน้าร้าน_บ้าน16\",\"รูปส่ง สินค้า16\",\"Lat/Long_ปลายทาง_17\",\"17เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_17\",\"รูปหน้าร้าน_บ้าน17\",\"รูปส่ง สินค้า17\",\"Lat/Long_ปลายทาง_18\",\"18เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_18\",\"รูปหน้าร้าน_บ้าน18\",\"รูปส่ง สินค้า18\",\"Lat/Long_ปลายทาง_19\",\"19เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_19\",\"รูปหน้าร้าน_บ้าน19\",\"รูปส่ง สินค้า19\",\"Lat/Long_ปลายทาง_20\",\"20เจ้าของสินค้า // ชื่อปลายทาง //Lat_Long // Inv No\",\"รูปบิลส่งสินค้า_20\",\"รูปหน้าร้าน_บ้าน20\",\"รูปส่ง สินค้า20\",\"จุดส่งงานลำดับสุดท้าย\",\"ชื่อปลายทาง_INV_จุดสุดท้าย\",\"เรท น้ำมันดีเซล\",\"เดือน\",\"Email พนักงาน\",\"ตรวจสอบ ข้อมูล\",\"Candidate_2_ระยะทาง_Km\",\"Candidate_2_แสดง แผนที่\",\"Candidate_3_ระยะทาง_Km\",\"Candidate_3_แสดง แผนที่\"],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa- indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2489,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ทำเบิกส่วนต่างScgวังน้อย_Form",
+  "page": 1792,
+  "props": [
+   [
+    "View name",
+    "ทำเบิกส่วนต่างScgวังน้อย_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":[\"ต้นทาง\",\"สถานะ\",\"วันที่ส่งสินค้า\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"Shipment No\",\"ชื่องาน\",\"จำนวนจุดส่งงาน จริง\",\"จำนวนจุดส่งก่อนเริ่มงาน\",\"ราคาในระบบก่อนส่งสินค้า\",\"ระยะทางในระบบก่อนส่งสินค้า\",\"ราคาสมควรได้\",\"เรท น้ำมันดีเซล\",\"Email พนักงาน\",\"ตรวจสอบ ข้อมูล\"],\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"ทำเบิกส่วนต่างScgวังน้อย_Detail\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2490,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ทำเบิกส่วนต่างScgวังน้อย_Inline",
+  "page": 1792,
+  "props": [
+   [
+    "View name",
+    "ทำเบิกส่วนต่างScgวังน้อย_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":true,\"ColumnOrder\": [],\"GroupBy\":[{\"Column\":\"เดือน\",\"Order\":\"Descending\"},{\"Column\":\"วันที่ส่งสินค้า\",\"Order\":\"Descending\"},{\"Column\":\"ชื่อ - นามสกุล\",\"Order\":\"Descending\"}, {\"Column\":\"สถานะ\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"GroupAggregate\":\"COUNT\",\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"RowSelected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- table\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2491,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "รอการอนุมัติ_Detail",
+  "page": 1793,
+  "props": [
+   [
+    "View name",
+    "รอการอนุมัติ_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**none**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"ชื่องาน\",\"ShipmentNo\",\"พิมอธิบายทุกอย่างที่สำคัญ\",\"ราคา\",\"สถานะการอนุมัติ\",\"จำนวนจุดรับ /จุดส่ง\",\"จำนวนร้านที่ยกขึ้นชั้น\",\"ระยะทางที่วิ่ง (KM)\",\"ID_พนักงาน\",\"รูปถ่ายบิลงานเพิ่ม1\",\"วันที่\"],\"ColumnOrder\":[\"วันที่\",\"ID_พนักงาน\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"ชื่องาน\",\"สถานที่รับงาน (ต้นทาง)\",\"สถานที่ส่งงาน(ปลายทาง)\",\"สถานะการอนุมัติ\",\"ระยะทางที่วิ่ง (KM)\",\"ราคาตามระยะ ทาง\",\"จำนวนร้านที่ยกขึ้นชั้น\",\"จำนวนจุดรับ / จุดส่ง\",\"ราคาจุดเพิ่ม\",\"เลือกเพิ่มเติม\",\"ราคาเพิ่ม\",\"ราคาในระบบหลังส่งสินค้า\",\"ราคาหลังส่งสินค้า\",\"ราคาก่อนส่งสินค้า\",\"ราคา\",\"Shipment No\",\"พิมอธิบายทุกอย่างที่สำคัญ\",\"รูปถ่ายบิลงาน\",\"รูปถ่ายหลังรถตอนขึ้นสินค้าเสร็จ\",\"รูปถ่ายบิลงานเพิ่ม1\",\"รูปถ่ายบิลงานเพิ่ม2\",\"เดือน\",\"Email ผู้อนุมัติ\",\"Email พนักงาน\",\"เรทดีเซล\",\"ราคาที่อนุมัติแล้ว\"],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [{\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa- indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2492,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "รอการอนุมัติ_Form",
+  "page": 1793,
+  "props": [
+   [
+    "View name",
+    "รอการอนุมัติ_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\": [],\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\": [{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2493,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "รับงานคืนได้เงิน200_Detail",
+  "page": 1794,
+  "props": [
+   [
+    "View name",
+    "รับงานคืนได้เงิน200_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"สร้างPDFรับ คืน\",\"สถานะการเข้ารับสินค้า\",\"หมายเหตุ\",\"ราคา\",\"จำนวนสินค้า\",\"วันที่เข้ารับ\",\"Shipment (หลัก)\",\"เลขที่เอกสารรับคืน\",\"Shipment No\",\"Invoice No\",\"รูปสินค้า\",\"รูปบิลรับคืน\",\"รูปจุดที่ส่งงาน\"],\"ColumnOrder\": [\"สร้างPDFรับคืน\",\"ID_รับงานคืนได้เงิน200\",\"สถานะการเข้ารับสินค้า\",\"วันที่เข้ารับ\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"Shipment (หลัก)\",\"Shipment (รับ คืน)\",\"เลขที่เอกสารรับคืน\",\"Shipment No\",\"Invoice No\",\"จำนวนสินค้า\",\"ชื่อเจ้าของสินค้า\",\"รหัสลูกค้า\",\"ชื่อลูกค้าที่เข้ารับ\",\"รูปสินค้า\",\"รูปบิลรับคืน\",\"รูปจุดที่ส่งงาน\",\"ราคา\",\"หมายเหตุ\",\"Lat / Long\",\"Email พนักงาน\",\"ตรวจสอบก่อนบันทึกข้อมูล\",\"รายชื่อจุดส่งในตารางงานประจำ วัน\"],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [{\"Column\":\"วันที่เข้ารับ\",\"Order\":\"Descending\"}, {\"Column\":\"_RowNumber\",\"Order\":\"Descending\"}],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa- indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2494,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "รับงานคืนได้เงิน200_Form",
+  "page": 1794,
+  "props": [
+   [
+    "View name",
+    "รับงานคืนได้เงิน200_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":[\"ตรวจสอบก่อนบันทึกข้อมูล\",\"สถานะการเข้ารับ สินค้า\",\"วันที่เข้ารับ\",\"ID_พนักงาน\",\"ชื่อ - นามสกุล\",\"ทะเบียนรถ\",\"Shipment(หลัก)\",\"Shipment (รับคืน)\",\"เลขที่เอกสารรับคืน\",\"Shipment No\",\"InvoiceNo\",\"จำนวนสินค้า\",\"ชื่อเจ้าของสินค้า\",\"รหัสลูกค้า\",\"ชื่อลูกค้าที่เข้ารับ\",\"รูปสินค้า\",\"รูปบิลรับคืน\",\"หมายเหตุ\",\"Lat / Long\",\"Email พนักงาน\"],\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"รับงานคืนได้เงิน200_Detail\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2495,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "รับงานคืนได้เงิน200_Inline",
+  "page": 1795,
+  "props": [
+   [
+    "View name",
+    "รับงานคืนได้เงิน200_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "deck"
+   ],
+   [
+    "ActionType",
+    "Square Image"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainDeckImageColumn\":null,\"ImageShape\":\"Square Image\",\"PrimaryDeckHeaderColumn\":null,\"SecondaryDeckHeaderColumn\":null,\"DeckSummaryColumn\":null,\"DeckNestedTableColumn\":null,\"ShowActionBar\":true,\"ActionColumns\":null,\"ActionBarEntries\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Left\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Right\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2496,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ราคาน้ำมันดีเซล_Detail",
+  "page": 1795,
+  "props": [
+   [
+    "View name",
+    "ราคาน้ำมันดีเซล_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2497,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ราคาน้ำมันดีเซล_Form",
+  "page": 1796,
+  "props": [
+   [
+    "View name",
+    "ราคาน้ำมันดีเซล_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2498,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ราคาในระบบก่อนส่งสินค้า_Detail",
+  "page": 1796,
+  "props": [
+   [
+    "View name",
+    "ราคาในระบบก่อนส่งสินค้า_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2499,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ราคาในระบบก่อนส่งสินค้า_Form",
+  "page": 1797,
+  "props": [
+   [
+    "View name",
+    "ราคาในระบบก่อนส่งสินค้า_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2500,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ส่งงานที่ยังไม่มีข้อมูลในระบบ_Detail",
+  "page": 1797,
+  "props": [
+   [
+    "View name",
+    "ส่งงานที่ยังไม่มีข้อมูลในระบบ_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2501,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ส่งงานที่ยังไม่มีข้อมูลในระบบ_Form",
+  "page": 1798,
+  "props": [
+   [
+    "View name",
+    "ส่งงานที่ยังไม่มีข้อมูลในระบบ_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2502,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "ส่งงานที่ยังไม่มีข้อมูลในระบบ_Inline",
+  "page": 1798,
+  "props": [
+   [
+    "View name",
+    "ส่งงานที่ยังไม่มีข้อมูลในระบบ_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "deck"
+   ],
+   [
+    "ActionType",
+    "Square Image"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainDeckImageColumn\":null,\"ImageShape\":\"Square Image\",\"PrimaryDeckHeaderColumn\":null,\"SecondaryDeckHeaderColumn\":null,\"DeckSummaryColumn\":null,\"DeckNestedTableColumn\":null,\"ShowActionBar\":true,\"ActionColumns\":null,\"ActionBarEntries\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Left\",\"EventAction\":\"**auto**\"}, {\"EventType\":\"Row Swiped Right\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa-list-ul\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2503,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สร้างเอกสาร_Detail",
+  "page": 1799,
+  "props": [
+   [
+    "View name",
+    "สร้างเอกสาร_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"ชื่องาน\",\"ชื่อ - นามสกุล\",\"StartDate\",\"EndDate\",\"Export to xlsx\",\"Export to xlsxTo Athens\",\"ปริ๊นใบวางบิลแยกตามชื่องาน\",\"วันที่ออกเอกสาร\",\"Export to XLSX_12\",\"EXPORTTO PDFรับคืน\"],\"ColumnOrder\": [\"StartDate\",\"EndDate\",\"ชื่องาน\",\"ชื่อ - นามสกุล\",\"Export to xlsx\",\"Exportto xlsxTo Athens\",\"ปริ๊นใบวางบิลแยกตามชื่องาน\",\"วันที่ออก เอกสาร\",\"Export to XLSX_12\",\"ปริ๊นใบวางบิล\",\"ราคารวม\",\"ปริ๊นใบป่ะ หน้า\",\"ราคารวมคนขับ\",\"ปริ๊นทำเบิกส่วนต่างScgวังน้อย\",\"ราคารวม_ทำเบิกส่วนต่างScgวังน้อย\",\"สรุปจำนวนจุดส่งงาน\",\"EXPORTTO PDFรับคืน\",\"ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง\",\"ราคา_ได้เพิ่ม200_ไม่มีสินค้าคืน_ร้านปิด_ไม่มีในจุดส่ง\",\"ทำเบิกค่ายกขึ้นชั้น\",\"ราคา_ทำเบิกค่ายกขึ้นชั้น\",\"ได้เพิ่ม50%ของค่าเที่ยว\",\"ราคา_ได้เพิ่ม50%ของค่า เที่ยว\"],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2504,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สร้างเอกสาร_Form",
+  "page": 1799,
+  "props": [
+   [
+    "View name",
+    "สร้างเอกสาร_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2505,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุป_Shipment_Detail",
+  "page": 1800,
+  "props": [
+   [
+    "View name",
+    "สรุป_Shipment_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [\"PlanDelivery\",\"ShipmentNo\",\"TruckLicense\",\"สรุป ยอด\",\"รายการ_ทั้งหมด\"],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2506,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุป_Shipment_Form",
+  "page": 1800,
+  "props": [
+   [
+    "View name",
+    "สรุป_Shipment_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2507,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุป_เจ้าของสินค้า_Detail",
+  "page": 1801,
+  "props": [
+   [
+    "View name",
+    "สรุป_เจ้าของสินค้า_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [\"SoldToName\",\"PlanDelivery\",\"จำนวน_ทั้งหมด\",\"จำนวน_สแกน แล้ว\",\"จำนวน_รอสแกน\",\"สรุปยอด\",\"LastUpdated\",\"รายการ_รอ สแกน\"],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2508,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุป_เจ้าของสินค้า_Form",
+  "page": 1801,
+  "props": [
+   [
+    "View name",
+    "สรุป_เจ้าของสินค้า_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2509,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุปงานประจำวัน_Detail",
+  "page": 1801,
+  "props": [
+   [
+    "View name",
+    "สรุปงานประจำวัน_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2510,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุปงานประจำวัน_Form",
+  "page": 1802,
+  "props": [
+   [
+    "View name",
+    "สรุปงานประจำวัน_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2511,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุปเบิกส่วนต่าง_Detail",
+  "page": 1802,
+  "props": [
+   [
+    "View name",
+    "สรุปเบิกส่วนต่าง_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[\"วันที่เริ่มต้น\",\"วันที่สิ้นสุด\",\"วันที่ออกเอกสาร\",\"Export to Excel\"],\"ColumnOrder\":[\"วันที่เริ่ม ต้น\",\"วันที่สิ้นสุด\",\"วันที่ออกเอกสาร\",\"Export to Excel\",\"สรุป_ทำเบิกส่วน ต่างScgวังน้อย\",\"ราคารวม_ทำเบิกส่วน ต่างScgวังน้อย\"],\"ImageStyle\":\"Fit\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2512,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุปเบิกส่วนต่าง_Form",
+  "page": 1803,
+  "props": [
+   [
+    "View name",
+    "สรุปเบิกส่วนต่าง_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2513,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "สรุปเบิกส่วนต่าง_Inline",
+  "page": 1803,
+  "props": [
+   [
+    "View name",
+    "สรุปเบิกส่วนต่าง_Inline"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "table"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnWidth\":\"Default\",\"EnableQuickEdit\":false,\"ColumnOrder\": [],\"GroupBy\":[],\"GroupAggregate\":\"NONE\",\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[{\"EventType\":\"Row Selected\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- table\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2514,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "หน้าหลัก_Detail",
+  "page": 1804,
+  "props": [
+   [
+    "View name",
+    "หน้าหลัก_Detail"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "detail"
+   ],
+   [
+    "ActionType",
+    "Automatic"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"MainSlideshowImageColumn\":\"**auto**\",\"DetailContentColumn\":\"**none**\",\"HeaderColumns\":[],\"QuickEditColumns\":[],\"ColumnOrder\": [],\"ImageStyle\":\"Fill\",\"Layout\":null,\"UseCardLayout\":false,\"DisplayMode\":\"Automatic\",\"MaxNestedRows\":5,\"SlideshowMode\":true,\"DesktopSplitMode\":\"Split view\",\"UseDesktopMultiColumn\":true,\"SortBy\": [],\"PrimarySortColumn\":null,\"IsPrimarySortDescending\":false,\"Events\":[],\"Icon\":\"fa-indent\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2515,
+  "table": null
+ },
+ {
+  "type": "view",
+  "name": "หน้าหลัก_Form",
+  "page": 1804,
+  "props": [
+   [
+    "View name",
+    "หน้าหลัก_Form"
+   ],
+   [
+    "Created by",
+    "System"
+   ],
+   [
+    "View type",
+    "form"
+   ],
+   [
+    "Position",
+    "ref"
+   ],
+   [
+    "View configuration",
+    "{\"ColumnOrder\":null,\"AutoSave\":false,\"AutoReopen\":false,\"FinishView\":\"**Automatic**\",\"RowKey\":\"\",\"FormStyle\":\"Automatic\",\"PageStyle\":\"Automatic\",\"FormFooterStyle\":\"Bottom\",\"MaxNestedRows\":5,\"AudioInput\":false,\"Events\":[{\"EventType\":\"Form Saved\",\"EventAction\":\"**auto**\"}],\"Icon\":\"fa- edit\",\"IconRunnerUps\":null,\"MenuOrder\":1}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ],
+   [
+    "Icon",
+    ""
+   ],
+   [
+    "Menu order",
+    "1"
+   ]
+  ],
+  "order": 2516,
+  "table": null
+ }
+]

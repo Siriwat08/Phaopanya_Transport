@@ -1,0 +1,215 @@
+﻿action,table,prominence,bulk,pdf_page
+Compose Email (Email พนักงาน),SCGนครหลวงJWDภูมิภาค,Display_Inline,No,1810
+Add,SCGนครหลวงJWDภูมิภาค,Display_Overlay,Yes,1810
+Compose Email (Email พนักงาน),ข้อมูลการเข้าบำรุงรักษา,Display_Inline,No,1811
+Compose Email (Email พนักงาน),ข้อมูลการวางบิล,Display_Inline,No,1811
+Compose Email (Email ผู้อนุมัติ),ข้อมูลการวางบิล,Display_Inline,No,1812
+Compose Email (Email พนักงาน),ข้อมูลพนักงาน,Display_Inline,No,1813
+Add,ข้อมูลการเข้าบำรุงรักษา,Display_Overlay,Yes,1813
+Add,ข้อมูลการวางบิล,Display_Overlay,Yes,1814
+Call Phone (เบอร์โทรศัพท์),ข้อมูลพนักงาน,Display_Inline,No,1814
+อนุมัติ,ข้อมูลการวางบิล,Display_Prominently,Yes,1815
+รอการอนุมัติ,ข้อมูลการวางบิล,Display_Inline,Yes,1816
+Edit,ข้อมูลการวางบิล,Display_Overlay,No,1817
+Edit,ปริ๊นใบวางบิล,Display_Overlay,No,1817
+Edit,PDFพนักงาน,Display_Overlay,No,1818
+Add,ปริ๊นใบวางบิล,Display_Overlay,Yes,1818
+Add,PDFพนักงาน,Display_Overlay,Yes,1819
+Clear,ปริ๊นใบวางบิล,Do_Not_Display,Yes,1819
+CLEAR 2,PDFพนักงาน,Display_Prominently,Yes,1820
+Edit,SCGนครหลวงJWDภูมิภาค,Display_Overlay,No,1821
+Edit,แจ้งปัญหาระหว่างวัน,Display_Overlay,No,1821
+Compose Email (Email พนักงาน),แจ้งปัญหาระหว่างวัน,Display_Inline,No,1822
+Add,แจ้งปัญหาระหว่างวัน,Display_Overlay,Yes,1822
+Add,ราคาน้ำมันดีเซล,Display_Overlay,Yes,1823
+Delete,ข้อมูลพนักงาน,Display_Prominently,Yes,1823
+Edit,ข้อมูลพนักงาน,Display_Overlay,No,1824
+Add,ข้อมูลพนักงาน,Display_Overlay,Yes,1824
+Add,ข้อมูลชื่องานต้นทางปลายทาง,Display_Overlay,Yes,1825
+Compose Email (Email พนักงาน),รับงานคืนได้เงิน200,Display_Inline,No,1825
+Add,รับงานคืนได้เงิน200,Display_Overlay,Yes,1826
+Delete,ข้อมูลชื่องานต้นทางปลายทาง,Display_Prominently,Yes,1827
+Edit,ข้อมูลชื่องานต้นทางปลายทาง,Display_Overlay,No,1827
+Delete,ข้อมูลงานRT,Display_Prominently,Yes,1828
+Edit,ข้อมูลงานRT,Display_Overlay,No,1828
+Add,ข้อมูลงานRT,Display_Overlay,Yes,1829
+Delete,ตารางงานประจำวัน,Display_Prominently,Yes,1829
+Edit,ตารางงานประจำวัน,Display_Overlay,No,1830
+Delete,ราคาน้ำมันดีเซล,Display_Prominently,Yes,1830
+Edit,ราคาน้ำมันดีเซล,Display_Overlay,No,1831
+Delete,ราคาในระบบก่อนส่งสินค้า,Display_Prominently,Yes,1831
+Edit,ราคาในระบบก่อนส่งสินค้า,Display_Overlay,No,1832
+Delete,หน้าหลัก,Display_Prominently,Yes,1832
+Edit,หน้าหลัก,Display_Overlay,No,1833
+Delete,ปริ๊นใบวางบิล,Display_Prominently,Yes,1833
+Delete,PDFพนักงาน,Display_Prominently,Yes,1834
+Add,ตารางงานประจำวัน,Display_Overlay,Yes,1834
+Add,ราคาในระบบก่อนส่งสินค้า,Display_Overlay,Yes,1835
+Add,หน้าหลัก,Display_Overlay,Yes,1835
+Delete,ข้อมูลการวางบิล,Display_Prominently,Yes,1836
+Delete,SCGนครหลวงJWDภูมิภาค,Display_Prominently,Yes,1836
+Delete,ข้อมูลการเข้าบำรุงรักษา,Display_Prominently,Yes,1837
+Edit,ข้อมูลการเข้าบำรุงรักษา,Display_Overlay,No,1837
+Delete,แจ้งปัญหาระหว่างวัน,Display_Prominently,Yes,1838
+Delete,รับงานคืนได้เงิน200,Display_Prominently,Yes,1838
+Edit,รับงานคืนได้เงิน200,Display_Overlay,No,1839
+สร้างใบป่ะหน้า_person_01,PDFพนักงาน,Do_Not_Display,Yes,1839
+สร้างใบป่ะหน้าทุกคน,PDFพนักงาน,Display_Prominently,Yes,1840
+Clearหน้าจอ,PDFพนักงาน,Do_Not_Display,Yes,1841
+สร้างใบป่ะหน้า_person_02,PDFพนักงาน,Do_Not_Display,Yes,1842
+สร้างใบป่ะหน้า_person_03,PDFพนักงาน,Do_Not_Display,Yes,1843
+สร้างใบป่ะหน้า_person_04,PDFพนักงาน,Do_Not_Display,Yes,1844
+สร้างใบป่ะหน้า_person_05,PDFพนักงาน,Do_Not_Display,Yes,1844
+สร้างใบป่ะหน้า_person_06,PDFพนักงาน,Do_Not_Display,Yes,1845
+สร้างใบป่ะหน้า_person_07,PDFพนักงาน,Do_Not_Display,Yes,1846
+สร้างใบป่ะหน้า_กิตติพงษ์แหลมผักแว่น,PDFพนักงาน,Do_Not_Display,Yes,1847
+สร้างใบป่ะหน้า_person_08,PDFพนักงาน,Do_Not_Display,Yes,1847
+สร้างใบป่ะหน้า_person_09,PDFพนักงาน,Do_Not_Display,Yes,1848
+สร้างใบป่ะหน้า_person_10,PDFพนักงาน,Do_Not_Display,Yes,1849
+สร้างใบป่ะหน้า_person_11,PDFพนักงาน,Do_Not_Display,Yes,1850
+สร้างใบป่ะหน้า_จิรายุโคตรวงษ์,PDFพนักงาน,Do_Not_Display,Yes,1850
+สร้างใบป่ะหน้า_person_12,PDFพนักงาน,Do_Not_Display,Yes,1851
+Delete,FILTER,Display_Prominently,Yes,1852
+Edit,FILTER,Display_Overlay,No,1852
+Add,FILTER,Display_Overlay,Yes,1853
+cLeAR_รับคืน,FILTER,Display_Prominently,Yes,1854
+View Map (Lat / Long),รับงานคืนได้เงิน200,Display_Inline,No,1854
+Chart Data for รับงานคืนได้เงิน200,รับงานคืนได้เงิน200,Display_Prominently,No,1855
+Send SMS (เบอร์โทรศัพท์),ข้อมูลพนักงาน,Display_Inline,No,1856
+Delete,Price_Table,Display_Prominently,Yes,1856
+Edit,Price_Table,Display_Overlay,No,1857
+Add,Price_Table,Display_Overlay,Yes,1857
+View Map (จุดส่งสินค้าปลายทาง),SCGนครหลวงJWDภูมิภาค,Display_Inline,No,1858
+ส่งรูปจุดที่ส่งงาน,รับงานคืนได้เงิน200,Display_Prominently,No,1859
+ส่งรูปวางบิลหรือสลิปโอนเงิน,ข้อมูลการวางบิล,Display_Prominently,No,1860
+สร้างใบป่ะหน้า_person_13,PDFพนักงาน,Do_Not_Display,Yes,1860
+สร้างใบป่ะหน้า_เกียรติศักดิ์พินิจเมือง,PDFพนักงาน,Do_Not_Display,Yes,1861
+ส่งรูปแจ้งปัญหา,แจ้งปัญหาระหว่างวัน,Display_Prominently,No,1862
+View Ref (ID_เอกสารนำกลับคืนคลัง),SCGนครหลวงJWDภูมิภาค,Display_Inline,No,1862
+Delete,สรุปเบิกส่วนต่าง,Display_Prominently,Yes,1863
+Edit,สรุปเบิกส่วนต่าง,Display_Overlay,No,1864
+Add,สรุปเบิกส่วนต่าง,Display_Overlay,Yes,1864
+View Ref(_ComputedKey_ID_SCGนครหลวงJWDภูมิภาค),สรุปเบิกส่วนต่าง,Display_Inline,No,1865
+Clearหน้าจอสรุปส่วนต่าง,สรุปเบิกส่วนต่าง,Display_Prominently,Yes,1865
+Delete,Doc_Return,Display_Prominently,Yes,1866
+Edit,Doc_Return,Display_Overlay,No,1867
+Delete,Image_Doc_Return,Display_Prominently,Yes,1867
+Edit,Image_Doc_Return,Display_Overlay,No,1868
+Add,Doc_Return,Display_Overlay,Yes,1868
+Add,Image_Doc_Return,Display_Overlay,Yes,1869
+View Ref (ID_Doc_Return),Image_Doc_Return,Display_Inline,No,1869
+GoToView,หน้าหลัก,Do_Not_Display,No,1870
+สร้างใบป่ะหน้า_เกียรติศักดิ์ยอมใหญ่,PDFพนักงาน,Do_Not_Display,Yes,1871
+เคลียสรุปจุดส่ง Action - 1,FILTER,Display_Prominently,Yes,1871
+View Map (คลังสินค้า เอสซีจีเจดับเบิ้ลยูดีวังน้อย),SCGนครหลวงJWDภูมิภาค,Display_Inline,No,1872
+ไอโรบอท,ปริ๊นใบวางบิล,Do_Not_Display,Yes,1873
+รับเอกสาร (งานพี่เหน่ง),ปริ๊นใบวางบิล,Do_Not_Display,Yes,1874
+person_14,ปริ๊นใบวางบิล,Do_Not_Display,Yes,1874
+โอนคลัง กระสอบ2(บางบัวทอง),ปริ๊นใบวางบิล,Do_Not_Display,Yes,1875
+คลังSCGJWDวังน้อย,ปริ๊นใบวางบิล,Do_Not_Display,Yes,1876
+MeSpace,ปริ๊นใบวางบิล,Do_Not_Display,Yes,1877
+โอนคลัง มโนยนต์ (นวนคร),ปริ๊นใบวางบิล,Do_Not_Display,Yes,1877
+โอนคลัง (GQ) จีคิว,ปริ๊นใบวางบิล,Do_Not_Display,Yes,1878
+ปริ๊นวางบิลทุกงาน,ปริ๊นใบวางบิล,Display_Prominently,Yes,1879
+เคลียหน้าจอ,ปริ๊นใบวางบิล,Display_Prominently,Yes,1880
+Delete,ทำเบิกส่วนต่างScgวังน้อย,Display_Prominently,Yes,1881
+Edit,ทำเบิกส่วนต่างScgวังน้อย,Display_Overlay,No,1881
+Add,ทำเบิกส่วนต่างScgวังน้อย,Display_Overlay,Yes,1882
+View Ref(_ComputedKey_ID_SCGนครหลวงJWDภูมิภาค),ทำเบิกส่วนต่างScgวังน้อย,Display_Inline,No,1882
+View Map (ต้นทาง),ทำเบิกส่วนต่างScgวังน้อย,Display_Inline,No,1883
+Compose Email (Email พนักงาน),ทำเบิกส่วนต่างScgวังน้อย,Display_Inline,No,1884
+รับเอกสาร (งานพี่เหน่ง) สตีเบล,ปริ๊นใบวางบิล,Do_Not_Display,Yes,1884
+CLEAR_ปริ๊นใบวางบิล_Action,ปริ๊นใบวางบิล,Do_Not_Display,Yes,1885
+View Map (Lat/Long),แจ้งปัญหาระหว่างวัน,Display_Inline,No,1886
+เพิ่มข้อมูลแจ้งปัญหาในจุดส่งงาน,แจ้งปัญหาระหว่างวัน,Do_Not_Display,Yes,1887
+อัพเดตค่าสถานะผ่านการตรวจสอบ,ทำเบิกส่วนต่างScgวังน้อย,Display_Prominently,Yes,1888
+Open Url (แสดงแผนที่_GoogleMapsRoutesAPI),ทำเบิกส่วนต่างScgวังน้อย,Display_Inline,No,1889
+อัพเดตสถานะไม่ผ่านการตรวจสอบ,ทำเบิกส่วนต่างScgวังน้อย,Display_Prominently,Yes,1889
+ปุ่มเปิดYes 2,ทำเบิกส่วนต่างScgวังน้อย,Display_Prominently,Yes,1890
+Edit,ข้อมูลงานRW,Display_Overlay,No,1891
+Add,ข้อมูลงานRW,Display_Overlay,Yes,1891
+View Map (ที่อยู่ปลายทาง_LatLong),ตารางงานประจำวัน,Display_Inline,No,1892
+View Map (ที่อยู่ปลายทาง_LatLong_Api),SCGนครหลวงJWDภูมิภาค,Display_Inline,No,1893
+ข้อมูลการเข้าบำรุงรักษาcsv,ข้อมูลการเข้าบำรุงรักษา,Display_Prominently,No,1893
+ข้อมูลการวางบิลcsv,ข้อมูลการวางบิล,Display_Prominently,No,1894
+ตารางงานประจำวันcsv,ตารางงานประจำวัน,Display_Prominently,No,1895
+แจ้งปัญหาระหว่างวันcsv,แจ้งปัญหาระหว่างวัน,Display_Prominently,No,1895
+ข้อมูลพนักงานcsv,ข้อมูลพนักงาน,Display_Prominently,No,1896
+ข้อมูลชื่องานต้นทางปลายทางcsv,ข้อมูลชื่องานต้นทางปลายทาง,Display_Prominently,No,1896
+ข้อมูลงานRWcsv,ข้อมูลงานRW,Display_Prominently,No,1897
+ข้อมูลงานRTcsv,ข้อมูลงานRT,Display_Prominently,No,1898
+ทำเบิกส่วนต่างScgวังน้อยcsv,ทำเบิกส่วนต่างScgวังน้อย,Display_Prominently,No,1898
+ปริ๊นใบวางบิลcsv,ปริ๊นใบวางบิล,Display_Prominently,No,1899
+รับงานคืนได้เงิน200csv,รับงานคืนได้เงิน200,Display_Prominently,No,1899
+ราคาน้ำมันดีเซลcsv,ราคาน้ำมันดีเซล,Display_Prominently,No,1900
+ราคาในระบบก่อนส่งสินค้าcsv,ราคาในระบบก่อนส่งสินค้า,Display_Prominently,No,1901
+สรุปเบิกส่วนต่างcsv,สรุปเบิกส่วนต่าง,Display_Prominently,No,1901
+หน้าหลักcsv,หน้าหลัก,Display_Prominently,No,1902
+Doc_Return_csv,Doc_Return,Display_Prominently,No,1903
+FILTERcsv,FILTER,Display_Prominently,No,1903
+Image_Doc_Return_csv,Image_Doc_Return,Display_Prominently,No,1904
+PDFพนักงานcsv,PDFพนักงาน,Display_Prominently,No,1904
+Price_Table_csv,Price_Table,Display_Prominently,No,1905
+SCGนครหลวงJWDภูมิภาค_csv,SCGนครหลวงJWDภูมิภาค,Display_Prominently,No,1906
+View Ref (SM_Link),แจ้งปัญหาระหว่างวัน,Display_Inline,No,1906
+View Ref (RT_Link),แจ้งปัญหาระหว่างวัน,Display_Inline,No,1907
+Delete,สร้างเอกสาร,Display_Prominently,Yes,1908
+Edit,สร้างเอกสาร,Display_Overlay,No,1908
+Add,สร้างเอกสาร,Display_Overlay,Yes,1909
+Mark_As_Delivered,ตารางงานประจำวัน,Do_Not_Display,Yes,1909
+Process_Delivery_Status_Bot Action - 1,SCGนครหลวงJWDภูมิภาค,Do_Not_Display,Yes,1910
+Mark_As_Delivered_not,ตารางงานประจำวัน,Do_Not_Display,Yes,1911
+ACT_Create_SCG_Flow,แจ้งปัญหาระหว่างวัน,Do_Not_Display,Yes,1911
+New Action,แจ้งปัญหาระหว่างวัน,Do_Not_Display,Yes,1912
+View Ref (SM_Link_SCG),SCGนครหลวงJWDภูมิภาค,Display_Inline,No,1913
+Compose Email (Email พนักงาน),ตารางงานประจำวัน,Display_Inline,No,1913
+View Ref (ID_พนักงาน),รับงานคืนได้เงิน200,Display_Inline,No,1914
+View Ref (ID_พนักงาน),แจ้งปัญหาระหว่างวัน,Display_Inline,No,1915
+View Ref (ID_พนักงาน),SCGนครหลวงJWDภูมิภาค,Display_Inline,No,1915
+View Ref (ID_พนักงาน),ข้อมูลการวางบิล,Display_Inline,No,1916
+View Ref (ID_พนักงาน),ข้อมูลการเข้าบำรุงรักษา,Display_Inline,No,1917
+Delete,ข้อมูลงานRW,Display_Prominently,Yes,1918
+View Ref (ID_พนักงาน),ทำเบิกส่วนต่างScgวังน้อย,Display_Inline,No,1918
+View Map (LatLong_Actual),ตารางงานประจำวัน,Display_Inline,No,1919
+View Map (พิกัดตอนกดบันทึกงาน),SCGนครหลวงJWDภูมิภาค,Display_Inline,No,1919
+View Map (LatLong_ตรวจสอบ),แจ้งปัญหาระหว่างวัน,Display_Inline,No,1920
+สร้างใบป่ะหน้า_person_15,PDFพนักงาน,Do_Not_Display,Yes,1921
+Delete,ScanDocs,Display_Prominently,Yes,1922
+Edit,ScanDocs,Display_Overlay,No,1922
+Compose Email (Scan_By),ScanDocs,Display_Inline,No,1923
+Add,ScanDocs,Display_Overlay,Yes,1924
+Update ScanStatus,ตารางงานประจำวัน,Do_Not_Display,Yes,1924
+ScanStatus,ScanDocs,Do_Not_Display,Yes,1925
+View Ref (Invoice_No),ScanDocs,Display_Inline,No,1925
+Delete,สรุป_เจ้าของสินค้า,Display_Prominently,Yes,1926
+Edit,สรุป_เจ้าของสินค้า,Display_Overlay,No,1927
+Add,สรุป_เจ้าของสินค้า,Display_Overlay,Yes,1927
+Update Action - 1,ScanDocs,Display_Prominently,Yes,1928
+Delete,สรุป_Shipment,Display_Prominently,Yes,1928
+Edit,สรุป_Shipment,Display_Overlay,No,1929
+Add,สรุป_Shipment,Display_Overlay,Yes,1929
+Delete,PriceOverride,Display_Prominently,Yes,1930
+Edit,PriceOverride,Display_Overlay,No,1930
+Add,PriceOverride,Display_Overlay,Yes,1931
+เบทาโกร+เหมาตู้,ปริ๊นใบวางบิล,Do_Not_Display,Yes,1931
+Thai paper (SCG Express),ปริ๊นใบวางบิล,Do_Not_Display,Yes,1932
+LINEMAN (6W) (SCG Express),ปริ๊นใบวางบิล,Do_Not_Display,Yes,1933
+โอนคลัง บุญถาวร เกษตร_นวมินทร์,ปริ๊นใบวางบิล,Do_Not_Display,Yes,1934
+ปุ่มเปิดYes_ราคาตามระยะทาง,ทำเบิกส่วนต่างScgวังน้อย,Display_Prominently,Yes,1934
+Delete,ส่งงานที่ยังไม่มีข้อมูลในระบบ,Display_Prominently,Yes,1935
+Edit,ส่งงานที่ยังไม่มีข้อมูลในระบบ,Display_Overlay,No,1936
+Compose Email (Email พนักงาน),ส่งงานที่ยังไม่มีข้อมูลในระบบ,Display_Inline,No,1936
+Add,ส่งงานที่ยังไม่มีข้อมูลในระบบ,Display_Overlay,Yes,1937
+View Map (จุดส่งสินค้าปลายทาง),ส่งงานที่ยังไม่มีข้อมูลในระบบ,Display_Inline,No,1937
+View Ref (ID_พนักงาน),ส่งงานที่ยังไม่มีข้อมูลในระบบ,Display_Inline,No,1938
+Delete,Acknowledge_Logs,Display_Prominently,Yes,1939
+Edit,Acknowledge_Logs,Display_Overlay,No,1939
+Delete,Announcements,Display_Prominently,Yes,1940
+Edit,Announcements,Display_Overlay,No,1941
+Compose Email (Email พนักงาน),Acknowledge_Logs,Display_Inline,No,1941
+Add,Acknowledge_Logs,Display_Overlay,Yes,1942
+Add,Announcements,Display_Overlay,Yes,1942
+View Ref (ID_ประกาศ),Acknowledge_Logs,Display_Inline,No,1943
+สร้างใบป่ะหน้า_person_16,PDFพนักงาน,Do_Not_Display,Yes,1943
+Open Url (Candidate_2_แสดงแผนที่),ทำเบิกส่วนต่างScgวังน้อย,Display_Inline,No,1944
+Open Url (Candidate_3_แสดงแผนที่),ทำเบิกส่วนต่างScgวังน้อย,Display_Inline,No,1945

@@ -1,0 +1,109 @@
+name: AI finding
+description: รายงานข้อค้นพบจากการวิเคราะห์แอป (สำหรับ AI agent และผู้ช่วย)
+title: "[AI] <ตาราง> / <คอลัมน์> — <สรุปปัญหา 1 บรรทัด>"
+labels: ["finding"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ก่อนเปิด issue กรุณาอ่าน `AGENTS.md` และ `docs/reading-the-pdf.md`
+        โดยเฉพาะเรื่อง **ขอบเขต (scope)** และ **เคส ≠ ช่องว่าง** — สองเรื่องนี้คือสาเหตุที่ทำให้รายงานบั๊กปลอม
+  - type: input
+    id: agent
+    attributes:
+      label: ชื่อ agent / ผู้รายงาน
+      placeholder: claude-code / cursor / codex / ชื่อคุณ
+    validations:
+      required: true
+  - type: dropdown
+    id: domain
+    attributes:
+      label: โดเมน
+      options: [D01, D02, D03, D04, D05, D06, D07, D08, D09, D10, D11]
+    validations:
+      required: true
+  - type: input
+    id: table
+    attributes:
+      label: ตาราง
+      placeholder: ปริ๊นใบวางบิล
+    validations:
+      required: true
+  - type: input
+    id: column
+    attributes:
+      label: คอลัมน์ (หรือแอคชัน)
+      placeholder: ราคารวม
+    validations:
+      required: true
+  - type: dropdown
+    id: property
+    attributes:
+      label: คุณสมบัติที่พบปัญหา
+      options:
+        - App formula
+        - Initial value
+        - Valid_If
+        - Show_If
+        - Required_If
+        - Editable_If
+        - Reset_If
+        - Security filter
+        - Expression for update mode
+        - With these properties
+        - Type Qualifier
+        - Row filter condition
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: ผลการประเมิน
+      options: [ดี, พอใช้, ต้องปรับปรุง, เสี่ยง, ไม่มีสูตร, ต้องยืนยันในแอป]
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: ระดับความรุนแรง
+      options: [critical, high, medium, low, info]
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: หน้าใน PDF ต้นฉบับ
+      placeholder: "193"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: ปัญหา
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: หลักฐาน (สูตร/ค่าจริงที่อ้างอิง)
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: ผลกระทบต่อธุรกิจ
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: คำแนะนำ
+    validations:
+      required: true
+  - type: textarea
+    id: falsifiable
+    attributes:
+      label: อะไรจะพิสูจน์ว่าข้อนี้ผิด (falsifiable test)
+      description: ถ้าเขียนไม่ได้ แปลว่ายังไม่พร้อมส่ง — กรุณาตรวจสอบหลักฐานอีกครั้ง
+    validations:
+      required: true

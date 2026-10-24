@@ -1,0 +1,442 @@
+[
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "อนุมัติ",
+  "page": 1804,
+  "props": [
+   [
+    "Rule name",
+    "อนุมัติ"
+   ],
+   [
+    "Format these columns actions",
+    "ราคา สถานะการอนุมัติ"
+   ],
+   [
+    "For this data",
+    "ข้อมูลการวางบิล"
+   ],
+   [
+    "If this condition is true",
+    "=[สถานะการอนุมัติ] = \"อนุมัติ\""
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"green\",\"highlightColor\":\"green\",\"textSize\":1.1,\"underline\":false,\"strikethrough\":false,\"bold\":true,\"italic\":false,\"uppercase\":false,\"icon\":\"fal fa-check\",\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ },
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "รอการอนุมัติ",
+  "page": 1805,
+  "props": [
+   [
+    "Rule name",
+    "รอการอนุมัติ"
+   ],
+   [
+    "Format these columns actions",
+    "ราคา สถานะการอนุมัติ"
+   ],
+   [
+    "For this data",
+    "ข้อมูลการวางบิล"
+   ],
+   [
+    "If this condition is true",
+    "=[สถานะการอนุมัติ] = \"รอการอนุมัติ\""
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"orange\",\"highlightColor\":\"orange\",\"textSize\":1.1,\"underline\":false,\"strikethrough\":false,\"bold\":true,\"italic\":false,\"uppercase\":false,\"icon\":\"far fa-alarm- clock\",\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ },
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "แจ้งเตือนราคาหลังวิ่งงาน",
+  "page": 1805,
+  "props": [
+   [
+    "Rule name",
+    "แจ้งเตือนราคาหลังวิ่งงาน"
+   ],
+   [
+    "Format these columns actions",
+    "ราคาในระบบหลังส่งสินค้า"
+   ],
+   [
+    "For this data",
+    "ข้อมูลการวางบิล"
+   ],
+   [
+    "If this condition is true",
+    "=AND( [ราคาในระบบหลังส่งสินค้า] <> [ราคา], OR( [ชื่องาน] =\"นครหลวง\", [ชื่องาน] = \"โอนคลัง พว\", [ชื่องาน] = \"โอนคลัง นำ วิวัฒน์\", [ชื่องาน] = \"โอนคลัง ซอยฮะ (โกเรีย)\", [ชื่องาน] = \"โอนคลัง TRW\", [ชื่องาน] = \"โอนคลัง NocNoc\", [ชื่องาน] = \"โอนคลังCPF FOOD\", [ชื่องาน] = \"โอนคลัง BYD\", [ชื่องาน] = \"ภูมิภาค\" ) )"
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"red\",\"highlightColor\":\"red\",\"textSize\":1.0,\"underline\":false,\"strikethrough\":false,\"bold\":true,\"italic\":false,\"uppercase\":false,\"icon\":null,\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ },
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "แจ้งเตือนเช็คราคาแล้วปกติ",
+  "page": 1806,
+  "props": [
+   [
+    "Rule name",
+    "แจ้งเตือนเช็คราคาแล้วปกติ"
+   ],
+   [
+    "Format these columns actions",
+    "ราคาในระบบหลังส่งสินค้า"
+   ],
+   [
+    "For this data",
+    "ข้อมูลการวางบิล"
+   ],
+   [
+    "If this condition is true",
+    "=IF([ราคาในระบบหลังส่งสินค้า] = [ราคา],TRUE, FALSE)"
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"green\",\"highlightColor\":\"green\",\"textSize\":1.2,\"underline\":false,\"strikethrough\":false,\"bold\":true,\"italic\":false,\"uppercase\":false,\"icon\":null,\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ },
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "ทำเบิกได้",
+  "page": 1806,
+  "props": [
+   [
+    "Rule name",
+    "ทำเบิกได้"
+   ],
+   [
+    "Format these columns actions",
+    "ขออนุมัติเบิกค่าขนส่งส่วนเพิ่ม"
+   ],
+   [
+    "For this data",
+    "ทำเบิกส่วนต่างScgวังน้อย"
+   ],
+   [
+    "If this condition is true",
+    "=[ขออนุมัติเบิกค่าขนส่งส่วนเพิ่ม] >0"
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"green\",\"highlightColor\":\"green\",\"textSize\":1.0,\"underline\":false,\"strikethrough\":false,\"bold\":true,\"italic\":false,\"uppercase\":false,\"icon\":\"far fa-sack-dollar\",\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ },
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "ทำเบิกไม่ได้",
+  "page": 1806,
+  "props": [
+   [
+    "Rule name",
+    "ทำเบิกไม่ได้"
+   ],
+   [
+    "Format these columns actions",
+    "ขออนุมัติเบิกค่าขนส่งส่วนเพิ่ม"
+   ],
+   [
+    "For this data",
+    "ทำเบิกส่วนต่างScgวังน้อย"
+   ],
+   [
+    "If this condition is true",
+    "=[ขออนุมัติเบิกค่าขนส่งส่วนเพิ่ม] < 0"
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"red\",\"highlightColor\":\"red\",\"textSize\":1.0,\"underline\":false,\"strikethrough\":true,\"bold\":false,\"italic\":false,\"uppercase\":false,\"icon\":\"far fa-sack-dollar\",\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ },
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "เตือนตรวจสอบ RW",
+  "page": 1807,
+  "props": [
+   [
+    "Rule name",
+    "เตือนตรวจสอบ RW"
+   ],
+   [
+    "Format these columns actions",
+    "Shipment No"
+   ],
+   [
+    "For this data",
+    "SCGนครหลวงJWDภูมิภาค"
+   ],
+   [
+    "If this condition is true",
+    "=IN([Invoice No],ข้อมูลงานRW[เลขที่เอกสาร])"
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"red\",\"highlightColor\":\"red\",\"textSize\":1.3,\"underline\":false,\"strikethrough\":false,\"bold\":true,\"italic\":false,\"uppercase\":false,\"icon\":null,\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ },
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "Green_Done",
+  "page": 1807,
+  "props": [
+   [
+    "Rule name",
+    "Green_Done"
+   ],
+   [
+    "Format these columns actions",
+    "Plan Delivery Invoice No Shipment No ชื่อ - นามสกุล ทะเบียนรถ ชื่อเจ้าของสินค้า ชื่อปลายทาง"
+   ],
+   [
+    "For this data",
+    "ตารางงานประจำวัน"
+   ],
+   [
+    "If this condition is true",
+    "=[ScanStatus] = \"สแกนแล้ว\""
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"green\",\"highlightColor\":\"green\",\"textSize\":1.0,\"underline\":false,\"strikethrough\":false,\"bold\":true,\"italic\":false,\"uppercase\":false,\"icon\":\"fal fa-check-circle\",\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ },
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "ผลการตรวจสอบงานส่ง_FAIL",
+  "page": 1808,
+  "props": [
+   [
+    "Rule name",
+    "ผลการตรวจสอบงานส่ง_FAIL"
+   ],
+   [
+    "Format these columns actions",
+    "ระยะขยับจากจุดเริ่มต้น_เมตร ระยะเวลาใช้งาน_นาทีความเร็วการเคลื่อนที่_เมตร_นาทีผลการตรวจสอบงานส่ง เหตุผิดปกติที่ตรวจพบ"
+   ],
+   [
+    "For this data",
+    "SCGนครหลวงJWDภูมิภาค"
+   ],
+   [
+    "If this condition is true",
+    "=[ผลการตรวจสอบงานส่ง] = \"FAIL\""
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"primaryText\",\"highlightColor\":\"red\",\"textSize\":1.0,\"underline\":false,\"strikethrough\":false,\"bold\":true,\"italic\":false,\"uppercase\":false,\"icon\":null,\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ },
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "สแกนรับแล้ว",
+  "page": 1808,
+  "props": [
+   [
+    "Rule name",
+    "สแกนรับแล้ว"
+   ],
+   [
+    "Format these columns actions",
+    "Invoice No ScanStatus ชื่อเจ้าของสินค้า_Invoice_ที่ต้องสแกน"
+   ],
+   [
+    "For this data",
+    "ตารางงานประจำวัน"
+   ],
+   [
+    "If this condition is true",
+    "=[ScanStatus] = \"สแกนรับแล้ว\""
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"green\",\"highlightColor\":\"green\",\"textSize\":1.0,\"underline\":false,\"strikethrough\":false,\"bold\":true,\"italic\":false,\"uppercase\":false,\"icon\":null,\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ },
+ {
+  "source": "format_rule",
+  "table": null,
+  "name": "รอสแกน",
+  "page": 1808,
+  "props": [
+   [
+    "Rule name",
+    "รอสแกน"
+   ],
+   [
+    "Format these columns actions",
+    "Invoice No ScanStatus ชื่อเจ้าของสินค้า_Invoice_ที่ต้องสแกน"
+   ],
+   [
+    "For this data",
+    "ตารางงานประจำวัน"
+   ],
+   [
+    "If this condition is true",
+    "=[ScanStatus] <> \"สแกนรับแล้ว\""
+   ],
+   [
+    "Rule order",
+    "1"
+   ],
+   [
+    "Is this format rule disabled?",
+    "No"
+   ],
+   [
+    "Like this",
+    "{\"textColor\":\"red\",\"highlightColor\":\"red\",\"textSize\":1.0,\"underline\":false,\"strikethrough\":false,\"bold\":true,\"italic\":false,\"uppercase\":false,\"icon\":null,\"imageSize\":null}"
+   ],
+   [
+    "Visible?",
+    "ALWAYS"
+   ]
+  ]
+ }
+]
